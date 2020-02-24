@@ -8,7 +8,7 @@ var documents = [{
     "id": 1,
     "url": "https://JudePark96.github.io/about/",
     "title": "About Me",
-    "body": "This is where you put the contents of your About page. Like all your pages, it’s in Markdown format. This website is powered by fastpages 1.       a blogging platform that natively supports Jupyter notebooks in addition to other formats.  &#8617;    "
+    "body": "Eunhwan Park Seoul, Republic of Korea. judepark@kookmin. ac. kr RESEARCH INTERESTS: Language Understanding, Dialogue System, Recommendation System, Knowledge Distillation, etc EDUCATION:  BS in Computer Science, 2015 ~ 2016 – Hanbat National University BS in Computer Science, 2016 ~ current – Kookmin UniversityWork Experience:  Backend Engineer, Plating Co, 2015 ~ 2016 Backend Engineer, Sellmate Co, 2018 ~ 2019 Backend Engineer, FreeLancer, 2019PUBLICATIONS: Domestic Conference  Comparison of Varient BERT Model on Korean, Roje Lee, Eunhwan Park, Jaekoo Lee. KICS Winter Conference 2020TEACHING EXPERIENCE:  Daily Mentor, Galmae Middle School     Introducing Software Engineering   HONORS / AWARDS:  Software Maestro 6th, 2015.  Summer Innovation Program - University of California, Irvine"
     }, {
     "id": 2,
     "url": "https://JudePark96.github.io/categories/",
