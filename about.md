@@ -4,10 +4,28 @@ title: About Me
 permalink: /about/
 ---
 
-This is where you put the contents of your *About* page. Like all your pages, it's in [Markdown](https://guides.github.com/features/mastering-markdown/) format.
+Eunhwan Park <br >
+Seoul, Republic of Korea. <br >
+judepark@kookmin.ac.kr
+### RESEARCH INTERESTS
+Language Understanding, Dialogue System, Recommendation System, Knowledge Distillation, etc
+### EDUCATION
+- BS in Computer Science, 2015 ~ 2016 – Hanbat National University
+- BS in Computer Science, 2016 ~ current – Kookmin University
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+### Work Experience
+- Backend Engineer, Plating Co, 2015 ~ 2016
+- Backend Engineer, Sellmate Co, 2018 ~ 2019
+- Backend Engineer, FreeLancer, 2019
 
+### PUBLICATIONS
+Domestic Conference
+- Comparison of Varient BERT Model on Korean, Roje Lee, Eunhwan Park, Jaekoo Lee. KICS Winter Conference 2020
 
+### TEACHING EXPERIENCE
+- Daily Mentor, Galmae Middle School
+  - Introducing Software Engineering 
 
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+### HONORS / AWARDS
+- Software Maestro 6th, 2015.
+- Summer Innovation Program - University of California, Irvine
