@@ -20,7 +20,7 @@ Language Understanding, Dialogue System, Recommendation System, Knowledge Distil
 
 ### PUBLICATIONS
 Domestic Conference
-- Comparison of Varient BERT Model on Korean, Roje Lee, Eunhwan Park, Jaekoo Lee. KICS Winter Conference 2020
+- Comparison of Varient BERT Model on Korean, Roje Lee, **Eunhwan Park**, Jaekoo Lee. KICS Winter Conference 2020
 
 ### TEACHING EXPERIENCE
 - Daily Mentor, Galmae Middle School
