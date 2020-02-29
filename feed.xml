@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-02-29T07:58:01-06:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">Mac OS X 에서 MeCab 설치 에러 해결</title><link href="https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html" rel="alternate" type="text/html" title="Mac OS X 에서 MeCab 설치 에러 해결" /><published>2020-02-29T00:00:00-06:00</published><updated>2020-02-29T00:00:00-06:00</updated><id>https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0</id><content type="html" xml:base="https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html">&lt;h2 id=&quot;소개&quot;&gt;소개&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-02-29T10:22:09-06:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">Mac OS X 에서 MeCab 설치 에러 해결</title><link href="https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html" rel="alternate" type="text/html" title="Mac OS X 에서 MeCab 설치 에러 해결" /><published>2020-02-29T00:00:00-06:00</published><updated>2020-02-29T00:00:00-06:00</updated><id>https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0</id><content type="html" xml:base="https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html">&lt;h2 id=&quot;소개&quot;&gt;소개&lt;/h2&gt;
 
 &lt;p&gt;자연어처리 데이터를 전처리할 때 필수적으로 필요한 것은 형태소 분석기를 통하여 토큰화(tokenization)을 하는 것이다. 한국어의 경우, MeCab이나 꼬꼬마 형태소 분석기 또는 카카오에서 만든 형태소 분석기 등을 사용한다.&lt;/p&gt;
 
@@ -835,7 +835,125 @@ do_thing()
       &lt;p&gt;This is the footnote. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">Basic setup</summary></entry><entry><title type="html">플레이팅은?</title><link href="https://judepark96.github.io/blog/startup/refactoring/android/2016/10/04/%ED%94%8C%EB%A0%88%EC%9D%B4%ED%8C%85-%EC%A0%90%EC%8B%AC-%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%9F%B0%EC%B9%AD-%ED%9A%8C%EA%B3%A0.html" rel="alternate" type="text/html" title="플레이팅은?" /><published>2016-10-04T00:00:00-05:00</published><updated>2016-10-04T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/startup/refactoring/android/2016/10/04/%ED%94%8C%EB%A0%88%EC%9D%B4%ED%8C%85-%EC%A0%90%EC%8B%AC-%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%9F%B0%EC%B9%AD-%ED%9A%8C%EA%B3%A0</id><content type="html" xml:base="https://judepark96.github.io/blog/startup/refactoring/android/2016/10/04/%ED%94%8C%EB%A0%88%EC%9D%B4%ED%8C%85-%EC%A0%90%EC%8B%AC-%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%9F%B0%EC%B9%AD-%ED%9A%8C%EA%B3%A0.html">&lt;p&gt;플레이팅은 셰프들의 음식을 만들고 사용자들에게 배달해주는 서비스로서 나는 이 서비스 회사의 개발자로 근무하고 있다.&lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">Basic setup</summary></entry><entry><title type="html">Overview</title><link href="https://judepark96.github.io/blog/2018/03/22/Bidirectional-LSTM-CRF-Models-for-Sequence-Tagging.html" rel="alternate" type="text/html" title="Overview" /><published>2018-03-22T00:00:00-05:00</published><updated>2018-03-22T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/2018/03/22/Bidirectional-LSTM-CRF-Models-for-Sequence-Tagging</id><content type="html" xml:base="https://judepark96.github.io/blog/2018/03/22/Bidirectional-LSTM-CRF-Models-for-Sequence-Tagging.html">&lt;ul&gt;
+  &lt;li&gt;Long Short-term Memory (LSTM) based models for sequence tagging.
+    &lt;ul&gt;
+      &lt;li&gt;Part of Speech tagging&lt;/li&gt;
+      &lt;li&gt;Named Entity Recognition&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Compare the performance of aforementioned models on NLP tagging data sets.
+    &lt;ul&gt;
+      &lt;li&gt;Convolutional CRF Network, etc …&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;This paper proposed &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;A Bidirectional LSTM-CRF Model&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-tagging&quot;&gt;2. Tagging&lt;/h3&gt;
+
+&lt;p&gt;Basically, there’s named entity recognition system in which each word is tagged with other (O) or one of four entity types: Person (PER), Location (LOC), Organization (ORG), and Miscellaneous (MISC).&lt;/p&gt;
+
+&lt;h3 id=&quot;3-recurrent-neural-network&quot;&gt;3. Recurrent Neural Network&lt;/h3&gt;
+
+&lt;p&gt;Traditionally, Recurrent Neural Network(RNN) introduced the connection between the previous hidden state and current hidden state. If input sequence is getting longer and longer, this is the reason of &lt;strong&gt;vanishing gradient&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;As a result, LSTM came out. Basically, it is the same as RNNs except that the hidden layer updates replaces by purpose-built memory cells. As a result, they may be better at finding and exploiting long range dependencies in data.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;But, unfortunately, LSTM is not perfect solution as always we were.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;4-bi-directional-lstm&quot;&gt;4. Bi-Directional LSTM&lt;/h3&gt;
+
+&lt;p&gt;Generally, LSTM only does forward pass. But, Bi-LSTM does &lt;strong&gt;forward pass and backward pass&lt;/strong&gt;, exactly both. It means, we calculate forward state and backward state.&lt;/p&gt;
+
+&lt;h3 id=&quot;5-conditional-random-field&quot;&gt;5. Conditional Random Field&lt;/h3&gt;
+
+&lt;p&gt;There are two different ways to make useof neighbor tag information in predicting current tags. 
+The first is to predict a distribution oftags for each time step and then use beam-like decoding to find optimal tag sequences. The second one is to focus on sentencelevel instead of individual positions.
+The inputs and outputs are directly connected. That is the difference between LSTM, CRF.&lt;/p&gt;
+
+&lt;h3 id=&quot;6-training-procedure---lstm&quot;&gt;6. Training Procedure - LSTM&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;All models used in this paper share a generic Stochastic Gradient Descent.&lt;/li&gt;
+  &lt;li&gt;Batch size set 100
+    &lt;ul&gt;
+      &lt;li&gt;It means, each sentence’s total length is no greater than 100.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;As a result, we get the output score for all tags at all positions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;7-training-procedure---crf&quot;&gt;7. Training Procedure - CRF&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Run CRF layer forward and backward pass to compute gradients for network output and state transition edges.&lt;/li&gt;
+  &lt;li&gt;Back-propagate the errors from the output to input
+    &lt;ul&gt;
+      &lt;li&gt;includes the both forward and backward states of LSTM&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Update the network parameters
+    &lt;ul&gt;
+      &lt;li&gt;Includes state transition matrix, bi-LSTM parameters&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;8-dataset&quot;&gt;8. Dataset&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Penn TreeBankPOS Tagging&lt;/li&gt;
+  &lt;li&gt;CoNLL 2000 Chunking&lt;/li&gt;
+  &lt;li&gt;CoNLL 2003 named entity tagging&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;9-features&quot;&gt;9. Features&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Word embedding&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Senna embedding&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;blockquote&gt;
+              &lt;p&gt;where is the GloVe, Word2Vec.&lt;/p&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Spelling features&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Where start with a capital letter&lt;/li&gt;
+      &lt;li&gt;letters only.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Context features&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Uni-gram, bi-gram, tri-gram …&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;10-conclusion&quot;&gt;10. Conclusion&lt;/h3&gt;
+
+&lt;p&gt;Conv-CRF model relies on Senna embedding to get good tagging accuracy. But, Bi-LSTM doesn’t rely on embedding also it got a good tagging accuracy.&lt;/p&gt;
+
+&lt;h3 id=&quot;11-reference&quot;&gt;11. Reference&lt;/h3&gt;
+
+&lt;p&gt;[Bidirectional LSTM-CRF Models for Sequence Tagging] https://arxiv.org/abs/1508.01991&lt;/p&gt;</content><author><name></name></author><category term="Deep Learning" /><category term="NLP" /><summary type="html">Long Short-term Memory (LSTM) based models for sequence tagging. Part of Speech tagging Named Entity Recognition Compare the performance of aforementioned models on NLP tagging data sets. Convolutional CRF Network, etc … This paper proposed A Bidirectional LSTM-CRF Model.</summary></entry><entry><title type="html">플레이팅은?</title><link href="https://judepark96.github.io/blog/startup/refactoring/android/2016/10/04/%ED%94%8C%EB%A0%88%EC%9D%B4%ED%8C%85-%EC%A0%90%EC%8B%AC-%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%9F%B0%EC%B9%AD-%ED%9A%8C%EA%B3%A0.html" rel="alternate" type="text/html" title="플레이팅은?" /><published>2016-10-04T00:00:00-05:00</published><updated>2016-10-04T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/startup/refactoring/android/2016/10/04/%ED%94%8C%EB%A0%88%EC%9D%B4%ED%8C%85-%EC%A0%90%EC%8B%AC-%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%9F%B0%EC%B9%AD-%ED%9A%8C%EA%B3%A0</id><content type="html" xml:base="https://judepark96.github.io/blog/startup/refactoring/android/2016/10/04/%ED%94%8C%EB%A0%88%EC%9D%B4%ED%8C%85-%EC%A0%90%EC%8B%AC-%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%9F%B0%EC%B9%AD-%ED%9A%8C%EA%B3%A0.html">&lt;p&gt;플레이팅은 셰프들의 음식을 만들고 사용자들에게 배달해주는 서비스로서 나는 이 서비스 회사의 개발자로 근무하고 있다.&lt;/p&gt;
 
 &lt;p&gt;우리 회사는 저녁 서비스만을 사용자에게 제공하고 있었는데 이번에 점심 서비스를 런칭하기로 결정하였다. 그런데 문제는 일정이 매우 촉박했다는 것이었다. 약 5일 간의 일정으로 모든 플랫폼의 클라이언트와 서비스 서버를 개발해야하는 것이었다.&lt;/p&gt;
 

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Overview | Eunhwan Park X NLP</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Overview" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="[Paper Review] Bidirectional LSTM-CRF Models for Sequence Tagging" />
+<meta property="og:description" content="[Paper Review] Bidirectional LSTM-CRF Models for Sequence Tagging" />
+<link rel="canonical" href="https://judepark96.github.io/blog/2018/03/22/Bidirectional-LSTM-CRF-Models-for-Sequence-Tagging.html" />
+<meta property="og:url" content="https://judepark96.github.io/blog/2018/03/22/Bidirectional-LSTM-CRF-Models-for-Sequence-Tagging.html" />
+<meta property="og:site_name" content="Eunhwan Park X NLP" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-03-22T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"[Paper Review] Bidirectional LSTM-CRF Models for Sequence Tagging","@type":"BlogPosting","url":"https://judepark96.github.io/blog/2018/03/22/Bidirectional-LSTM-CRF-Models-for-Sequence-Tagging.html","headline":"Overview","dateModified":"2018-03-22T00:00:00-05:00","datePublished":"2018-03-22T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://judepark96.github.io/blog/2018/03/22/Bidirectional-LSTM-CRF-Models-for-Sequence-Tagging.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/blog/assets/main.css">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://judepark96.github.io/blog/feed.xml" title="Eunhwan Park X NLP" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+          ]}
+        );
+      });
+    </script>
+  
+
+  <script>
+  function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+  }
+  window.onload = wrap_img;
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+      // add link icon to anchor tags
+      var elem = document.querySelectorAll(".anchor-link")
+      elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+      // remove paragraph tags in rendered toc (happens from notebooks)
+      var toctags = document.querySelectorAll(".toc-entry")
+      toctags.forEach(e => (e.firstElementChild.innerText = e.firstElementChild.innerText.replace('¶', '')))
+    });
+  </script>
+</head><body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">Eunhwan Park X NLP</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">About Me</a><a class="page-link" href="/blog/">Posts</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Overview</h1><p class="page-description">[Paper Review] Bidirectional LSTM-CRF Models for Sequence Tagging</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2018-03-22T00:00:00-05:00" itemprop="datePublished">
+        Mar 22, 2018
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h3"><a href="#2-tagging">2. Tagging</a></li>
+<li class="toc-entry toc-h3"><a href="#3-recurrent-neural-network">3. Recurrent Neural Network</a></li>
+<li class="toc-entry toc-h3"><a href="#4-bi-directional-lstm">4. Bi-Directional LSTM</a></li>
+<li class="toc-entry toc-h3"><a href="#5-conditional-random-field">5. Conditional Random Field</a></li>
+<li class="toc-entry toc-h3"><a href="#6-training-procedure---lstm">6. Training Procedure - LSTM</a></li>
+<li class="toc-entry toc-h3"><a href="#7-training-procedure---crf">7. Training Procedure - CRF</a></li>
+<li class="toc-entry toc-h3"><a href="#8-dataset">8. Dataset</a></li>
+<li class="toc-entry toc-h3"><a href="#9-features">9. Features</a></li>
+<li class="toc-entry toc-h3"><a href="#10-conclusion">10. Conclusion</a></li>
+<li class="toc-entry toc-h3"><a href="#11-reference">11. Reference</a></li>
+</ul><ul>
+  <li>Long Short-term Memory (LSTM) based models for sequence tagging.
+    <ul>
+      <li>Part of Speech tagging</li>
+      <li>Named Entity Recognition</li>
+    </ul>
+  </li>
+  <li>Compare the performance of aforementioned models on NLP tagging data sets.
+    <ul>
+      <li>Convolutional CRF Network, etc …</li>
+    </ul>
+  </li>
+  <li>This paper proposed <code class="language-plaintext highlighter-rouge">A Bidirectional LSTM-CRF Model</code>.</li>
+</ul>
+
+<h3 id="2-tagging">
+<a class="anchor" href="#2-tagging" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Tagging</h3>
+
+<p>Basically, there’s named entity recognition system in which each word is tagged with other (O) or one of four entity types: Person (PER), Location (LOC), Organization (ORG), and Miscellaneous (MISC).</p>
+
+<h3 id="3-recurrent-neural-network">
+<a class="anchor" href="#3-recurrent-neural-network" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. Recurrent Neural Network</h3>
+
+<p>Traditionally, Recurrent Neural Network(RNN) introduced the connection between the previous hidden state and current hidden state. If input sequence is getting longer and longer, this is the reason of <strong>vanishing gradient</strong>.</p>
+
+<p>As a result, LSTM came out. Basically, it is the same as RNNs except that the hidden layer updates replaces by purpose-built memory cells. As a result, they may be better at finding and exploiting long range dependencies in data.</p>
+
+<blockquote>
+  <p>But, unfortunately, LSTM is not perfect solution as always we were.</p>
+</blockquote>
+
+<h3 id="4-bi-directional-lstm">
+<a class="anchor" href="#4-bi-directional-lstm" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. Bi-Directional LSTM</h3>
+
+<p>Generally, LSTM only does forward pass. But, Bi-LSTM does <strong>forward pass and backward pass</strong>, exactly both. It means, we calculate forward state and backward state.</p>
+
+<h3 id="5-conditional-random-field">
+<a class="anchor" href="#5-conditional-random-field" aria-hidden="true"><span class="octicon octicon-link"></span></a>5. Conditional Random Field</h3>
+
+<p>There are two different ways to make useof neighbor tag information in predicting current tags. 
+The first is to predict a distribution oftags for each time step and then use beam-like decoding to find optimal tag sequences. The second one is to focus on sentencelevel instead of individual positions.
+The inputs and outputs are directly connected. That is the difference between LSTM, CRF.</p>
+
+<h3 id="6-training-procedure---lstm">
+<a class="anchor" href="#6-training-procedure---lstm" aria-hidden="true"><span class="octicon octicon-link"></span></a>6. Training Procedure - LSTM</h3>
+
+<ul>
+  <li>All models used in this paper share a generic Stochastic Gradient Descent.</li>
+  <li>Batch size set 100
+    <ul>
+      <li>It means, each sentence’s total length is no greater than 100.</li>
+    </ul>
+  </li>
+  <li>As a result, we get the output score for all tags at all positions.</li>
+</ul>
+
+<h3 id="7-training-procedure---crf">
+<a class="anchor" href="#7-training-procedure---crf" aria-hidden="true"><span class="octicon octicon-link"></span></a>7. Training Procedure - CRF</h3>
+
+<ul>
+  <li>Run CRF layer forward and backward pass to compute gradients for network output and state transition edges.</li>
+  <li>Back-propagate the errors from the output to input
+    <ul>
+      <li>includes the both forward and backward states of LSTM</li>
+    </ul>
+  </li>
+  <li>Update the network parameters
+    <ul>
+      <li>Includes state transition matrix, bi-LSTM parameters</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="8-dataset">
+<a class="anchor" href="#8-dataset" aria-hidden="true"><span class="octicon octicon-link"></span></a>8. Dataset</h3>
+
+<ul>
+  <li>Penn TreeBankPOS Tagging</li>
+  <li>CoNLL 2000 Chunking</li>
+  <li>CoNLL 2003 named entity tagging</li>
+</ul>
+
+<h3 id="9-features">
+<a class="anchor" href="#9-features" aria-hidden="true"><span class="octicon octicon-link"></span></a>9. Features</h3>
+
+<ul>
+  <li>
+    <p>Word embedding</p>
+
+    <ul>
+      <li>
+        <p>Senna embedding</p>
+
+        <ul>
+          <li>
+            <blockquote>
+              <p>where is the GloVe, Word2Vec.</p>
+            </blockquote>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Spelling features</p>
+
+    <ul>
+      <li>Where start with a capital letter</li>
+      <li>letters only.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Context features</p>
+
+    <ul>
+      <li>Uni-gram, bi-gram, tri-gram …</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="10-conclusion">
+<a class="anchor" href="#10-conclusion" aria-hidden="true"><span class="octicon octicon-link"></span></a>10. Conclusion</h3>
+
+<p>Conv-CRF model relies on Senna embedding to get good tagging accuracy. But, Bi-LSTM doesn’t rely on embedding also it got a good tagging accuracy.</p>
+
+<h3 id="11-reference">
+<a class="anchor" href="#11-reference" aria-hidden="true"><span class="octicon octicon-link"></span></a>11. Reference</h3>
+
+<p>[Bidirectional LSTM-CRF Models for Sequence Tagging] https://arxiv.org/abs/1508.01991</p>
+
+  </div><a class="u-url" href="/blog/2018/03/22/Bidirectional-LSTM-CRF-Models-for-Sequence-Tagging.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Eunhwan Park X NLP</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Eunhwan Park X NLP</li><li><a class="u-email" href="mailto:judepark@kookmin.ac.kr">judepark@kookmin.ac.kr</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list">
+  <li><a href="https://github.com/JudePark96"><svg class="social svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">JudePark96</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Eunhwan Park X NLP</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
