@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-02-29T07:49:15-06:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">Knowledge Distillation</title><link href="https://judepark96.github.io/blog/knowledge-distillation/nlp/2020/02/26/Knowledge-Distillation.html" rel="alternate" type="text/html" title="Knowledge Distillation" /><published>2020-02-26T00:00:00-06:00</published><updated>2020-02-26T00:00:00-06:00</updated><id>https://judepark96.github.io/blog/knowledge-distillation/nlp/2020/02/26/Knowledge-Distillation</id><content type="html" xml:base="https://judepark96.github.io/blog/knowledge-distillation/nlp/2020/02/26/Knowledge-Distillation.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-02-29T07:52:32-06:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">Mac OS X 에서 MeCab 설치 에러 해결</title><link href="https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html" rel="alternate" type="text/html" title="Mac OS X 에서 MeCab 설치 에러 해결" /><published>2020-02-29T00:00:00-06:00</published><updated>2020-02-29T00:00:00-06:00</updated><id>https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0</id><content type="html" xml:base="https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html">&lt;h2 id=&quot;소개&quot;&gt;소개&lt;/h2&gt;
+
+&lt;p&gt;자연어처리 데이터를 전처리할 때 필수적으로 필요한 것은 형태소 분석기를 통하여 토큰화(tokenization)을 하는 것이다. 한국어의 경우, MeCab이나 꼬꼬마 형태소 분석기 또는 카카오에서 만든 형태소 분석기 등을 사용한다.&lt;/p&gt;
+
+&lt;p&gt;필자의 개발 환경은 Mac OS X 인데, 이 환경에서 설치할 때 약간의 에러가 발생한다. 이 글에서는 이 에러를 어떻게 해결하는지 알아본다.&lt;/p&gt;
+
+&lt;h2 id=&quot;에러-해결&quot;&gt;에러 해결&lt;/h2&gt;
+
+&lt;p&gt;에러는 크게 2가지가 발생한다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ldconfig: command not found&lt;/code&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;update_dyld_shared_cache
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;error: command 'gcc' failed with exit status&lt;/code&gt;[1]&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MACOSX_DEPLOYMENT_TARGET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;10.10
+&lt;span class=&quot;nv&quot;&gt;CFLAGS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'-stdlib=libc++'&lt;/span&gt; pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;konlpy
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;위의 명령어를 수행하면 정상적으로 설치가 진행된다.&lt;/p&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+
+&lt;p&gt;[1]. &lt;a href=&quot;https://github.com/konlpy/konlpy/issues/224#issuecomment-455439009&quot;&gt;Mac OS konlpy 설치오류 #224&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">소개</summary></entry><entry><title type="html">Knowledge Distillation</title><link href="https://judepark96.github.io/blog/knowledge-distillation/nlp/2020/02/26/Knowledge-Distillation.html" rel="alternate" type="text/html" title="Knowledge Distillation" /><published>2020-02-26T00:00:00-06:00</published><updated>2020-02-26T00:00:00-06:00</updated><id>https://judepark96.github.io/blog/knowledge-distillation/nlp/2020/02/26/Knowledge-Distillation</id><content type="html" xml:base="https://judepark96.github.io/blog/knowledge-distillation/nlp/2020/02/26/Knowledge-Distillation.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;NLP 에서 BERT라는 Transformer 를 이용한 Pre-Trained Language Representation 이 나오면서 많은 성능 향상을 이루어냈다. BERT는 기본적으로, 위키피디아, 뉴스 데이터 등과 같은 large corpus 를 &lt;strong&gt;unlabeled data&lt;/strong&gt;로 모델을 미리 학습 시킨 후, 특정 task를 가지고 있는 &lt;strong&gt;labeled data 를 이용하여 transfer learning&lt;/strong&gt;을 하는 모델이다.&lt;/p&gt;
 
@@ -797,42 +835,4 @@ do_thing()
       &lt;p&gt;This is the footnote. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">Basic setup</summary></entry><entry><title type="html">Mac OS X 에서 MeCab 설치 에러 해결</title><link href="https://judepark96.github.io/blog/mecab/nlp/2002/03/01/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html" rel="alternate" type="text/html" title="Mac OS X 에서 MeCab 설치 에러 해결" /><published>2002-03-01T00:00:00-06:00</published><updated>2002-03-01T00:00:00-06:00</updated><id>https://judepark96.github.io/blog/mecab/nlp/2002/03/01/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0</id><content type="html" xml:base="https://judepark96.github.io/blog/mecab/nlp/2002/03/01/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html">&lt;h2 id=&quot;소개&quot;&gt;소개&lt;/h2&gt;
-
-&lt;p&gt;자연어처리 데이터를 전처리할 때 필수적으로 필요한 것은 형태소 분석기를 통하여 토큰화(tokenization)을 하는 것이다. 한국어의 경우, MeCab이나 꼬꼬마 형태소 분석기 또는 카카오에서 만든 형태소 분석기 등을 사용한다.&lt;/p&gt;
-
-&lt;p&gt;필자의 개발 환경은 Mac OS X 인데, 이 환경에서 설치할 때 약간의 에러가 발생한다. 이 글에서는 이 에러를 어떻게 해결하는지 알아본다.&lt;/p&gt;
-
-&lt;h2 id=&quot;에러-해결&quot;&gt;에러 해결&lt;/h2&gt;
-
-&lt;p&gt;에러는 크게 2가지가 발생한다.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ldconfig: command not found&lt;/code&gt;&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;update_dyld_shared_cache
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;error: command 'gcc' failed with exit status&lt;/code&gt;[1]&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MACOSX_DEPLOYMENT_TARGET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;10.10
-&lt;span class=&quot;nv&quot;&gt;CFLAGS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'-stdlib=libc++'&lt;/span&gt; pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;konlpy
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;위의 명령어를 수행하면 정상적으로 설치가 진행된다.&lt;/p&gt;
-
-&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
-
-&lt;p&gt;[1]. &lt;a href=&quot;https://github.com/konlpy/konlpy/issues/224#issuecomment-455439009&quot;&gt;Mac OS konlpy 설치오류 #224&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">소개</summary></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><summary type="html">Basic setup</summary></entry></feed>
