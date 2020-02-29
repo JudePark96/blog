@@ -3,17 +3,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Tags | Eunhwan Park X NLP</title>
+<title>Mac OS X 에서 MeCab 설치 에러 해결 | Eunhwan Park X NLP</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Tags" />
+<meta property="og:title" content="Mac OS X 에서 MeCab 설치 에러 해결" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Eunhwan Park X NLP" />
-<meta property="og:description" content="Eunhwan Park X NLP" />
-<link rel="canonical" href="https://judepark96.github.io/blog/categories/" />
-<meta property="og:url" content="https://judepark96.github.io/blog/categories/" />
+<meta name="description" content="MeCab 설치 에러 간단 해결" />
+<meta property="og:description" content="MeCab 설치 에러 간단 해결" />
+<link rel="canonical" href="https://judepark96.github.io/blog/mecab/nlp/2002/03/01/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html" />
+<meta property="og:url" content="https://judepark96.github.io/blog/mecab/nlp/2002/03/01/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html" />
 <meta property="og:site_name" content="Eunhwan Park X NLP" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2002-03-01T00:00:00-06:00" />
 <script type="application/ld+json">
-{"description":"Eunhwan Park X NLP","@type":"WebPage","url":"https://judepark96.github.io/blog/categories/","headline":"Tags","@context":"https://schema.org"}</script>
+{"description":"MeCab 설치 에러 간단 해결","@type":"BlogPosting","url":"https://judepark96.github.io/blog/mecab/nlp/2002/03/01/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html","headline":"Mac OS X 에서 MeCab 설치 에러 해결","dateModified":"2002-03-01T00:00:00-06:00","datePublished":"2002-03-01T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://judepark96.github.io/blog/mecab/nlp/2002/03/01/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -85,98 +87,85 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-<h2>Contents</h2>
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Mac OS X 에서 MeCab 설치 에러 해결</h1><p class="page-description">MeCab 설치 에러 간단 해결</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2002-03-01T00:00:00-06:00" itemprop="datePublished">
+        Mar 1, 2002
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
 
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#mecab">mecab</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#nlp">nlp</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#소개">소개</a></li>
+<li class="toc-entry toc-h2"><a href="#에러-해결">에러 해결</a></li>
+<li class="toc-entry toc-h2"><a href="#reference">Reference</a></li>
+</ul><h2 id="소개">
+<a class="anchor" href="#%EC%86%8C%EA%B0%9C" aria-hidden="true"><span class="octicon octicon-link"></span></a>소개</h2>
+
+<p>자연어처리 데이터를 전처리할 때 필수적으로 필요한 것은 형태소 분석기를 통하여 토큰화(tokenization)을 하는 것이다. 한국어의 경우, MeCab이나 꼬꼬마 형태소 분석기 또는 카카오에서 만든 형태소 분석기 등을 사용한다.</p>
+
+<p>필자의 개발 환경은 Mac OS X 인데, 이 환경에서 설치할 때 약간의 에러가 발생한다. 이 글에서는 이 에러를 어떻게 해결하는지 알아본다.</p>
+
+<h2 id="에러-해결">
+<a class="anchor" href="#%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>에러 해결</h2>
+
+<p>에러는 크게 2가지가 발생한다.</p>
 
 <ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">ldconfig: command not found</code></p>
 
-  
-  <li><a href="#mecab">mecab</a></li>
+    <ul>
+      <li>
+        <div class="language-shell highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>update_dyld_shared_cache
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">error: command 'gcc' failed with exit status</code>[1]</p>
 
-  
-  <li><a href="#nlp">nlp</a></li>
-
-  
-  <li><a href="#fastpages">fastpages</a></li>
-
-  
-  <li><a href="#markdown">markdown</a></li>
-
-  
-  <li><a href="#jupyter">jupyter</a></li>
-
-  
-  <li><a href="#knowledge-distillation">knowledge-distillation</a></li>
-
+    <ul>
+      <li>
+        <div class="language-shell highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">MACOSX_DEPLOYMENT_TARGET</span><span class="o">=</span>10.10
+<span class="nv">CFLAGS</span><span class="o">=</span><span class="s1">'-stdlib=libc++'</span> pip <span class="nb">install </span>konlpy
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
 </ul>
 
+<p>위의 명령어를 수행하면 정상적으로 설치가 진행된다.</p>
 
+<h2 id="reference">
+<a class="anchor" href="#reference" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reference</h2>
 
-    
+<p>[1]. <a href="https://github.com/konlpy/konlpy/issues/224#issuecomment-455439009">Mac OS konlpy 설치오류 #224</a></p>
 
-    <h3 id ="mecab"><i class="fas fa-tags category-tags-icon"></i></i> mecab</h3>
-    <a name="mecab"></a>
-    <article class="archive-item">
-      <p class="post-meta post-meta-title"><a class="page-meta" href="/blog/mecab/nlp/2002/03/01/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html">Mac OS X 에서 MeCab 설치 에러 해결</a>  • Mar 1, 2002</p>
-    </article>
-    
-
-    
-
-    <h3 id ="nlp"><i class="fas fa-tags category-tags-icon"></i></i> nlp</h3>
-    <a name="nlp"></a>
-    <article class="archive-item">
-      <p class="post-meta post-meta-title"><a class="page-meta" href="/blog/knowledge-distillation/nlp/2020/02/26/Knowledge-Distillation.html">Knowledge Distillation</a>  • Feb 26, 2020</p>
-    </article>
-    <article class="archive-item">
-      <p class="post-meta post-meta-title"><a class="page-meta" href="/blog/mecab/nlp/2002/03/01/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html">Mac OS X 에서 MeCab 설치 에러 해결</a>  • Mar 1, 2002</p>
-    </article>
-    
-
-    
-
-    <h3 id ="fastpages"><i class="fas fa-tags category-tags-icon"></i></i> fastpages</h3>
-    <a name="fastpages"></a>
-    <article class="archive-item">
-      <p class="post-meta post-meta-title"><a class="page-meta" href="/blog/fastpages/jupyter/2020/02/20/test.html">Fastpages Notebook Blog Post</a>  • Feb 20, 2020</p>
-    </article>
-    <article class="archive-item">
-      <p class="post-meta post-meta-title"><a class="page-meta" href="/blog/fastpages/markdown/2020/01/14/test-markdown-post.html">Example Markdown Post</a>  • Jan 14, 2020</p>
-    </article>
-    
-
-    
-
-    <h3 id ="markdown"><i class="fas fa-tags category-tags-icon"></i></i> markdown</h3>
-    <a name="markdown"></a>
-    <article class="archive-item">
-      <p class="post-meta post-meta-title"><a class="page-meta" href="/blog/fastpages/markdown/2020/01/14/test-markdown-post.html">Example Markdown Post</a>  • Jan 14, 2020</p>
-    </article>
-    
-
-    
-
-    <h3 id ="jupyter"><i class="fas fa-tags category-tags-icon"></i></i> jupyter</h3>
-    <a name="jupyter"></a>
-    <article class="archive-item">
-      <p class="post-meta post-meta-title"><a class="page-meta" href="/blog/fastpages/jupyter/2020/02/20/test.html">Fastpages Notebook Blog Post</a>  • Feb 20, 2020</p>
-    </article>
-    
-
-    
-
-    <h3 id ="knowledge-distillation"><i class="fas fa-tags category-tags-icon"></i></i> knowledge-distillation</h3>
-    <a name="knowledge-distillation"></a>
-    <article class="archive-item">
-      <p class="post-meta post-meta-title"><a class="page-meta" href="/blog/knowledge-distillation/nlp/2020/02/26/Knowledge-Distillation.html">Knowledge Distillation</a>  • Feb 26, 2020</p>
-    </article>
-    
-
-
-
-</div>
+  </div><a class="u-url" href="/blog/mecab/nlp/2002/03/01/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html" hidden></a>
+</article>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/blog/"></data>
