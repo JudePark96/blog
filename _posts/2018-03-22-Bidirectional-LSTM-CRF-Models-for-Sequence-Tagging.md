@@ -3,6 +3,7 @@ toc: true
 description: "[Paper Review] Bidirectional LSTM-CRF Models for Sequence Tagging"
 tags: [Deep Learning, NLP]
 ---
+# Bidirectional LSTM-CRF Models for Sequence Tagging
 
 ### 1. Overview
 
