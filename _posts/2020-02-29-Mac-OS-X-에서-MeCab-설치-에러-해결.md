@@ -28,6 +28,11 @@ categories: [mecab, nlp]
     export MACOSX_DEPLOYMENT_TARGET=10.10
     CFLAGS='-stdlib=libc++' pip install konlpy
     ```
+    
+- `mecab install error`
+  - ```shell
+    bash <(curl -s https://raw.githubusercontent.com/konlpy/konlpy/master/scripts/mecab.sh)
+    ```
 
 위의 명령어를 수행하면 정상적으로 설치가 진행된다.
 
