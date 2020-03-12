@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-03-08T13:43:21-05:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">Mac OS X 에서 MeCab 설치 에러 해결</title><link href="https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html" rel="alternate" type="text/html" title="Mac OS X 에서 MeCab 설치 에러 해결" /><published>2020-02-29T00:00:00-06:00</published><updated>2020-02-29T00:00:00-06:00</updated><id>https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0</id><content type="html" xml:base="https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html">&lt;h2 id=&quot;소개&quot;&gt;소개&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-03-12T09:09:45-05:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">Rotating 2D Array 90 Degrees In Python</title><link href="https://judepark96.github.io/blog/algorithm/python/2020/03/09/Rotating-2D-Array-90-Degrees-In-Python.html" rel="alternate" type="text/html" title="Rotating 2D Array 90 Degrees In Python" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/algorithm/python/2020/03/09/Rotating-2D-Array-90-Degrees-In-Python</id><content type="html" xml:base="https://judepark96.github.io/blog/algorithm/python/2020/03/09/Rotating-2D-Array-90-Degrees-In-Python.html">&lt;p&gt;Sometimes, we have to rotate the given 2d array to solve the algorithm. For example, in this &lt;a href=&quot;[https://tech.kakao.com/2019/10/02/kakao-blind-recruitment-2020-round1/](https://tech.kakao.com/2019/10/02/kakao-blind-recruitment-2020-round1/)&quot;&gt;coding test&lt;/a&gt;, Question 3.&lt;/p&gt;
+
+&lt;p&gt;In this post, I will show you how to rotate given 2d array in simple way.&lt;/p&gt;
+
+&lt;h1 id=&quot;concept&quot;&gt;Concept&lt;/h1&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+M=
+  \begin{bmatrix}
+    1 &amp; 2 &amp; 3  \\
+    4 &amp; 5 &amp; 6 \\
+    7 &amp; 8 &amp; 9
+  \end{bmatrix} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Above given matrix is $N \times N$. What if we rotate 90 degrees above matrix?&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+M =
+  \begin{bmatrix}
+    7 &amp; 4 &amp; 1  \\
+    8 &amp; 5 &amp; 2 \\
+    9 &amp; 6 &amp; 3
+  \end{bmatrix} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Result is above matrix. I think if i have to write in Java or C, it would be bothering me. So, Python.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Steps :
+    &lt;ul&gt;
+      &lt;li&gt;First of all, we have to reverse the given matrix.&lt;/li&gt;
+      &lt;li&gt;Second of all, &lt;strong&gt;zip(python) it&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;code&quot;&gt;Code&lt;/h1&gt;
+
+&lt;p&gt;First, we need to define the matrix like as follows:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;matrix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;As I mentioned, first we have to reverse the matrix. So,&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[::&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Reverse!
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Last step is zipping it.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;matrix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;zip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[::&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Result is as follows:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[(7, 4, 1), (8, 5, 2), (9, 6, 3)]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Sometimes, we have to rotate the given 2d array to solve the algorithm. For example, in this coding test, Question 3.</summary></entry><entry><title type="html">Mac OS X 에서 MeCab 설치 에러 해결</title><link href="https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html" rel="alternate" type="text/html" title="Mac OS X 에서 MeCab 설치 에러 해결" /><published>2020-02-29T00:00:00-06:00</published><updated>2020-02-29T00:00:00-06:00</updated><id>https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0</id><content type="html" xml:base="https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html">&lt;h2 id=&quot;소개&quot;&gt;소개&lt;/h2&gt;
 
 &lt;p&gt;자연어처리 데이터를 전처리할 때 필수적으로 필요한 것은 형태소 분석기를 통하여 토큰화(tokenization)을 하는 것이다. 한국어의 경우, MeCab이나 꼬꼬마 형태소 분석기 또는 카카오에서 만든 형태소 분석기 등을 사용한다.&lt;/p&gt;
 
@@ -26,6 +83,15 @@
       &lt;li&gt;
         &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MACOSX_DEPLOYMENT_TARGET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;10.10
 &lt;span class=&quot;nv&quot;&gt;CFLAGS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'-stdlib=libc++'&lt;/span&gt; pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;konlpy
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mecab install error&lt;/code&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bash &amp;lt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;curl &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; https://raw.githubusercontent.com/konlpy/konlpy/master/scripts/mecab.sh&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
