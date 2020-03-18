@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-03-12T09:09:45-05:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">Rotating 2D Array 90 Degrees In Python</title><link href="https://judepark96.github.io/blog/algorithm/python/2020/03/09/Rotating-2D-Array-90-Degrees-In-Python.html" rel="alternate" type="text/html" title="Rotating 2D Array 90 Degrees In Python" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/algorithm/python/2020/03/09/Rotating-2D-Array-90-Degrees-In-Python</id><content type="html" xml:base="https://judepark96.github.io/blog/algorithm/python/2020/03/09/Rotating-2D-Array-90-Degrees-In-Python.html">&lt;p&gt;Sometimes, we have to rotate the given 2d array to solve the algorithm. For example, in this &lt;a href=&quot;[https://tech.kakao.com/2019/10/02/kakao-blind-recruitment-2020-round1/](https://tech.kakao.com/2019/10/02/kakao-blind-recruitment-2020-round1/)&quot;&gt;coding test&lt;/a&gt;, Question 3.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-03-17T23:58:02-05:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">Rotating 2D Array 90 Degrees In Python</title><link href="https://judepark96.github.io/blog/algorithm/python/2020/03/09/Rotating-2D-Array-90-Degrees-In-Python.html" rel="alternate" type="text/html" title="Rotating 2D Array 90 Degrees In Python" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/algorithm/python/2020/03/09/Rotating-2D-Array-90-Degrees-In-Python</id><content type="html" xml:base="https://judepark96.github.io/blog/algorithm/python/2020/03/09/Rotating-2D-Array-90-Degrees-In-Python.html">&lt;p&gt;Sometimes, we have to rotate the given 2d array to solve the algorithm. For example, in this &lt;a href=&quot;[https://tech.kakao.com/2019/10/02/kakao-blind-recruitment-2020-round1/](https://tech.kakao.com/2019/10/02/kakao-blind-recruitment-2020-round1/)&quot;&gt;coding test&lt;/a&gt;, Question 3.&lt;/p&gt;
 
 &lt;p&gt;In this post, I will show you how to rotate given 2d array in simple way.&lt;/p&gt;
 
@@ -102,49 +102,7 @@ M =
 
 &lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
 
-&lt;p&gt;[1]. &lt;a href=&quot;https://github.com/konlpy/konlpy/issues/224#issuecomment-455439009&quot;&gt;Mac OS konlpy 설치오류 #224&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">소개</summary></entry><entry><title type="html">Knowledge Distillation</title><link href="https://judepark96.github.io/blog/knowledge-distillation/nlp/2020/02/26/Knowledge-Distillation.html" rel="alternate" type="text/html" title="Knowledge Distillation" /><published>2020-02-26T00:00:00-06:00</published><updated>2020-02-26T00:00:00-06:00</updated><id>https://judepark96.github.io/blog/knowledge-distillation/nlp/2020/02/26/Knowledge-Distillation</id><content type="html" xml:base="https://judepark96.github.io/blog/knowledge-distillation/nlp/2020/02/26/Knowledge-Distillation.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;NLP 에서 BERT라는 Transformer 를 이용한 Pre-Trained Language Representation 이 나오면서 많은 성능 향상을 이루어냈다. BERT는 기본적으로, 위키피디아, 뉴스 데이터 등과 같은 large corpus 를 &lt;strong&gt;unlabeled data&lt;/strong&gt;로 모델을 미리 학습 시킨 후, 특정 task를 가지고 있는 &lt;strong&gt;labeled data 를 이용하여 transfer learning&lt;/strong&gt;을 하는 모델이다.&lt;/p&gt;
-
-&lt;p&gt;하지만, BERT는 좋은 성능에도 불구하고 굉장히 큰 모델 사이즈를 나타내고 있다. 예를 들어, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BERT-Base, Multilingual Cased&lt;/code&gt;[1] 의 경우 110M 이라는 사이즈를 보여주고 있다. 이는 곧, 재정적 여유가 충분한 회사가 아닌 이상 실제  프로덕션에서 서비스화하기 어려움을 의미한다. 그렇기 때문에, &lt;strong&gt;성능을 보존하면서 모델 사이즈를 경량화하는 방안&lt;/strong&gt;이 필요하다고 생각할 수 있다.&lt;/p&gt;
-
-&lt;p&gt;이번 글에서는 모델 경량화 방안 중 하나인 Knowledge Distillation 에 대해서 간략하게 소개해보고자 한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;model&quot;&gt;Model&lt;/h2&gt;
-&lt;p&gt;Supervised Learning 이라는 접근법을 통해 모델을 학습한다고 가정하자. 그렇다면, 생각할 수 있는 절차는 아래와 같다. :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;주어진 데이터와 라벨을 전처리한다.&lt;/li&gt;
-  &lt;li&gt;모델을 정의 및 학습한다.&lt;/li&gt;
-  &lt;li&gt;발생한 loss 를 이용하여 back-propagation 을 한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.com/JudePark96/blog/blob/master/_posts/cross_entropy_probability.png?raw=true&quot; alt=&quot;image-20200226170645740&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;이미지 클래스 분류라는 과업(CIFAR-10 등)을 기반으로 하면 위와 같은 확률을 통하여 가장 높은 확률 dog 를 고를 것이다. 그 이유는 90% 의 확률로 dog 이라고 예측하였기 때문이다.&lt;/p&gt;
-
-&lt;p&gt;여기서 &lt;strong&gt;근본적으로 들 수 있는 의문은 나머지 확률들은 과연 ignored 되도 괜찮은 것인가?&lt;/strong&gt; 라는 관점이다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.com/JudePark96/blog/blob/master/_posts/t_softmax.png?raw=true&quot; alt=&quot;t_softmax&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Geoffery Hinton 은 Distilling the Knowledge in a Neural Network[2] 라는 논문을 통해 Temperature 라는 개념을 도입하여 Target 을 Softer 하게 함으로서 Knowledge 를 일반화한다고 한다. 위 사진의 수식에서 T가 Temperature 이며 T=1 일 때, 일반적인 Softmax 함수와 똑같음을 알 수 있다.&lt;/p&gt;
-
-&lt;p&gt;위의 수식을 통하여 one-hot encoding 처럼 만들어진 hard target 을 soft target 분포를 label 로 학습을 하면 충분히 generalized 해서 knowledge 를 transfer 할 수 있다고 한다.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;이미지 자료는 Dark Knowledge[3] 에서 캡쳐했습니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;experiments&quot;&gt;Experiments&lt;/h2&gt;
-
-&lt;p&gt;직접 실험을 해보진 않았지만 Dark Knowledge[3] 의 슬라이드에 따르면 MNIST 데이터 집합으로 실험한 결과 좋은 성능을 나타냈다고 한다. 비록 이번 글에선 직접 실험한 걸 소개하진 못했지만 다음 글에선 기회가 된다면 BERT 를 Knowledge Distillation 하였을 때, 어떠한 결과가 나오는지 소개하고자 한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
-&lt;p&gt;[1]. &lt;a href=&quot;https://github.com/google-research/bert&quot;&gt;Google-Research BERT&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;[2]. &lt;a href=&quot;https://arxiv.org/pdf/1503.02531.pdf&quot;&gt;Distilling the Knowledge in a Neural Network&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;[3]. &lt;a href=&quot;https://www.ttic.edu/dl/dark14.pdf&quot;&gt;Dark Knowledge&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Introduction</summary></entry><entry><title type="html">Fastpages Notebook Blog Post</title><link href="https://judepark96.github.io/blog/fastpages/jupyter/2020/02/20/test.html" rel="alternate" type="text/html" title="Fastpages Notebook Blog Post" /><published>2020-02-20T00:00:00-06:00</published><updated>2020-02-20T00:00:00-06:00</updated><id>https://judepark96.github.io/blog/fastpages/jupyter/2020/02/20/test</id><content type="html" xml:base="https://judepark96.github.io/blog/fastpages/jupyter/2020/02/20/test.html">&lt;!--
+&lt;p&gt;[1]. &lt;a href=&quot;https://github.com/konlpy/konlpy/issues/224#issuecomment-455439009&quot;&gt;Mac OS konlpy 설치오류 #224&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">소개</summary></entry><entry><title type="html">Fastpages Notebook Blog Post</title><link href="https://judepark96.github.io/blog/fastpages/jupyter/2020/02/20/test.html" rel="alternate" type="text/html" title="Fastpages Notebook Blog Post" /><published>2020-02-20T00:00:00-06:00</published><updated>2020-02-20T00:00:00-06:00</updated><id>https://judepark96.github.io/blog/fastpages/jupyter/2020/02/20/test</id><content type="html" xml:base="https://judepark96.github.io/blog/fastpages/jupyter/2020/02/20/test.html">&lt;!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
