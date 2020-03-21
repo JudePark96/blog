@@ -8,10 +8,10 @@ Eunhwan Park <br >
 Seoul, Republic of Korea. <br >
 judepark@kookmin.ac.kr
 ### RESEARCH INTERESTS
-Language Understanding, Dialogue System, Recommendation System, Knowledge Distillation, etc
+Language Understanding, Dialogue System, Recommendation System, Graph Representaiton, Knowledge Distillation, etc
 ### EDUCATION
 - BS in Computer Science, 2015 ~ 2016 – Hanbat National University
-- BS in Computer Science, 2016 ~ current – Kookmin University
+- BS in Computer Science, 2016 ~ present – Kookmin University
 
 ### Work Experience
 - Backend Engineer, Plating Co, 2015 ~ 2016
