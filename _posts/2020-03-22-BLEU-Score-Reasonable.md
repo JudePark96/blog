@@ -32,7 +32,7 @@ Reference Response: I want buy gift for my mom!
 
 각자가 evaluator 가 되어 human evaluation 을 해본다면 정답 문장과 생성 문장, 모두 자연스러움을 느낄 수 있을 것이다.
 
-하지만, 위의 대화 예시를 BLEU score 로 계산해본다면 zero-score 를 받는다. 이는 $n$-gram overlap 을 이용한 평가가 human judgement 와는 상관관계가 떨어진다는 것을 의미하며 evaluation stage 에서 semantic methodology 가 고려되야한다는 것을 알 수 있다.
+하지만, 위의 대화 예시를 BLEU score 로 계산해본다면 zero-score 를 받는다. 이는 $n$-gram overlap 을 이용한 평가가 human judgement 와는 correlation이 떨어진다는 것을 의미하며 evaluation stage 에서 semantic methodology 가 고려되야한다는 것을 알 수 있다.
 
 # Reference
 [1]. [Better Automatic Evaluation of Open-Domain Dialogue Systems with Contextualized Embeddings]([https://arxiv.org/abs/1904.10635](https://arxiv.org/abs/1904.10635))
