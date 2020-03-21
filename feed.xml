@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-03-21T10:17:51-05:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">Rotating 2D Array 90 Degrees In Python</title><link href="https://judepark96.github.io/blog/algorithm/python/2020/03/09/Rotating-2D-Array-90-Degrees-In-Python.html" rel="alternate" type="text/html" title="Rotating 2D Array 90 Degrees In Python" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/algorithm/python/2020/03/09/Rotating-2D-Array-90-Degrees-In-Python</id><content type="html" xml:base="https://judepark96.github.io/blog/algorithm/python/2020/03/09/Rotating-2D-Array-90-Degrees-In-Python.html">&lt;p&gt;Sometimes, we have to rotate the given 2d array to solve the algorithm. For example, in this &lt;a href=&quot;[https://tech.kakao.com/2019/10/02/kakao-blind-recruitment-2020-round1/](https://tech.kakao.com/2019/10/02/kakao-blind-recruitment-2020-round1/)&quot;&gt;coding test&lt;/a&gt;, Question 3.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-03-21T10:22:17-05:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">Rotating 2D Array 90 Degrees In Python</title><link href="https://judepark96.github.io/blog/algorithm/python/2020/03/09/Rotating-2D-Array-90-Degrees-In-Python.html" rel="alternate" type="text/html" title="Rotating 2D Array 90 Degrees In Python" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/algorithm/python/2020/03/09/Rotating-2D-Array-90-Degrees-In-Python</id><content type="html" xml:base="https://judepark96.github.io/blog/algorithm/python/2020/03/09/Rotating-2D-Array-90-Degrees-In-Python.html">&lt;p&gt;Sometimes, we have to rotate the given 2d array to solve the algorithm. For example, in this &lt;a href=&quot;[https://tech.kakao.com/2019/10/02/kakao-blind-recruitment-2020-round1/](https://tech.kakao.com/2019/10/02/kakao-blind-recruitment-2020-round1/)&quot;&gt;coding test&lt;/a&gt;, Question 3.&lt;/p&gt;
 
 &lt;p&gt;In this post, I will show you how to rotate given 2d array in simple way.&lt;/p&gt;
 
@@ -55,37 +55,7 @@ M =
 &lt;p&gt;Result is as follows:&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[(7, 4, 1), (8, 5, 2), (9, 6, 3)]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Sometimes, we have to rotate the given 2d array to solve the algorithm. For example, in this coding test, Question 3.</summary></entry><entry><title type="html">BLEU (Bilingual Evaluation Understudy) Score</title><link href="https://judepark96.github.io/blog/2020/03/02/BLEU-Score-Reasonable.html" rel="alternate" type="text/html" title="BLEU (Bilingual Evaluation Understudy) Score" /><published>2020-03-02T00:00:00-06:00</published><updated>2020-03-02T00:00:00-06:00</updated><id>https://judepark96.github.io/blog/2020/03/02/BLEU-Score-Reasonable</id><content type="html" xml:base="https://judepark96.github.io/blog/2020/03/02/BLEU-Score-Reasonable.html">&lt;p&gt;최근, 연구 주제를 정하며 대화형 데이터에 대한 evaluation metric에 대하여 생각해볼 필요가 있어짐에 따라 BLEU Score에 대하여 찾아보게 되었다. BLEU에 대한 설명과 어떠한 문제점을 내포하고 있는지 간단하게 서술해본다.&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;BLEU = min(1, \frac{\text{output length(prediction)}}{\text{reference length(target)}})(\prod_i^4precision_i)^\frac{1}{4}&lt;/script&gt;
-
-&lt;p&gt;BLEU 란 evaluation metric 으로서 주어진 데이터 X 가 순서성을 가진 단어로, Y 또한 X 와 마찬가지로 이루어진 경우에 사용되며 번역, 요약과 같은 과업에 사용된다.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;$n$-gram overlap 을 통하여 얼마나 겹치는지&lt;/li&gt;
-  &lt;li&gt;문장 길이에 대한 과적합 보정&lt;/li&gt;
-  &lt;li&gt;같은 단어가 연속적으로 나올 때 과적합되는 것을 보정&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;is-it-really-reasonable&quot;&gt;Is It Really Reasonable?&lt;/h1&gt;
-
-&lt;p&gt;BLEU 의 수식을 간단히 요약하자면 Target Sentence 와 Predicted Sentence 사이의 $n$-gram overlap 을 통하여 문장의 유사성을 살펴보는 것이다. 그렇다면, 이는 과연 합리적인 evaluation metric 인지 고심해봐야한다.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[1] Dialogue Context
-Speaker 1: Hey! What are you doing here?
-Speaker 2: I'm just shopping.
-Query: What are you shopping for?
-Generated Response: Some new clothes
-Reference Response: I want buy gift for my mom!
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;위의 대화 예시는 발화자 1이 “야! 너 여기서 뭐해?”라는 질문에 발화자 2가 “난 그냥 쇼핑하지.” 라는 대화이다. 그리고 다음 발화인 “쇼핑 뭐 하는데?” 라는 말에 응답 문장으로서 “그냥 새 옷 조금”라는 생성된 문장과 “어머니를 위해 옷을 사고 싶어!”라는 정답 문장이다.&lt;/p&gt;
-
-&lt;p&gt;각자가 evaluator 가 되어 human evaluation 을 해본다면 정답 문장과 생성 문장, 모두 자연스러움을 느낄 수 있을 것이다.&lt;/p&gt;
-
-&lt;p&gt;하지만, 위의 대화 예시를 BLEU score 로 계산해본다면 zero-score 를 받는다. 이는 $n$-gram overlap 을 이용한 평가가 human judgement 와는 상관관계가 떨어진다는 것을 의미하며 evaluation stage 에서 semantic methodology 가 고려되야한다는 것을 알 수 있다.&lt;/p&gt;
-
-&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
-&lt;p&gt;[1]. &lt;a href=&quot;[https://arxiv.org/abs/1904.10635](https://arxiv.org/abs/1904.10635)&quot;&gt;Better Automatic Evaluation of Open-Domain Dialogue Systems with Contextualized Embeddings&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Deep Learning" /><category term="NLP" /><category term="Evaluation Metric" /><summary type="html">최근, 연구 주제를 정하며 대화형 데이터에 대한 evaluation metric에 대하여 생각해볼 필요가 있어짐에 따라 BLEU Score에 대하여 찾아보게 되었다. BLEU에 대한 설명과 어떠한 문제점을 내포하고 있는지 간단하게 서술해본다.</summary></entry><entry><title type="html">Mac OS X 에서 MeCab 설치 에러 해결</title><link href="https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html" rel="alternate" type="text/html" title="Mac OS X 에서 MeCab 설치 에러 해결" /><published>2020-02-29T00:00:00-06:00</published><updated>2020-02-29T00:00:00-06:00</updated><id>https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0</id><content type="html" xml:base="https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html">&lt;h2 id=&quot;소개&quot;&gt;소개&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Sometimes, we have to rotate the given 2d array to solve the algorithm. For example, in this coding test, Question 3.</summary></entry><entry><title type="html">Mac OS X 에서 MeCab 설치 에러 해결</title><link href="https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html" rel="alternate" type="text/html" title="Mac OS X 에서 MeCab 설치 에러 해결" /><published>2020-02-29T00:00:00-06:00</published><updated>2020-02-29T00:00:00-06:00</updated><id>https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0</id><content type="html" xml:base="https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html">&lt;h2 id=&quot;소개&quot;&gt;소개&lt;/h2&gt;
 
 &lt;p&gt;자연어처리 데이터를 전처리할 때 필수적으로 필요한 것은 형태소 분석기를 통하여 토큰화(tokenization)을 하는 것이다. 한국어의 경우, MeCab이나 꼬꼬마 형태소 분석기 또는 카카오에서 만든 형태소 분석기 등을 사용한다.&lt;/p&gt;
 
