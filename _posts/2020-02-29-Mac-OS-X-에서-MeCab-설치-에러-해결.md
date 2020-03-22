@@ -14,7 +14,7 @@ categories: [mecab, nlp]
 
 ## 에러 해결
 
-에러는 크게 2가지가 발생한다.
+에러는 크게 3가지가 발생한다.
 
 - `ldconfig: command not found`
 
