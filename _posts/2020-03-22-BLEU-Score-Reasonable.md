@@ -6,6 +6,8 @@ tags: [Deep Learning, NLP, Evaluation Metric]
 
 # BLEU (Bilingual Evaluation Understudy) Score
 
+> 연구 주제에 맞게 읽을 논문을 추천해주신 카카오의 [이동엽](https://www.facebook.com/dongyub.lee.9) 형에게 감사드립니다! :)
+
 최근, 연구 주제를 정하며 대화형 데이터에 대한 evaluation metric에 대하여 생각해볼 필요가 있어짐에 따라 BLEU Score에 대하여 찾아보게 되었다. BLEU에 대한 설명과 어떠한 문제점을 내포하고 있는지 간단하게 서술해본다.
 
 $$BLEU = min(1, \frac{\text{output length(prediction)}}{\text{reference length(target)}})(\prod_i^4precision_i)^\frac{1}{4}$$
@@ -20,8 +22,10 @@ BLEU 란 evaluation metric 으로서 주어진 데이터 X 가 순서성을 가�
 
 BLEU 의 수식을 간단히 요약하자면 Target Sentence 와 Predicted Sentence 사이의 $n$-gram overlap 을 통하여 문장의 유사성을 살펴보는 것이다. 그렇다면, 이는 과연 합리적인 evaluation metric 인지 고심해봐야한다.
 
+기존의 방법론에 대하여 문제 제기를 한 첫 논문은 RUBER[1] 이며 이를 바탕으로 BERT 와 같은 Contextualized Embedding 을 이용하여 제안한 것이 [2] 이다. 이 글에서는 [2]의 논문의 예시를 인용하였다.
+
 ```
-[1] Dialogue Context
+[2] Dialogue Context
 Speaker 1: Hey! What are you doing here?
 Speaker 2: I'm just shopping.
 Query: What are you shopping for?
@@ -35,4 +39,6 @@ Reference Response: I want buy gift for my mom!
 하지만, 위의 대화 예시를 BLEU score 로 계산해본다면 zero-score 를 받는다. 이는 $n$-gram overlap 을 이용한 평가가 human judgement 와는 correlation이 떨어진다는 것을 의미하며 evaluation stage 에서 semantic methodology 가 고려되야한다는 것을 알 수 있다.
 
 # Reference
-[1]. [Better Automatic Evaluation of Open-Domain Dialogue Systems with Contextualized Embeddings]([https://arxiv.org/abs/1904.10635](https://arxiv.org/abs/1904.10635))
+[1]. [RUBER: An Unsupervised Method for Automatic Evaluation of Open-Domain Dialog Systems](https://arxiv.org/abs/1701.03079)
+
+[2]. [Better Automatic Evaluation of Open-Domain Dialogue Systems with Contextualized Embeddings](https://arxiv.org/abs/1904.10635)
