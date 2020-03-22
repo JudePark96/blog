@@ -33,7 +33,7 @@ var documents = [{
     "id": 6,
     "url": "https://JudePark96.github.io/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html",
     "title": "Mac OS X 에서 MeCab 설치 에러 해결",
-    "body": "2020/02/29 - 소개: 자연어처리 데이터를 전처리할 때 필수적으로 필요한 것은 형태소 분석기를 통하여 토큰화(tokenization)을 하는 것이다. 한국어의 경우, MeCab이나 꼬꼬마 형태소 분석기 또는 카카오에서 만든 형태소 분석기 등을 사용한다. 필자의 개발 환경은 Mac OS X 인데, 이 환경에서 설치할 때 약간의 에러가 발생한다. 이 글에서는 이 에러를 어떻게 해결하는지 알아본다. 에러 해결: 에러는 크게 2가지가 발생한다.    ldconfig: command not found          sudo update_dyld_shared_cache             error: command 'gcc' failed with exit status[1]          export MACOSX_DEPLOYMENT_TARGET=10. 10CFLAGS='-stdlib=libc++' pip install konlpy             mecab install error          bash &lt;(curl -s https://raw. githubusercontent. com/konlpy/konlpy/master/scripts/mecab. sh)          위의 명령어를 수행하면 정상적으로 설치가 진행된다. Reference: [1]. Mac OS konlpy 설치오류 #224 "
+    "body": "2020/02/29 - 소개: 자연어처리 데이터를 전처리할 때 필수적으로 필요한 것은 형태소 분석기를 통하여 토큰화(tokenization)을 하는 것이다. 한국어의 경우, MeCab이나 꼬꼬마 형태소 분석기 또는 카카오에서 만든 형태소 분석기 등을 사용한다. 필자의 개발 환경은 Mac OS X 인데, 이 환경에서 설치할 때 약간의 에러가 발생한다. 이 글에서는 이 에러를 어떻게 해결하는지 알아본다. 에러 해결: 에러는 크게 3가지가 발생한다.    ldconfig: command not found          sudo update_dyld_shared_cache             error: command 'gcc' failed with exit status[1]          export MACOSX_DEPLOYMENT_TARGET=10. 10CFLAGS='-stdlib=libc++' pip install konlpy             mecab install error          bash &lt;(curl -s https://raw. githubusercontent. com/konlpy/konlpy/master/scripts/mecab. sh)          위의 명령어를 수행하면 정상적으로 설치가 진행된다. Reference: [1]. Mac OS konlpy 설치오류 #224 "
     }, {
     "id": 7,
     "url": "https://JudePark96.github.io/fastpages/jupyter/2020/02/20/test.html",

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-03-22T00:35:34-05:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">BLEU (Bilingual Evaluation Understudy) Score</title><link href="https://judepark96.github.io/blog/2020/03/22/BLEU-Score-Reasonable.html" rel="alternate" type="text/html" title="BLEU (Bilingual Evaluation Understudy) Score" /><published>2020-03-22T00:00:00-05:00</published><updated>2020-03-22T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/2020/03/22/BLEU-Score-Reasonable</id><content type="html" xml:base="https://judepark96.github.io/blog/2020/03/22/BLEU-Score-Reasonable.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-03-22T02:24:31-05:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">BLEU (Bilingual Evaluation Understudy) Score</title><link href="https://judepark96.github.io/blog/2020/03/22/BLEU-Score-Reasonable.html" rel="alternate" type="text/html" title="BLEU (Bilingual Evaluation Understudy) Score" /><published>2020-03-22T00:00:00-05:00</published><updated>2020-03-22T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/2020/03/22/BLEU-Score-Reasonable</id><content type="html" xml:base="https://judepark96.github.io/blog/2020/03/22/BLEU-Score-Reasonable.html">&lt;blockquote&gt;
   &lt;p&gt;연구 주제에 맞게 읽을 논문을 추천해주신 카카오의 &lt;a href=&quot;https://www.facebook.com/dongyub.lee.9&quot;&gt;이동엽&lt;/a&gt; 형에게 감사드립니다! :)&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -101,7 +101,7 @@ M =
 
 &lt;h2 id=&quot;에러-해결&quot;&gt;에러 해결&lt;/h2&gt;
 
-&lt;p&gt;에러는 크게 2가지가 발생한다.&lt;/p&gt;
+&lt;p&gt;에러는 크게 3가지가 발생한다.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
