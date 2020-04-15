@@ -1,4 +1,105 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-04-14T12:09:36-05:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">An Efficient Framework for Learning Sentence Representations</title><link href="https://judepark96.github.io/blog/embedding/nlp/deep-learning/2020/04/14/An-Efficient-Framework-for-Learning-Sentence-Representations.html" rel="alternate" type="text/html" title="An Efficient Framework for Learning Sentence Representations" /><published>2020-04-14T00:00:00-05:00</published><updated>2020-04-14T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/embedding/nlp/deep-learning/2020/04/14/An-Efficient-Framework-for-Learning-Sentence-Representations</id><content type="html" xml:base="https://judepark96.github.io/blog/embedding/nlp/deep-learning/2020/04/14/An-Efficient-Framework-for-Learning-Sentence-Representations.html">&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;c83e26401b0a4168a3d48c26253be6d8&quot; data-ratio=&quot;1.41436464088398&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-04-15T01:30:50-05:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">CS224W - Machine Learning w/ Graph (1)</title><link href="https://judepark96.github.io/blog/embedding/machine-learning/deep-learning/graph/2020/04/15/CS224W-Machine-Learning-with-Graph-(1).html" rel="alternate" type="text/html" title="CS224W - Machine Learning w/ Graph (1)" /><published>2020-04-15T00:00:00-05:00</published><updated>2020-04-15T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/embedding/machine-learning/deep-learning/graph/2020/04/15/CS224W-Machine%20-Learning-with-Graph-(1)</id><content type="html" xml:base="https://judepark96.github.io/blog/embedding/machine-learning/deep-learning/graph/2020/04/15/CS224W-Machine-Learning-with-Graph-(1).html">&lt;ul&gt;
+  &lt;li&gt;Why Networks?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Networks are a general language for describing complex systems of interacting entities.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Networks
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Society&lt;/strong&gt; :→ collection of 7+ billion individuals.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Communication systems&lt;/strong&gt; :→ it links electronic devices&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Interaction&lt;/strong&gt; :→ between genes/proteins regulate life&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Thoughts&lt;/strong&gt; :→ it is hidden in the connections between billions of neurons in our brain&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Type of Networks
+    &lt;ul&gt;
+      &lt;li&gt;Social networks&lt;/li&gt;
+      &lt;li&gt;Economic networks&lt;/li&gt;
+      &lt;li&gt;Communication networks&lt;/li&gt;
+      &lt;li&gt;Information networks&lt;/li&gt;
+      &lt;li&gt;Internet&lt;/li&gt;
+      &lt;li&gt;Networks of neurons&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Way to Analyze Networks
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Node classification&lt;/strong&gt; :→ predict the type/color of a given node&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Link prediction&lt;/strong&gt; :→ predict whether two nodes are linked&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Community detection&lt;/strong&gt; :→ identify densely linked clusters of nodes&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Network Similarity&lt;/strong&gt; :→ measure similarity of two nodes/networks&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Embedding Node
+    &lt;ul&gt;
+      &lt;li&gt;Let there is $Node u$, $Node v$.  When embedding, our goal is mapping nodes to $d$-dimensional embeddings such that nodes with similar network neighbourhoods are embedded close together.
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;My thinking&lt;/strong&gt; :→ As I think, in Natural Language Area, between each word of given sentence, they have a certain &lt;strong&gt;relationship&lt;/strong&gt; which they have to be represented by network representation.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Components of a Network
+    &lt;ul&gt;
+      &lt;li&gt;Object ($N$)
+        &lt;ul&gt;
+          &lt;li&gt;nodes, vertices&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Interactions ($E$)
+        &lt;ul&gt;
+          &lt;li&gt;links, edges&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;System ($G(N, E)$)
+        &lt;ul&gt;
+          &lt;li&gt;network, graph&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Directed VS Undirected Graphs
+    &lt;ul&gt;
+      &lt;li&gt;Directed
+        &lt;ul&gt;
+          &lt;li&gt;links :→ directed /w arcs&lt;/li&gt;
+          &lt;li&gt;examples :→ phone calls, following on Twitter.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Undirected
+        &lt;ul&gt;
+          &lt;li&gt;links :→ undirected which means it is symmetrical, reciprocal matrix.&lt;/li&gt;
+          &lt;li&gt;example :→ collaborations, friendship on Facebook&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Bipartite Graph
+    &lt;ul&gt;
+      &lt;li&gt;it is a graph whose nodes can be divided into two disjoint sets $U$ and $V$ such that every link connects a node in $U$ to one in $V$ which means $U$ and $V$ are &lt;strong&gt;independent sets.&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;Examples
+        &lt;ul&gt;
+          &lt;li&gt;Authors - Papers&lt;/li&gt;
+          &lt;li&gt;Actors - Movies&lt;/li&gt;
+          &lt;li&gt;Users - Moveis&lt;/li&gt;
+          &lt;li&gt;Recipes - Ingredients&lt;/li&gt;
+          &lt;li&gt;Folded Network
+            &lt;ul&gt;
+              &lt;li&gt;Author collaboration networks&lt;/li&gt;
+              &lt;li&gt;Movie co-rating networks&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Conclusion
+    &lt;ul&gt;
+      &lt;li&gt;As mentioned above, Networks are a general language for describing complex systems of interacting entities. No matter what you are in position it means domain, well-representation by graph will be powerful method to solve the given tasks.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Why Networks?</summary></entry><entry><title type="html">An Efficient Framework for Learning Sentence Representations</title><link href="https://judepark96.github.io/blog/embedding/nlp/deep-learning/2020/04/14/An-Efficient-Framework-for-Learning-Sentence-Representations.html" rel="alternate" type="text/html" title="An Efficient Framework for Learning Sentence Representations" /><published>2020-04-14T00:00:00-05:00</published><updated>2020-04-14T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/embedding/nlp/deep-learning/2020/04/14/An-Efficient-Framework-for-Learning-Sentence-Representations</id><content type="html" xml:base="https://judepark96.github.io/blog/embedding/nlp/deep-learning/2020/04/14/An-Efficient-Framework-for-Learning-Sentence-Representations.html">&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;c83e26401b0a4168a3d48c26253be6d8&quot; data-ratio=&quot;1.41436464088398&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
 
 &lt;h2 id=&quot;1-summary&quot;&gt;1. Summary&lt;/h2&gt;
 
