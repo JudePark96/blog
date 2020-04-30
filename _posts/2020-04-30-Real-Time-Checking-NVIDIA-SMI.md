@@ -21,6 +21,6 @@ categories: [Python]
 
 그러면 아래와 같이 화면이 나온다.
 
-![nvidia-smi](/Users/judepark/Documents/blog/images/nvidia-smi.png)
+![nvidia-smi](../images/nvidia-smi.png)
 
 위의 명령어는 nvidia-smi 를 0.5초에 한 번씩 새로고침되도록 하는 명령어이다. 이를 통하여 실시간 모니터링이 가능하다.
