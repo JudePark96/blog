@@ -1,7 +1,7 @@
 ---
 toc: true
-description: Python - dataclasses package
-categories: [Python]
+description: NVIDIA-SMI Monitoring
+categories: [Deep-Learning]
 
 ---
 
