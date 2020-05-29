@@ -3,19 +3,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Mac OS X 에서 MeCab 설치 에러 해결 | Eunhwan Park X NLP</title>
+<title>Supervised Learning, Linear Regression | Eunhwan Park X NLP</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Mac OS X 에서 MeCab 설치 에러 해결" />
+<meta property="og:title" content="Supervised Learning, Linear Regression" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="MeCab 설치 에러 간단 해결" />
-<meta property="og:description" content="MeCab 설치 에러 간단 해결" />
-<link rel="canonical" href="https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html" />
-<meta property="og:url" content="https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html" />
+<meta name="description" content="Supervised Learning, Linear Regression - CS229 notes" />
+<meta property="og:description" content="Supervised Learning, Linear Regression - CS229 notes" />
+<link rel="canonical" href="https://judepark96.github.io/blog/machine-learning/supervised-learning/2020/05/03/Supervised-Learning-1.html" />
+<meta property="og:url" content="https://judepark96.github.io/blog/machine-learning/supervised-learning/2020/05/03/Supervised-Learning-1.html" />
 <meta property="og:site_name" content="Eunhwan Park X NLP" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-29T00:00:00-06:00" />
+<meta property="article:published_time" content="2020-05-03T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html","@type":"BlogPosting","headline":"Mac OS X 에서 MeCab 설치 에러 해결","dateModified":"2020-02-29T00:00:00-06:00","datePublished":"2020-02-29T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://judepark96.github.io/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html"},"description":"MeCab 설치 에러 간단 해결","@context":"https://schema.org"}</script>
+{"url":"https://judepark96.github.io/blog/machine-learning/supervised-learning/2020/05/03/Supervised-Learning-1.html","@type":"BlogPosting","headline":"Supervised Learning, Linear Regression","dateModified":"2020-05-03T00:00:00-05:00","datePublished":"2020-05-03T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://judepark96.github.io/blog/machine-learning/supervised-learning/2020/05/03/Supervised-Learning-1.html"},"description":"Supervised Learning, Linear Regression - CS229 notes","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -90,8 +90,8 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Mac OS X 에서 MeCab 설치 에러 해결</h1><p class="page-description">MeCab 설치 에러 간단 해결</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-02-29T00:00:00-06:00" itemprop="datePublished">
-        Feb 29, 2020
+    <h1 class="post-title p-name" itemprop="name headline">Supervised Learning, Linear Regression</h1><p class="page-description">Supervised Learning, Linear Regression - CS229 notes</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-05-03T00:00:00-05:00" itemprop="datePublished">
+        May 3, 2020
       </time>
        • <span class="read-time" title="Estimated read time">
     
@@ -103,10 +103,10 @@
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/blog/categories/#mecab">mecab</a>
+        <a class="category-tags-link" href="/blog/categories/#machine-learning">machine-learning</a>
         &nbsp;
       
-        <a class="category-tags-link" href="/blog/categories/#nlp">nlp</a>
+        <a class="category-tags-link" href="/blog/categories/#supervised-learning">supervised-learning</a>
         
       
       </p>
@@ -116,65 +116,57 @@
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#소개">소개</a></li>
-<li class="toc-entry toc-h2"><a href="#에러-해결">에러 해결</a></li>
-<li class="toc-entry toc-h2"><a href="#reference">Reference</a></li>
-</ul><h2 id="소개">
-<a class="anchor" href="#%EC%86%8C%EA%B0%9C" aria-hidden="true"><span class="octicon octicon-link"></span></a>소개</h2>
+<li class="toc-entry toc-h3"><a href="#1-supervised-learning">1. Supervised Learning</a></li>
+<li class="toc-entry toc-h3"><a href="#2-linear-regression">2. Linear Regression</a></li>
+<li class="toc-entry toc-h3"><a href="#3-conclusion">3. Conclusion</a></li>
+</ul><h3 id="1-supervised-learning">
+<a class="anchor" href="#1-supervised-learning" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. Supervised Learning</h3>
 
-<p>자연어처리 데이터를 전처리할 때 필수적으로 필요한 것은 형태소 분석기를 통하여 토큰화(tokenization)을 하는 것이다. 한국어의 경우, MeCab이나 꼬꼬마 형태소 분석기 또는 카카오에서 만든 형태소 분석기 등을 사용한다.</p>
+<p>Supervised Learning 이란 주어진 $feature X$ 를 이용하여 $target Y$ 를 예측하는 것이다. $(x_i, y_i)$ 는 하나의 training example 이며 ${(x_i, y_i);i = 1, …, n}$ 를 training set 으로 표현할 수 있다.</p>
 
-<p>필자의 개발 환경은 Mac OS X 인데, 이 환경에서 설치할 때 약간의 에러가 발생한다. 이 글에서는 이 에러를 어떻게 해결하는지 알아본다.</p>
+<p>위의 Notation 을 바탕으로 정리하자면 주어진 training set 을 바탕으로 $target Y$ 를 예측하는 $h(x)$ 를 학습하는 것이다. 이 $h(x)$ 를 Hypothesis 라고  부른다.</p>
 
-<h2 id="에러-해결">
-<a class="anchor" href="#%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>에러 해결</h2>
+<p>$target Y$ 가 continuous 하다면 regression problem 이고, $target Y$ 가 discrete 하다면 classification problem 으로 부를 수 있다.</p>
 
-<p>에러는 크게 3가지가 발생한다.</p>
+<h3 id="2-linear-regression">
+<a class="anchor" href="#2-linear-regression" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Linear Regression</h3>
 
-<ul>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">ldconfig: command not found</code></p>
+<p>$X$ 가 2개의 feature 를 가지고 있다고 하자. 그렇다면 $h(x)$ 는 아래와 같이 될 수 있다.</p>
 
-    <ul>
-      <li>
-        <div class="language-shell highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>update_dyld_shared_cache
-</code></pre></div>        </div>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">error: command 'gcc' failed with exit status</code>[1]</p>
+<script type="math/tex; mode=display">h(x) = \theta_0 + \theta_1x_1 + \theta_2x_2</script>
 
-    <ul>
-      <li>
-        <div class="language-shell highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">MACOSX_DEPLOYMENT_TARGET</span><span class="o">=</span>10.10
-<span class="nv">CFLAGS</span><span class="o">=</span><span class="s1">'-stdlib=libc++'</span> pip <span class="nb">install </span>konlpy
-</code></pre></div>        </div>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">mecab install error</code></p>
-    <ul>
-      <li>
-        <div class="language-shell highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>bash &lt;<span class="o">(</span>curl <span class="nt">-s</span> https://raw.githubusercontent.com/konlpy/konlpy/master/scripts/mecab.sh<span class="o">)</span>
-</code></pre></div>        </div>
-      </li>
-    </ul>
-  </li>
-</ul>
+<p>위의 수식은 linear function 을 통하여 y 로 approximate 하는 것이다. 여기서 $\theta$ 는 parameters 이며 weights 로도 불린다. 이 $\theta$ 는 $x$ 를 $y$ 로 vector space 에서 mapping 하는 것을 의미하며 그렇기 때문에 $\theta$ 가 잘 학습되는 것이 중요하다.</p>
 
-<p>위의 명령어를 수행하면 정상적으로 설치가 진행된다.</p>
+<p>어떻게 좋은 $\theta$ 를 얻을 수 있을까? Linear Regression 을 하는 목적은 주어진 $feature X$ 를 이용하여 $target Y$ 에 근사시키는 것이다. 이를 위해 <strong>Cost Function</strong> 을 사용한다. 수식은 아래와 같다.</p>
 
-<h2 id="reference">
-<a class="anchor" href="#reference" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reference</h2>
+<p>$J(\theta) = \frac{1}{2}\sum_{i=1}^n(h_{\theta}(x^{i}) - y^i)^2 $</p>
 
-<p>[1]. <a href="https://github.com/konlpy/konlpy/issues/224#issuecomment-455439009">Mac OS konlpy 설치오류 #224</a></p>
+<p>Ordinary Least Squares 를 의미하며 수식을 직관적으로 바라보면 $h(x^i)$ 와 $y^i$ 간의 잔차를 제곱한 것이다. 이는 $y$ 와 $h_{\theta}(x)$ 간의 error 를 의미하며 좋은 $\theta$ 를 얻기 위해서 error 를 줄여야할 것이다.</p>
 
-  </div><a class="u-url" href="/blog/mecab/nlp/2020/02/29/Mac-OS-X-%EC%97%90%EC%84%9C-MeCab-%EC%84%A4%EC%B9%98-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0.html" hidden></a>
+<p>우리는 $J(\theta)$ 를 최소화(minimize)하는 $\theta$ 를 찾고 싶다. 그렇기 때문에 <strong>Gradient Descent</strong> 를 사용한다.</p>
+
+<p>$\theta_j := \theta_j - \alpha \frac{\partial}{\partial\theta_j}J(\theta)$</p>
+
+<p>$\alpha$ 는 learning rate 를 의미한다. 매 step 마다 $J(\theta)$ 를 최소화할 것이며 결국 수렴할 것이다. right hand side 의 partial derivative term 을 풀어보면 아래와 같다.</p>
+
+<p>$\frac{\partial}{\partial\theta_j}J(\theta) = (h_\theta(x) - y)x_j$</p>
+
+<p>그렇기 때문에 update rule 은 아래와 같다.</p>
+
+<p>$\theta_j := \theta_j + \alpha(y^i-h_{\theta}(x^i)x^i_j))$</p>
+
+<p>위의 rule 을 <strong>least mean squares update rule</strong> 이라고 불린다.</p>
+
+<h3 id="3-conclusion">
+<a class="anchor" href="#3-conclusion" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. Conclusion</h3>
+
+<ol>
+  <li>Supervised Learning 은 $h(x) :\rightarrow Y$, 즉 $y$ 로 근사시키는 $h(x)$ 를 만드는 것이다.</li>
+  <li>$J(\theta)$ 를 minimize 하기 위하여 Gradient Descent 를 사용한다.</li>
+  <li>Linear Regression 에서 update rule 로서 least mean squares update rule 을 사용한다.</li>
+</ol>
+
+  </div><a class="u-url" href="/blog/machine-learning/supervised-learning/2020/05/03/Supervised-Learning-1.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">

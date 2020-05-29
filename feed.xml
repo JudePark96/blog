@@ -1,4 +1,214 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-04-15T01:30:50-05:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">CS224W - Machine Learning w/ Graph (1)</title><link href="https://judepark96.github.io/blog/embedding/machine-learning/deep-learning/graph/2020/04/15/CS224W-Machine-Learning-with-Graph-(1).html" rel="alternate" type="text/html" title="CS224W - Machine Learning w/ Graph (1)" /><published>2020-04-15T00:00:00-05:00</published><updated>2020-04-15T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/embedding/machine-learning/deep-learning/graph/2020/04/15/CS224W-Machine%20-Learning-with-Graph-(1)</id><content type="html" xml:base="https://judepark96.github.io/blog/embedding/machine-learning/deep-learning/graph/2020/04/15/CS224W-Machine-Learning-with-Graph-(1).html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-05-29T11:46:28-05:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">프로그래머스 - 모의고사 (Python)</title><link href="https://judepark96.github.io/blog/algorithm/2020/05/16/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-(Python).html" rel="alternate" type="text/html" title="프로그래머스 - 모의고사 (Python)" /><published>2020-05-16T00:00:00-05:00</published><updated>2020-05-16T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/algorithm/2020/05/16/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20-%20%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC%20(Python)</id><content type="html" xml:base="https://judepark96.github.io/blog/algorithm/2020/05/16/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-(Python).html">&lt;h2 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h2&gt;
+
+&lt;p&gt;수포자는 수학을 포기한 사람의 준말입니다. 수포자 삼인방은 모의고사에 수학 문제를 전부 찍으려 합니다. 수포자는 1번 문제부터 마지막 문제까지 다음과 같이 찍습니다.&lt;/p&gt;
+
+&lt;p&gt;1번 수포자가 찍는 방식: 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, …
+2번 수포자가 찍는 방식: 2, 1, 2, 3, 2, 4, 2, 5, 2, 1, 2, 3, 2, 4, 2, 5, …
+3번 수포자가 찍는 방식: 3, 3, 1, 1, 2, 2, 4, 4, 5, 5, 3, 3, 1, 1, 2, 2, 4, 4, 5, 5, …&lt;/p&gt;
+
+&lt;p&gt;1번 문제부터 마지막 문제까지의 정답이 순서대로 들은 배열 answers가 주어졌을 때, 가장 많은 문제를 맞힌 사람이 누구인지 배열에 담아 return 하도록 solution 함수를 작성해주세요.&lt;/p&gt;
+
+&lt;h5 id=&quot;제한-조건&quot;&gt;제한 조건&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;시험은 최대 10,000 문제로 구성되어있습니다.&lt;/li&gt;
+  &lt;li&gt;문제의 정답은 1, 2, 3, 4, 5중 하나입니다.&lt;/li&gt;
+  &lt;li&gt;가장 높은 점수를 받은 사람이 여럿일 경우, return하는 값을 오름차순 정렬해주세요.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;입출력-예&quot;&gt;입출력 예&lt;/h5&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;answers&lt;/th&gt;
+      &lt;th&gt;return&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[1,2,3,4,5]&lt;/td&gt;
+      &lt;td&gt;[1]&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[1,3,2,4,2]&lt;/td&gt;
+      &lt;td&gt;[1,2,3]&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h5 id=&quot;입출력-예-설명&quot;&gt;입출력 예 설명&lt;/h5&gt;
+
+&lt;p&gt;입출력 예 #1&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;수포자 1은 모든 문제를 맞혔습니다.&lt;/li&gt;
+  &lt;li&gt;수포자 2는 모든 문제를 틀렸습니다.&lt;/li&gt;
+  &lt;li&gt;수포자 3은 모든 문제를 틀렸습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;따라서 가장 문제를 많이 맞힌 사람은 수포자 1입니다.&lt;/p&gt;
+
+&lt;p&gt;입출력 예 #2&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;모든 사람이 2문제씩을 맞췄습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;문제-풀이&quot;&gt;문제 풀이&lt;/h2&gt;
+
+&lt;p&gt;이 문제의 theme 은 &lt;strong&gt;완전탐색&lt;/strong&gt;이다. 주어진 패턴과 답안을 비교하며 맞은 수를 각 수포자마다 기록하고 형식에 맞게만 반환해주면 되는 문제이다.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;answers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;p1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;answers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;p2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;answers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;p3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;answers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;calc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;result_list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;answers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;answers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;answers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;enumerate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;수포자가 찍는 방식을 패턴이라고 하자. 그렇다면 그 패턴은 최소한 &lt;strong&gt;패턴 *= (정답 수 / 패턴 길이) + 1&lt;/strong&gt; 만큼 될 것이다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;p1~p3&lt;/code&gt; 가 그렇게 초기화된 것이다.&lt;/p&gt;
+
+&lt;p&gt;그리고 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;calc&lt;/code&gt; 이라는 lambda function 을 선언해준다. 이 lambda function 에서 맞은 것을 기록하며 만약 5개 중 2개가 맞았다면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[True, False, True, False, False]&lt;/code&gt; 와 같은 방식으로 기록될 것이다. (이것은 예시일 뿐이다.) 그렇다면 이 배열을 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sum&lt;/code&gt; 함수로 계산하면 2가 될 것이다.&lt;/p&gt;
+
+&lt;p&gt;그리고 답안 형태에 맞게 변환해주고 반환해주면 정답이 풀린다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Python 의 Generator 를 이용하면 (cycle 과 같은) 공간복잡도 또한 해결할 수 있으나, 최대 10,000 문제라는 조건과 쉬운 문제의 특성 상 cycle 을 사용하지 않았다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;출처&quot;&gt;출처&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42840&quot;&gt;프로그래머스 - 모의고사&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">문제 설명</summary></entry><entry><title type="html">Supervised Learning, Linear Regression</title><link href="https://judepark96.github.io/blog/machine-learning/supervised-learning/2020/05/03/Supervised-Learning-1.html" rel="alternate" type="text/html" title="Supervised Learning, Linear Regression" /><published>2020-05-03T00:00:00-05:00</published><updated>2020-05-03T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/machine-learning/supervised-learning/2020/05/03/Supervised%20Learning-1</id><content type="html" xml:base="https://judepark96.github.io/blog/machine-learning/supervised-learning/2020/05/03/Supervised-Learning-1.html">&lt;h3 id=&quot;1-supervised-learning&quot;&gt;1. Supervised Learning&lt;/h3&gt;
+
+&lt;p&gt;Supervised Learning 이란 주어진 $feature X$ 를 이용하여 $target Y$ 를 예측하는 것이다. $(x_i, y_i)$ 는 하나의 training example 이며 ${(x_i, y_i);i = 1, …, n}$ 를 training set 으로 표현할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;위의 Notation 을 바탕으로 정리하자면 주어진 training set 을 바탕으로 $target Y$ 를 예측하는 $h(x)$ 를 학습하는 것이다. 이 $h(x)$ 를 Hypothesis 라고  부른다.&lt;/p&gt;
+
+&lt;p&gt;$target Y$ 가 continuous 하다면 regression problem 이고, $target Y$ 가 discrete 하다면 classification problem 으로 부를 수 있다.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-linear-regression&quot;&gt;2. Linear Regression&lt;/h3&gt;
+
+&lt;p&gt;$X$ 가 2개의 feature 를 가지고 있다고 하자. 그렇다면 $h(x)$ 는 아래와 같이 될 수 있다.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;h(x) = \theta_0 + \theta_1x_1 + \theta_2x_2&lt;/script&gt;
+
+&lt;p&gt;위의 수식은 linear function 을 통하여 y 로 approximate 하는 것이다. 여기서 $\theta$ 는 parameters 이며 weights 로도 불린다. 이 $\theta$ 는 $x$ 를 $y$ 로 vector space 에서 mapping 하는 것을 의미하며 그렇기 때문에 $\theta$ 가 잘 학습되는 것이 중요하다.&lt;/p&gt;
+
+&lt;p&gt;어떻게 좋은 $\theta$ 를 얻을 수 있을까? Linear Regression 을 하는 목적은 주어진 $feature X$ 를 이용하여 $target Y$ 에 근사시키는 것이다. 이를 위해 &lt;strong&gt;Cost Function&lt;/strong&gt; 을 사용한다. 수식은 아래와 같다.&lt;/p&gt;
+
+&lt;p&gt;$J(\theta) = \frac{1}{2}\sum_{i=1}^n(h_{\theta}(x^{i}) - y^i)^2 $&lt;/p&gt;
+
+&lt;p&gt;Ordinary Least Squares 를 의미하며 수식을 직관적으로 바라보면 $h(x^i)$ 와 $y^i$ 간의 잔차를 제곱한 것이다. 이는 $y$ 와 $h_{\theta}(x)$ 간의 error 를 의미하며 좋은 $\theta$ 를 얻기 위해서 error 를 줄여야할 것이다.&lt;/p&gt;
+
+&lt;p&gt;우리는 $J(\theta)$ 를 최소화(minimize)하는 $\theta$ 를 찾고 싶다. 그렇기 때문에 &lt;strong&gt;Gradient Descent&lt;/strong&gt; 를 사용한다.&lt;/p&gt;
+
+&lt;p&gt;$\theta_j := \theta_j - \alpha \frac{\partial}{\partial\theta_j}J(\theta)$&lt;/p&gt;
+
+&lt;p&gt;$\alpha$ 는 learning rate 를 의미한다. 매 step 마다 $J(\theta)$ 를 최소화할 것이며 결국 수렴할 것이다. right hand side 의 partial derivative term 을 풀어보면 아래와 같다.&lt;/p&gt;
+
+&lt;p&gt;$\frac{\partial}{\partial\theta_j}J(\theta) = (h_\theta(x) - y)x_j$&lt;/p&gt;
+
+&lt;p&gt;그렇기 때문에 update rule 은 아래와 같다.&lt;/p&gt;
+
+&lt;p&gt;$\theta_j := \theta_j + \alpha(y^i-h_{\theta}(x^i)x^i_j))$&lt;/p&gt;
+
+&lt;p&gt;위의 rule 을 &lt;strong&gt;least mean squares update rule&lt;/strong&gt; 이라고 불린다.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-conclusion&quot;&gt;3. Conclusion&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Supervised Learning 은 $h(x) :\rightarrow Y$, 즉 $y$ 로 근사시키는 $h(x)$ 를 만드는 것이다.&lt;/li&gt;
+  &lt;li&gt;$J(\theta)$ 를 minimize 하기 위하여 Gradient Descent 를 사용한다.&lt;/li&gt;
+  &lt;li&gt;Linear Regression 에서 update rule 로서 least mean squares update rule 을 사용한다.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">1. Supervised Learning</summary></entry><entry><title type="html">Real-Time Checking NVIDIA-SMI</title><link href="https://judepark96.github.io/blog/deep-learning/2020/04/30/Real-Time-Checking-NVIDIA-SMI.html" rel="alternate" type="text/html" title="Real-Time Checking NVIDIA-SMI" /><published>2020-04-30T00:00:00-05:00</published><updated>2020-04-30T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/deep-learning/2020/04/30/Real-Time-Checking-NVIDIA-SMI</id><content type="html" xml:base="https://judepark96.github.io/blog/deep-learning/2020/04/30/Real-Time-Checking-NVIDIA-SMI.html">&lt;h2 id=&quot;1-introduction&quot;&gt;1. Introduction&lt;/h2&gt;
+
+&lt;p&gt;딥러닝 신경망을 학습하다보면 GPU 상태를 확인해볼 필요가 있다. 그 명령어가 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nvidia-smi&lt;/code&gt; 인데 이거를 매번 타이핑하는 것은 굉장히 비효율적인 행동이다. 리눅스 명령어를 통하여 실시간 모니터링이 가능하도록 하자.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;cuda 관련 환경 구축이 전부 되어있음을 가정한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;2-monitoring&quot;&gt;2. Monitoring&lt;/h2&gt;
+
+&lt;p&gt;아래의 명령어를 터미널에서 타이핑한다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;watch -d -n 0.5 nvidia-smi&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;그러면 아래와 같이 화면이 나온다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/JudePark96/blog/master/images/nvidia-smi.png&quot; alt=&quot;nvidia-smi&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;위의 명령어는 nvidia-smi 를 0.5초에 한 번씩 새로고침되도록 하는 명령어이다. 이를 통하여 실시간 모니터링이 가능하다.&lt;/p&gt;</content><author><name></name></author><summary type="html">1. Introduction</summary></entry><entry><title type="html">Python - DataClasses Package</title><link href="https://judepark96.github.io/blog/python/2020/04/21/Python-DataClasses-Package.html" rel="alternate" type="text/html" title="Python - DataClasses Package" /><published>2020-04-21T00:00:00-05:00</published><updated>2020-04-21T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/python/2020/04/21/Python-DataClasses-Package</id><content type="html" xml:base="https://judepark96.github.io/blog/python/2020/04/21/Python-DataClasses-Package.html">&lt;h2 id=&quot;1-introduction&quot;&gt;1. Introduction&lt;/h2&gt;
+
+&lt;p&gt;Java 로 개발하던 때에는 &lt;strong&gt;Lombok&lt;/strong&gt; 이라는 Dependency 를 통해 Constructor, Getter, Setter 등을 쉽게 Wrapping 할 수 있었다. 이는 객체 코드를 작성할 때 많은 양의 코드를 줄여주었다.&lt;/p&gt;
+
+&lt;p&gt;예를 들어, 객체를 아래와 같이 작성할 수 있었다.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;lombok.Data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;nd&quot;&gt;@Data&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Student&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이렇게 하면 기본적인 Constructor, Getter, Setter 등을 &lt;em&gt;@Data Annotation&lt;/em&gt; 을 통해서 쉽게 할 수 있었다. 이처럼 Java 로 개발할 때는 이런 도구들이 개발 효율성을 높여주었다.&lt;/p&gt;
+
+&lt;p&gt;지금은 소프트웨어 엔지니어링을 하지 않고 신경망 설계 및 실험을 진행하고 있지만 이 경우에도 당연히 많은 코드가 쓰이며 그렇기 때문에 어떻게 코드를 효율적으로 빠르게 작성할 수 있는가에 대하여 고민하는 것은 당연한 것 같다.&lt;/p&gt;
+
+&lt;p&gt;기존의 Python3 에서 객체 코드를 작성할 때는 아래와 같이 작성하였다.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;torch.nn&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nn&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Net&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;q&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;q&lt;/span&gt;
+    &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;
+    &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위와 같은 코드를 작성하면서 시간이 많이 걸렸다고 생각되는 구간은 Constructor 이다. Property 를 일일히 Assgin 해주고 있었기 때문에 손가락을 많이 움직여야했다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Java 에도 있는데 Python 에도 혹시 편하게 해주는 것은 없을까? 라는 생각은 계속 해왔었다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;이러한 문제를 없애주기 해소하기 위하여 Python 3.7 부터 추가된 &lt;a href=&quot;https://docs.python.org/ko/3/library/dataclasses.html&quot;&gt;dataclasses&lt;/a&gt; 라는 Pacakge 를 사용해보도록 하자.&lt;/p&gt;
+
+&lt;p&gt;이 글에서는 간단한 사용 방법만 소개하도록 한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-how-to-use&quot;&gt;2. How to use?&lt;/h2&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;dataclasses&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dataclass&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dataclass&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Net&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Java 와 비슷하게 &lt;em&gt;@dataclass&lt;/em&gt; Decorator 로 객체를 Wrapping 해준다.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Net&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Net&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;결과는 위와 같이 나오며 성공적으로 Constructor 가 설정되었음을 알 수 있었다.&lt;/p&gt;
+
+&lt;h2 id=&quot;3-reference&quot;&gt;3. Reference&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.python.org/ko/3/library/dataclasses.html&quot;&gt;Python Doc - dataclasses&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">1. Introduction</summary></entry><entry><title type="html">CS224W - Machine Learning w/ Graph (1)</title><link href="https://judepark96.github.io/blog/embedding/machine-learning/deep-learning/graph/2020/04/15/CS224W-Machine-Learning-with-Graph-(1).html" rel="alternate" type="text/html" title="CS224W - Machine Learning w/ Graph (1)" /><published>2020-04-15T00:00:00-05:00</published><updated>2020-04-15T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/embedding/machine-learning/deep-learning/graph/2020/04/15/CS224W-Machine%20-Learning-with-Graph-(1)</id><content type="html" xml:base="https://judepark96.github.io/blog/embedding/machine-learning/deep-learning/graph/2020/04/15/CS224W-Machine-Learning-with-Graph-(1).html">&lt;ul&gt;
   &lt;li&gt;Why Networks?&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -427,942 +637,4 @@ M =
 
 &lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
 
-&lt;p&gt;[1]. &lt;a href=&quot;https://github.com/konlpy/konlpy/issues/224#issuecomment-455439009&quot;&gt;Mac OS konlpy 설치오류 #224&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">소개</summary></entry><entry><title type="html">Fastpages Notebook Blog Post</title><link href="https://judepark96.github.io/blog/fastpages/jupyter/2020/02/20/test.html" rel="alternate" type="text/html" title="Fastpages Notebook Blog Post" /><published>2020-02-20T00:00:00-06:00</published><updated>2020-02-20T00:00:00-06:00</updated><id>https://judepark96.github.io/blog/fastpages/jupyter/2020/02/20/test</id><content type="html" xml:base="https://judepark96.github.io/blog/fastpages/jupyter/2020/02/20/test.html">&lt;!--
-#################################################
-### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
-#################################################
-# file to edit: _notebooks/2020-02-20-test.ipynb
---&gt;
-
-&lt;div class=&quot;container&quot; id=&quot;notebook-container&quot;&gt;
-        
-    
-    
-&lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&gt;
-
-&lt;/div&gt;
-    
-
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h1 id=&quot;About&quot;&gt;About&lt;a class=&quot;anchor-link&quot; href=&quot;#About&quot;&gt; &lt;/a&gt;&lt;/h1&gt;&lt;p&gt;This notebook is a demonstration of some of capabilities of &lt;a href=&quot;https://github.com/fastai/fastpages&quot;&gt;fastpages&lt;/a&gt; with notebooks.&lt;/p&gt;
-&lt;p&gt;With &lt;code&gt;fastpages&lt;/code&gt; you can save your jupyter notebooks into the &lt;code&gt;_notebooks&lt;/code&gt; folder at the root of your repository, and they will be automatically be converted to Jekyll compliant blog posts!&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h2 id=&quot;Front-Matter&quot;&gt;Front Matter&lt;a class=&quot;anchor-link&quot; href=&quot;#Front-Matter&quot;&gt; &lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Front Matter is a markdown cell at the beginning of your notebook that allows you to inject metadata into your notebook. For example:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Setting &lt;code&gt;toc: true&lt;/code&gt; will automatically generate a table of contents&lt;/li&gt;
-&lt;li&gt;Setting &lt;code&gt;badges: true&lt;/code&gt; will automatically include GitHub and Google Colab links to your notebook.&lt;/li&gt;
-&lt;li&gt;Setting &lt;code&gt;comments: true&lt;/code&gt; will enable commenting on your blog post, powered by &lt;a href=&quot;https://github.com/utterance/utterances&quot;&gt;utterances&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;More details and options for front matter can be viewed on the &lt;a href=&quot;https://github.com/fastai/fastpages#front-matter-related-options&quot;&gt;front matter section&lt;/a&gt; of the README.&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h2 id=&quot;Markdown-Shortcuts&quot;&gt;Markdown Shortcuts&lt;a class=&quot;anchor-link&quot; href=&quot;#Markdown-Shortcuts&quot;&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;put a &lt;code&gt;#hide&lt;/code&gt; flag at the top of any cell you want to completely hide in the docs&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;put a &lt;code&gt;#collapse&lt;/code&gt; flag at the top of any cell if you want to hide that cell by default, but stil have it be visible to the reader:&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-    
-    
-&lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&gt;
-&lt;details class=&quot;description&quot;&gt;
-      &lt;summary class=&quot;btn btn-sm&quot; data-open=&quot;Hide Code&quot; data-close=&quot;Show Code&quot;&gt;&lt;/summary&gt;
-        &lt;p&gt;&lt;div class=&quot;input&quot;&gt;
-
-&lt;div class=&quot;inner_cell&quot;&gt;
-    &lt;div class=&quot;input_area&quot;&gt;
-&lt;div class=&quot; highlight hl-ipython3&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#collapse&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pd&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;altair&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;alt&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-    &lt;/details&gt;
-&lt;/div&gt;
-    
-
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;put a &lt;code&gt;#collapse_show&lt;/code&gt; flag at the top of any cell if you want to &lt;strong&gt;show&lt;/strong&gt; that cell by default, but give the reader the option to hide it:&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-    
-    
-&lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&gt;
-&lt;details class=&quot;description&quot; open=&quot;&quot;&gt;
-      &lt;summary class=&quot;btn btn-sm&quot; data-open=&quot;Hide Code&quot; data-close=&quot;Show Code&quot;&gt;&lt;/summary&gt;
-        &lt;p&gt;&lt;div class=&quot;input&quot;&gt;
-
-&lt;div class=&quot;inner_cell&quot;&gt;
-    &lt;div class=&quot;input_area&quot;&gt;
-&lt;div class=&quot; highlight hl-ipython3&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#collapse_show&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;cars&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;https://vega.github.io/vega-datasets/data/cars.json&amp;#39;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;movies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;https://vega.github.io/vega-datasets/data/movies.json&amp;#39;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;sp500&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;https://vega.github.io/vega-datasets/data/sp500.csv&amp;#39;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;stocks&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;https://vega.github.io/vega-datasets/data/stocks.csv&amp;#39;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;flights&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;https://vega.github.io/vega-datasets/data/flights-5k.json&amp;#39;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-    &lt;/details&gt;
-&lt;/div&gt;
-    
-
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h2 id=&quot;Interactive-Charts-With-Altair&quot;&gt;Interactive Charts With Altair&lt;a class=&quot;anchor-link&quot; href=&quot;#Interactive-Charts-With-Altair&quot;&gt; &lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Charts made with Altair remain interactive.  Example charts taken from &lt;a href=&quot;https://github.com/uwdata/visualization-curriculum&quot;&gt;this repo&lt;/a&gt;, specifically &lt;a href=&quot;https://github.com/uwdata/visualization-curriculum/blob/master/altair_interaction.ipynb&quot;&gt;this notebook&lt;/a&gt;.&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h3 id=&quot;Example-1:-DropDown&quot;&gt;Example 1: DropDown&lt;a class=&quot;anchor-link&quot; href=&quot;#Example-1:-DropDown&quot;&gt; &lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-    
-    
-&lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&gt;
-&lt;div class=&quot;input&quot;&gt;
-
-&lt;div class=&quot;inner_cell&quot;&gt;
-    &lt;div class=&quot;input_area&quot;&gt;
-&lt;div class=&quot; highlight hl-ipython3&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# single-value selection over [Major_Genre, MPAA_Rating] pairs&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# use specific hard-wired values as the initial selected values&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;selection&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;selection_single&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Select&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;fields&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Major_Genre&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;MPAA_Rating&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Major_Genre&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Drama&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;MPAA_Rating&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;R&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Major_Genre&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;binding_select&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;genres&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;MPAA_Rating&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;binding_radio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mpaa&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  
-&lt;span class=&quot;c1&quot;&gt;# scatter plot, modify opacity based on selection&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Chart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;movies&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mark_circle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_selection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;selection&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Rotten_Tomatoes_Rating:Q&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;IMDB_Rating:Q&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;tooltip&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Title:N&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;opacity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;selection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.75&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.05&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;output_wrapper&quot;&gt;
-&lt;div class=&quot;output&quot;&gt;
-
-&lt;div class=&quot;output_area&quot;&gt;
-
-
-&lt;div class=&quot;output_html rendered_html output_subarea output_execute_result&quot;&gt;
-
-&lt;div id=&quot;altair-viz-1a49e83878ce4d678d7b162f3d6b510f&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-  (function(spec, embedOpt){
-    const outputDiv = document.getElementById(&quot;altair-viz-1a49e83878ce4d678d7b162f3d6b510f&quot;);
-    const paths = {
-      &quot;vega&quot;: &quot;https://cdn.jsdelivr.net/npm//vega@5?noext&quot;,
-      &quot;vega-lib&quot;: &quot;https://cdn.jsdelivr.net/npm//vega-lib?noext&quot;,
-      &quot;vega-lite&quot;: &quot;https://cdn.jsdelivr.net/npm//vega-lite@4.0.2?noext&quot;,
-      &quot;vega-embed&quot;: &quot;https://cdn.jsdelivr.net/npm//vega-embed@6?noext&quot;,
-    };
-
-    function loadScript(lib) {
-      return new Promise(function(resolve, reject) {
-        var s = document.createElement('script');
-        s.src = paths[lib];
-        s.async = true;
-        s.onload = () =&gt; resolve(paths[lib]);
-        s.onerror = () =&gt; reject(`Error loading script: ${paths[lib]}`);
-        document.getElementsByTagName(&quot;head&quot;)[0].appendChild(s);
-      });
-    }
-
-    function showError(err) {
-      outputDiv.innerHTML = `&lt;div class=&quot;error&quot; style=&quot;color:red;&quot;&gt;${err}&lt;/div&gt;`;
-      throw err;
-    }
-
-    function displayChart(vegaEmbed) {
-      vegaEmbed(outputDiv, spec, embedOpt)
-        .catch(err =&gt; showError(`Javascript Error: ${err.message}&lt;br&gt;This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
-    }
-
-    if(typeof define === &quot;function&quot; &amp;&amp; define.amd) {
-      requirejs.config({paths});
-      require([&quot;vega-embed&quot;], displayChart, err =&gt; showError(`Error loading script: ${err.message}`));
-    } else if (typeof vegaEmbed === &quot;function&quot;) {
-      displayChart(vegaEmbed);
-    } else {
-      loadScript(&quot;vega&quot;)
-        .then(() =&gt; loadScript(&quot;vega-lite&quot;))
-        .then(() =&gt; loadScript(&quot;vega-embed&quot;))
-        .catch(showError)
-        .then(() =&gt; displayChart(vegaEmbed));
-    }
-  })({&quot;config&quot;: {&quot;view&quot;: {&quot;continuousWidth&quot;: 400, &quot;continuousHeight&quot;: 300}}, &quot;data&quot;: {&quot;url&quot;: &quot;https://vega.github.io/vega-datasets/data/movies.json&quot;}, &quot;mark&quot;: &quot;circle&quot;, &quot;encoding&quot;: {&quot;opacity&quot;: {&quot;condition&quot;: {&quot;value&quot;: 0.75, &quot;selection&quot;: &quot;Select&quot;}, &quot;value&quot;: 0.05}, &quot;tooltip&quot;: {&quot;type&quot;: &quot;nominal&quot;, &quot;field&quot;: &quot;Title&quot;}, &quot;x&quot;: {&quot;type&quot;: &quot;quantitative&quot;, &quot;field&quot;: &quot;Rotten_Tomatoes_Rating&quot;}, &quot;y&quot;: {&quot;type&quot;: &quot;quantitative&quot;, &quot;field&quot;: &quot;IMDB_Rating&quot;}}, &quot;selection&quot;: {&quot;Select&quot;: {&quot;type&quot;: &quot;single&quot;, &quot;fields&quot;: [&quot;Major_Genre&quot;, &quot;MPAA_Rating&quot;], &quot;init&quot;: {&quot;Major_Genre&quot;: &quot;Drama&quot;, &quot;MPAA_Rating&quot;: &quot;R&quot;}, &quot;bind&quot;: {&quot;Major_Genre&quot;: {&quot;input&quot;: &quot;select&quot;, &quot;options&quot;: [&quot;Action&quot;, &quot;Adventure&quot;, &quot;Black Comedy&quot;, &quot;Comedy&quot;, &quot;Concert/Performance&quot;, &quot;Documentary&quot;, &quot;Drama&quot;, &quot;Horror&quot;, &quot;Musical&quot;, &quot;Romantic Comedy&quot;, &quot;Thriller/Suspense&quot;, &quot;Western&quot;]}, &quot;MPAA_Rating&quot;: {&quot;input&quot;: &quot;radio&quot;, &quot;options&quot;: [&quot;G&quot;, &quot;PG&quot;, &quot;PG-13&quot;, &quot;R&quot;, &quot;NC-17&quot;, &quot;Not Rated&quot;]}}}}, &quot;$schema&quot;: &quot;https://vega.github.io/schema/vega-lite/v4.0.2.json&quot;}, {&quot;mode&quot;: &quot;vega-lite&quot;});
-&lt;/script&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-    
-
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h3 id=&quot;Example-2:-Tooltips&quot;&gt;Example 2: Tooltips&lt;a class=&quot;anchor-link&quot; href=&quot;#Example-2:-Tooltips&quot;&gt; &lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-    
-    
-&lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&gt;
-&lt;div class=&quot;input&quot;&gt;
-
-&lt;div class=&quot;inner_cell&quot;&gt;
-    &lt;div class=&quot;input_area&quot;&gt;
-&lt;div class=&quot; highlight hl-ipython3&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Chart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;movies&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mark_circle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_selection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;selection_interval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;scales&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encodings&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;x&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Rotten_Tomatoes_Rating:Q&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;IMDB_Rating:Q&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Axis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minExtent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# use min extent to stabilize axis title placement&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;tooltip&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Title:N&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Release_Date:N&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;IMDB_Rating:Q&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Rotten_Tomatoes_Rating:Q&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;properties&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;600&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;400&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;output_wrapper&quot;&gt;
-&lt;div class=&quot;output&quot;&gt;
-
-&lt;div class=&quot;output_area&quot;&gt;
-
-
-&lt;div class=&quot;output_html rendered_html output_subarea output_execute_result&quot;&gt;
-
-&lt;div id=&quot;altair-viz-c022b476f4fb482ca6f609bf6ed082d2&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-  (function(spec, embedOpt){
-    const outputDiv = document.getElementById(&quot;altair-viz-c022b476f4fb482ca6f609bf6ed082d2&quot;);
-    const paths = {
-      &quot;vega&quot;: &quot;https://cdn.jsdelivr.net/npm//vega@5?noext&quot;,
-      &quot;vega-lib&quot;: &quot;https://cdn.jsdelivr.net/npm//vega-lib?noext&quot;,
-      &quot;vega-lite&quot;: &quot;https://cdn.jsdelivr.net/npm//vega-lite@4.0.2?noext&quot;,
-      &quot;vega-embed&quot;: &quot;https://cdn.jsdelivr.net/npm//vega-embed@6?noext&quot;,
-    };
-
-    function loadScript(lib) {
-      return new Promise(function(resolve, reject) {
-        var s = document.createElement('script');
-        s.src = paths[lib];
-        s.async = true;
-        s.onload = () =&gt; resolve(paths[lib]);
-        s.onerror = () =&gt; reject(`Error loading script: ${paths[lib]}`);
-        document.getElementsByTagName(&quot;head&quot;)[0].appendChild(s);
-      });
-    }
-
-    function showError(err) {
-      outputDiv.innerHTML = `&lt;div class=&quot;error&quot; style=&quot;color:red;&quot;&gt;${err}&lt;/div&gt;`;
-      throw err;
-    }
-
-    function displayChart(vegaEmbed) {
-      vegaEmbed(outputDiv, spec, embedOpt)
-        .catch(err =&gt; showError(`Javascript Error: ${err.message}&lt;br&gt;This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
-    }
-
-    if(typeof define === &quot;function&quot; &amp;&amp; define.amd) {
-      requirejs.config({paths});
-      require([&quot;vega-embed&quot;], displayChart, err =&gt; showError(`Error loading script: ${err.message}`));
-    } else if (typeof vegaEmbed === &quot;function&quot;) {
-      displayChart(vegaEmbed);
-    } else {
-      loadScript(&quot;vega&quot;)
-        .then(() =&gt; loadScript(&quot;vega-lite&quot;))
-        .then(() =&gt; loadScript(&quot;vega-embed&quot;))
-        .catch(showError)
-        .then(() =&gt; displayChart(vegaEmbed));
-    }
-  })({&quot;config&quot;: {&quot;view&quot;: {&quot;continuousWidth&quot;: 400, &quot;continuousHeight&quot;: 300}}, &quot;data&quot;: {&quot;url&quot;: &quot;https://vega.github.io/vega-datasets/data/movies.json&quot;}, &quot;mark&quot;: &quot;circle&quot;, &quot;encoding&quot;: {&quot;tooltip&quot;: [{&quot;type&quot;: &quot;nominal&quot;, &quot;field&quot;: &quot;Title&quot;}, {&quot;type&quot;: &quot;nominal&quot;, &quot;field&quot;: &quot;Release_Date&quot;}, {&quot;type&quot;: &quot;quantitative&quot;, &quot;field&quot;: &quot;IMDB_Rating&quot;}, {&quot;type&quot;: &quot;quantitative&quot;, &quot;field&quot;: &quot;Rotten_Tomatoes_Rating&quot;}], &quot;x&quot;: {&quot;type&quot;: &quot;quantitative&quot;, &quot;field&quot;: &quot;Rotten_Tomatoes_Rating&quot;}, &quot;y&quot;: {&quot;type&quot;: &quot;quantitative&quot;, &quot;axis&quot;: {&quot;minExtent&quot;: 30}, &quot;field&quot;: &quot;IMDB_Rating&quot;}}, &quot;height&quot;: 400, &quot;selection&quot;: {&quot;selector001&quot;: {&quot;type&quot;: &quot;interval&quot;, &quot;bind&quot;: &quot;scales&quot;, &quot;encodings&quot;: [&quot;x&quot;]}}, &quot;width&quot;: 600, &quot;$schema&quot;: &quot;https://vega.github.io/schema/vega-lite/v4.0.2.json&quot;}, {&quot;mode&quot;: &quot;vega-lite&quot;});
-&lt;/script&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-    
-
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h3 id=&quot;Example-3:-More-Tooltips&quot;&gt;Example 3: More Tooltips&lt;a class=&quot;anchor-link&quot; href=&quot;#Example-3:-More-Tooltips&quot;&gt; &lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-    
-    
-&lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&gt;
-&lt;div class=&quot;input&quot;&gt;
-
-&lt;div class=&quot;inner_cell&quot;&gt;
-    &lt;div class=&quot;input_area&quot;&gt;
-&lt;div class=&quot; highlight hl-ipython3&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# select a point for which to provide details-on-demand&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;selection_single&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;encodings&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;x&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# limit selection to x-axis value&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;mouseover&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# select on mouseover events&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;nearest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# select data point nearest the cursor&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;empty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;none&amp;#39;&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;# empty selection includes no data points&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# define our base line chart of stock prices&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;base&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Chart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mark_line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;date:T&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;price:Q&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scale&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Scale&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;log&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;symbol:N&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# base line chart&lt;/span&gt;
-    
-    &lt;span class=&quot;c1&quot;&gt;# add a rule mark to serve as a guide line&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Chart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mark_rule&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;#aaa&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;date:T&amp;#39;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform_filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-    
-    &lt;span class=&quot;c1&quot;&gt;# add circle marks for selected time points, hide unselected points&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mark_circle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;opacity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_selection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;# add white stroked text to provide a legible background for labels&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mark_text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;align&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;left&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stroke&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;white&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strokeWidth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;price:Q&amp;#39;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform_filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;# add text labels for stock prices&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mark_text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;align&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;left&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;price:Q&amp;#39;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform_filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-    
-    &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stocks&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;properties&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;700&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;400&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;output_wrapper&quot;&gt;
-&lt;div class=&quot;output&quot;&gt;
-
-&lt;div class=&quot;output_area&quot;&gt;
-
-
-&lt;div class=&quot;output_html rendered_html output_subarea output_execute_result&quot;&gt;
-
-&lt;div id=&quot;altair-viz-9283d3681fd24aafa3d1e2f9ad193ecf&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-  (function(spec, embedOpt){
-    const outputDiv = document.getElementById(&quot;altair-viz-9283d3681fd24aafa3d1e2f9ad193ecf&quot;);
-    const paths = {
-      &quot;vega&quot;: &quot;https://cdn.jsdelivr.net/npm//vega@5?noext&quot;,
-      &quot;vega-lib&quot;: &quot;https://cdn.jsdelivr.net/npm//vega-lib?noext&quot;,
-      &quot;vega-lite&quot;: &quot;https://cdn.jsdelivr.net/npm//vega-lite@4.0.2?noext&quot;,
-      &quot;vega-embed&quot;: &quot;https://cdn.jsdelivr.net/npm//vega-embed@6?noext&quot;,
-    };
-
-    function loadScript(lib) {
-      return new Promise(function(resolve, reject) {
-        var s = document.createElement('script');
-        s.src = paths[lib];
-        s.async = true;
-        s.onload = () =&gt; resolve(paths[lib]);
-        s.onerror = () =&gt; reject(`Error loading script: ${paths[lib]}`);
-        document.getElementsByTagName(&quot;head&quot;)[0].appendChild(s);
-      });
-    }
-
-    function showError(err) {
-      outputDiv.innerHTML = `&lt;div class=&quot;error&quot; style=&quot;color:red;&quot;&gt;${err}&lt;/div&gt;`;
-      throw err;
-    }
-
-    function displayChart(vegaEmbed) {
-      vegaEmbed(outputDiv, spec, embedOpt)
-        .catch(err =&gt; showError(`Javascript Error: ${err.message}&lt;br&gt;This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
-    }
-
-    if(typeof define === &quot;function&quot; &amp;&amp; define.amd) {
-      requirejs.config({paths});
-      require([&quot;vega-embed&quot;], displayChart, err =&gt; showError(`Error loading script: ${err.message}`));
-    } else if (typeof vegaEmbed === &quot;function&quot;) {
-      displayChart(vegaEmbed);
-    } else {
-      loadScript(&quot;vega&quot;)
-        .then(() =&gt; loadScript(&quot;vega-lite&quot;))
-        .then(() =&gt; loadScript(&quot;vega-embed&quot;))
-        .catch(showError)
-        .then(() =&gt; displayChart(vegaEmbed));
-    }
-  })({&quot;config&quot;: {&quot;view&quot;: {&quot;continuousWidth&quot;: 400, &quot;continuousHeight&quot;: 300}}, &quot;layer&quot;: [{&quot;mark&quot;: &quot;line&quot;, &quot;encoding&quot;: {&quot;color&quot;: {&quot;type&quot;: &quot;nominal&quot;, &quot;field&quot;: &quot;symbol&quot;}, &quot;x&quot;: {&quot;type&quot;: &quot;temporal&quot;, &quot;field&quot;: &quot;date&quot;}, &quot;y&quot;: {&quot;type&quot;: &quot;quantitative&quot;, &quot;field&quot;: &quot;price&quot;, &quot;scale&quot;: {&quot;type&quot;: &quot;log&quot;}}}}, {&quot;mark&quot;: {&quot;type&quot;: &quot;rule&quot;, &quot;color&quot;: &quot;#aaa&quot;}, &quot;encoding&quot;: {&quot;x&quot;: {&quot;type&quot;: &quot;temporal&quot;, &quot;field&quot;: &quot;date&quot;}}, &quot;transform&quot;: [{&quot;filter&quot;: {&quot;selection&quot;: &quot;selector002&quot;}}]}, {&quot;mark&quot;: &quot;circle&quot;, &quot;encoding&quot;: {&quot;color&quot;: {&quot;type&quot;: &quot;nominal&quot;, &quot;field&quot;: &quot;symbol&quot;}, &quot;opacity&quot;: {&quot;condition&quot;: {&quot;value&quot;: 1, &quot;selection&quot;: &quot;selector002&quot;}, &quot;value&quot;: 0}, &quot;x&quot;: {&quot;type&quot;: &quot;temporal&quot;, &quot;field&quot;: &quot;date&quot;}, &quot;y&quot;: {&quot;type&quot;: &quot;quantitative&quot;, &quot;field&quot;: &quot;price&quot;, &quot;scale&quot;: {&quot;type&quot;: &quot;log&quot;}}}, &quot;selection&quot;: {&quot;selector002&quot;: {&quot;type&quot;: &quot;single&quot;, &quot;encodings&quot;: [&quot;x&quot;], &quot;on&quot;: &quot;mouseover&quot;, &quot;nearest&quot;: true, &quot;empty&quot;: &quot;none&quot;}}}, {&quot;mark&quot;: {&quot;type&quot;: &quot;text&quot;, &quot;align&quot;: &quot;left&quot;, &quot;dx&quot;: 5, &quot;dy&quot;: -5, &quot;stroke&quot;: &quot;white&quot;, &quot;strokeWidth&quot;: 2}, &quot;encoding&quot;: {&quot;color&quot;: {&quot;type&quot;: &quot;nominal&quot;, &quot;field&quot;: &quot;symbol&quot;}, &quot;text&quot;: {&quot;type&quot;: &quot;quantitative&quot;, &quot;field&quot;: &quot;price&quot;}, &quot;x&quot;: {&quot;type&quot;: &quot;temporal&quot;, &quot;field&quot;: &quot;date&quot;}, &quot;y&quot;: {&quot;type&quot;: &quot;quantitative&quot;, &quot;field&quot;: &quot;price&quot;, &quot;scale&quot;: {&quot;type&quot;: &quot;log&quot;}}}, &quot;transform&quot;: [{&quot;filter&quot;: {&quot;selection&quot;: &quot;selector002&quot;}}]}, {&quot;mark&quot;: {&quot;type&quot;: &quot;text&quot;, &quot;align&quot;: &quot;left&quot;, &quot;dx&quot;: 5, &quot;dy&quot;: -5}, &quot;encoding&quot;: {&quot;color&quot;: {&quot;type&quot;: &quot;nominal&quot;, &quot;field&quot;: &quot;symbol&quot;}, &quot;text&quot;: {&quot;type&quot;: &quot;quantitative&quot;, &quot;field&quot;: &quot;price&quot;}, &quot;x&quot;: {&quot;type&quot;: &quot;temporal&quot;, &quot;field&quot;: &quot;date&quot;}, &quot;y&quot;: {&quot;type&quot;: &quot;quantitative&quot;, &quot;field&quot;: &quot;price&quot;, &quot;scale&quot;: {&quot;type&quot;: &quot;log&quot;}}}, &quot;transform&quot;: [{&quot;filter&quot;: {&quot;selection&quot;: &quot;selector002&quot;}}]}], &quot;data&quot;: {&quot;url&quot;: &quot;https://vega.github.io/vega-datasets/data/stocks.csv&quot;}, &quot;height&quot;: 400, &quot;width&quot;: 700, &quot;$schema&quot;: &quot;https://vega.github.io/schema/vega-lite/v4.0.2.json&quot;}, {&quot;mode&quot;: &quot;vega-lite&quot;});
-&lt;/script&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-    
-
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h2 id=&quot;Data-Tables&quot;&gt;Data Tables&lt;a class=&quot;anchor-link&quot; href=&quot;#Data-Tables&quot;&gt; &lt;/a&gt;&lt;/h2&gt;&lt;p&gt;You can display tables per the usual way in your blog:&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-    
-    
-&lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&gt;
-&lt;div class=&quot;input&quot;&gt;
-
-&lt;div class=&quot;inner_cell&quot;&gt;
-    &lt;div class=&quot;input_area&quot;&gt;
-&lt;div class=&quot; highlight hl-ipython3&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;movies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;https://vega.github.io/vega-datasets/data/movies.json&amp;#39;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;movies&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# display table with pandas&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Title&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Worldwide_Gross&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
-    &lt;span class=&quot;s1&quot;&gt;&amp;#39;Production_Budget&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;IMDB_Rating&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;output_wrapper&quot;&gt;
-&lt;div class=&quot;output&quot;&gt;
-
-&lt;div class=&quot;output_area&quot;&gt;
-
-
-&lt;div class=&quot;output_html rendered_html output_subarea output_execute_result&quot;&gt;
-&lt;div&gt;
-&lt;style scoped=&quot;&quot;&gt;
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-&lt;/style&gt;
-&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
-  &lt;thead&gt;
-    &lt;tr style=&quot;text-align: right;&quot;&gt;
-      &lt;th&gt;&lt;/th&gt;
-      &lt;th&gt;Title&lt;/th&gt;
-      &lt;th&gt;Worldwide_Gross&lt;/th&gt;
-      &lt;th&gt;Production_Budget&lt;/th&gt;
-      &lt;th&gt;IMDB_Rating&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;th&gt;0&lt;/th&gt;
-      &lt;td&gt;The Land Girls&lt;/td&gt;
-      &lt;td&gt;146083.0&lt;/td&gt;
-      &lt;td&gt;8000000.0&lt;/td&gt;
-      &lt;td&gt;6.1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;1&lt;/th&gt;
-      &lt;td&gt;First Love, Last Rites&lt;/td&gt;
-      &lt;td&gt;10876.0&lt;/td&gt;
-      &lt;td&gt;300000.0&lt;/td&gt;
-      &lt;td&gt;6.9&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2&lt;/th&gt;
-      &lt;td&gt;I Married a Strange Person&lt;/td&gt;
-      &lt;td&gt;203134.0&lt;/td&gt;
-      &lt;td&gt;250000.0&lt;/td&gt;
-      &lt;td&gt;6.8&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;3&lt;/th&gt;
-      &lt;td&gt;Let's Talk About Sex&lt;/td&gt;
-      &lt;td&gt;373615.0&lt;/td&gt;
-      &lt;td&gt;300000.0&lt;/td&gt;
-      &lt;td&gt;NaN&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;4&lt;/th&gt;
-      &lt;td&gt;Slam&lt;/td&gt;
-      &lt;td&gt;1087521.0&lt;/td&gt;
-      &lt;td&gt;1000000.0&lt;/td&gt;
-      &lt;td&gt;3.4&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-    
-
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h2 id=&quot;Images&quot;&gt;Images&lt;a class=&quot;anchor-link&quot; href=&quot;#Images&quot;&gt; &lt;/a&gt;&lt;/h2&gt;&lt;h3 id=&quot;Local-Images&quot;&gt;Local Images&lt;a class=&quot;anchor-link&quot; href=&quot;#Local-Images&quot;&gt; &lt;/a&gt;&lt;/h3&gt;&lt;p&gt;You can reference local images and they will be copied and rendered on your blog automatically.  You can include these with the following markdown syntax:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;![](my_icons/fastai_logo.png)&lt;/code&gt;&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;&lt;img src=&quot;/images/copied_from_nb/my_icons/fastai_logo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h3 id=&quot;Remote-Images&quot;&gt;Remote Images&lt;a class=&quot;anchor-link&quot; href=&quot;#Remote-Images&quot;&gt; &lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Remote images can be included with the following markdown syntax:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;![](https://image.flaticon.com/icons/svg/36/36686.svg)&lt;/code&gt;&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;&lt;img src=&quot;https://image.flaticon.com/icons/svg/36/36686.svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h3 id=&quot;Animated-Gifs&quot;&gt;Animated Gifs&lt;a class=&quot;anchor-link&quot; href=&quot;#Animated-Gifs&quot;&gt; &lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Animated Gifs work, too!&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;![](https://upload.wikimedia.org/wikipedia/commons/7/71/ChessPawnSpecialMoves.gif)&lt;/code&gt;&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/7/71/ChessPawnSpecialMoves.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h3 id=&quot;Captions&quot;&gt;Captions&lt;a class=&quot;anchor-link&quot; href=&quot;#Captions&quot;&gt; &lt;/a&gt;&lt;/h3&gt;&lt;p&gt;You can include captions with markdown images like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;![](https://www.fast.ai/images/fastai_paper/show_batch.png &quot;Credit: https://www.fast.ai/2020/02/13/fastai-A-Layered-API-for-Deep-Learning/&quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.fast.ai/images/fastai_paper/show_batch.png&quot; alt=&quot;&quot; title=&quot;Credit: https://www.fast.ai/2020/02/13/fastai-A-Layered-API-for-Deep-Learning/&quot; /&gt;&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h1 id=&quot;Other-Elements&quot;&gt;Other Elements&lt;a class=&quot;anchor-link&quot; href=&quot;#Other-Elements&quot;&gt; &lt;/a&gt;&lt;/h1&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h2 id=&quot;Tweetcards&quot;&gt;Tweetcards&lt;a class=&quot;anchor-link&quot; href=&quot;#Tweetcards&quot;&gt; &lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Typing &lt;code&gt;&amp;gt; twitter: https://twitter.com/jakevdp/status/1204765621767901185?s=20&lt;/code&gt; will render this:
-
-&lt;center&gt;
-&lt;div class=&quot;jekyll-twitter-plugin&quot;&gt;&lt;p&gt;There was a 'Bad Request' error fetching URL: '&lt;a href=&quot;https://twitter.com/jakevdp/status/1204765621767901185?s=20&quot;&gt;https://twitter.com/jakevdp/status/1204765621767901185?s=20&lt;/a&gt;'&lt;/p&gt;&lt;/div&gt;
-&lt;/center&gt;&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h2 id=&quot;Youtube-Videos&quot;&gt;Youtube Videos&lt;a class=&quot;anchor-link&quot; href=&quot;#Youtube-Videos&quot;&gt; &lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Typing &lt;code&gt;&amp;gt; youtube: https://youtu.be/XfoYk_Z5AkI&lt;/code&gt; will render this:
-
-&lt;center&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/a&amp;gt;&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/center&gt;&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
-&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h2 id=&quot;Boxes-/-Callouts&quot;&gt;Boxes / Callouts&lt;a class=&quot;anchor-link&quot; href=&quot;#Boxes-/-Callouts&quot;&gt; &lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Typing &lt;code&gt;&amp;gt; Warning: There will be no second warning!&lt;/code&gt; will render this:
-&lt;div class=&quot;flash flash-error&quot;&gt;
-    &lt;svg class=&quot;octicon octicon-alert&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z&quot; /&gt;&lt;/svg&gt;
-    &lt;strong&gt;Warning: &lt;/strong&gt;There will be no second warning!
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;Typing &lt;code&gt;&amp;gt; Important: Pay attention! It's important.&lt;/code&gt; will render this:
-&lt;div class=&quot;flash flash-warn&quot;&gt;
-    &lt;svg class=&quot;octicon octicon-zap&quot; viewBox=&quot;0 0 10 16&quot; version=&quot;1.1&quot; width=&quot;10&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M10 7H6l3-7-9 9h4l-3 7 9-9z&quot; /&gt;&lt;/svg&gt;
-    &lt;strong&gt;Important: &lt;/strong&gt;Pay attention! It&amp;#8217;s important.
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;Typing &lt;code&gt;&amp;gt; Tip: This is my tip.&lt;/code&gt; will render this:
-&lt;div class=&quot;flash flash-success&quot;&gt;
-    &lt;svg class=&quot;octicon octicon-checklist&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M16 8.5l-6 6-3-3L8.5 10l1.5 1.5L14.5 7 16 8.5zM5.7 12.2l.8.8H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h7c.55 0 1 .45 1 1v6.5l-.8-.8c-.39-.39-1.03-.39-1.42 0L5.7 10.8a.996.996 0 000 1.41v-.01zM4 4h5V3H4v1zm0 2h5V5H4v1zm0 2h3V7H4v1zM3 9H2v1h1V9zm0-2H2v1h1V7zm0-2H2v1h1V5zm0-2H2v1h1V3z&quot; /&gt;&lt;/svg&gt;
-    &lt;strong&gt;Tip: &lt;/strong&gt;This is my tip.
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;Typing &lt;code&gt;&amp;gt; Note: Take note of this.&lt;/code&gt; will render this:
-&lt;div class=&quot;flash&quot;&gt;
-    &lt;svg class=&quot;octicon octicon-info&quot; viewBox=&quot;0 0 14 16&quot; version=&quot;1.1&quot; width=&quot;14&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M6.3 5.69a.942.942 0 01-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 01-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z&quot; /&gt;&lt;/svg&gt;
-    &lt;strong&gt;Note: &lt;/strong&gt;Take note of this.
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;Typing &lt;code&gt;&amp;gt; Note: A doc link to [an example website: fast.ai](https://www.fast.ai/) should also work fine.&lt;/code&gt; will render in the docs:
-&lt;div class=&quot;flash&quot;&gt;
-    &lt;svg class=&quot;octicon octicon-info octicon octicon-info&quot; viewBox=&quot;0 0 14 16&quot; version=&quot;1.1&quot; width=&quot;14&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M6.3 5.69a.942.942 0 01-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 01-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z&quot; /&gt;&lt;/svg&gt;
-    &lt;strong&gt;Note: &lt;/strong&gt;A doc link to &lt;a href=&quot;https://www.fast.ai/&quot;&gt;an example website: fast.ai&lt;/a&gt; should also work fine.
-&lt;/div&gt;&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://judepark96.github.io/blog/images/chart-preview.png" /><media:content medium="image" url="https://judepark96.github.io/blog/images/chart-preview.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bidirectional LSTM-CRF Models for Sequence Tagging</title><link href="https://judepark96.github.io/blog/2018/03/22/Bidirectional-LSTM-CRF-Models-for-Sequence-Tagging.html" rel="alternate" type="text/html" title="Bidirectional LSTM-CRF Models for Sequence Tagging" /><published>2018-03-22T00:00:00-05:00</published><updated>2018-03-22T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/2018/03/22/Bidirectional-LSTM-CRF-Models-for-Sequence-Tagging</id><content type="html" xml:base="https://judepark96.github.io/blog/2018/03/22/Bidirectional-LSTM-CRF-Models-for-Sequence-Tagging.html">&lt;h3 id=&quot;1-overview&quot;&gt;1. Overview&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Long Short-term Memory (LSTM) based models for sequence tagging.
-    &lt;ul&gt;
-      &lt;li&gt;Part of Speech tagging&lt;/li&gt;
-      &lt;li&gt;Named Entity Recognition&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Compare the performance of aforementioned models on NLP tagging data sets.
-    &lt;ul&gt;
-      &lt;li&gt;Convolutional CRF Network, etc …&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;This paper proposed &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;A Bidirectional LSTM-CRF Model&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;2-tagging&quot;&gt;2. Tagging&lt;/h3&gt;
-
-&lt;p&gt;Basically, there’s named entity recognition system in which each word is tagged with other (O) or one of four entity types: Person (PER), Location (LOC), Organization (ORG), and Miscellaneous (MISC).&lt;/p&gt;
-
-&lt;h3 id=&quot;3-recurrent-neural-network&quot;&gt;3. Recurrent Neural Network&lt;/h3&gt;
-
-&lt;p&gt;Traditionally, Recurrent Neural Network(RNN) introduced the connection between the previous hidden state and current hidden state. If input sequence is getting longer and longer, this is the reason of &lt;strong&gt;vanishing gradient&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;As a result, LSTM came out. Basically, it is the same as RNNs except that the hidden layer updates replaces by purpose-built memory cells. As a result, they may be better at finding and exploiting long range dependencies in data.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;But, unfortunately, LSTM is not perfect solution as always we were.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;4-bi-directional-lstm&quot;&gt;4. Bi-Directional LSTM&lt;/h3&gt;
-
-&lt;p&gt;Generally, LSTM only does forward pass. But, Bi-LSTM does &lt;strong&gt;forward pass and backward pass&lt;/strong&gt;, exactly both. It means, we calculate forward state and backward state.&lt;/p&gt;
-
-&lt;h3 id=&quot;5-conditional-random-field&quot;&gt;5. Conditional Random Field&lt;/h3&gt;
-
-&lt;p&gt;There are two different ways to make useof neighbor tag information in predicting current tags. 
-The first is to predict a distribution oftags for each time step and then use beam-like decoding to find optimal tag sequences. The second one is to focus on sentencelevel instead of individual positions.
-The inputs and outputs are directly connected. That is the difference between LSTM, CRF.&lt;/p&gt;
-
-&lt;h3 id=&quot;6-training-procedure---lstm&quot;&gt;6. Training Procedure - LSTM&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;All models used in this paper share a generic Stochastic Gradient Descent.&lt;/li&gt;
-  &lt;li&gt;Batch size set 100
-    &lt;ul&gt;
-      &lt;li&gt;It means, each sentence’s total length is no greater than 100.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;As a result, we get the output score for all tags at all positions.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;7-training-procedure---crf&quot;&gt;7. Training Procedure - CRF&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Run CRF layer forward and backward pass to compute gradients for network output and state transition edges.&lt;/li&gt;
-  &lt;li&gt;Back-propagate the errors from the output to input
-    &lt;ul&gt;
-      &lt;li&gt;includes the both forward and backward states of LSTM&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Update the network parameters
-    &lt;ul&gt;
-      &lt;li&gt;Includes state transition matrix, bi-LSTM parameters&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;8-dataset&quot;&gt;8. Dataset&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Penn TreeBankPOS Tagging&lt;/li&gt;
-  &lt;li&gt;CoNLL 2000 Chunking&lt;/li&gt;
-  &lt;li&gt;CoNLL 2003 named entity tagging&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;9-features&quot;&gt;9. Features&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Word embedding&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;Senna embedding&lt;/p&gt;
-
-        &lt;ul&gt;
-          &lt;li&gt;
-            &lt;blockquote&gt;
-              &lt;p&gt;where is the GloVe, Word2Vec.&lt;/p&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Spelling features&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;Where start with a capital letter&lt;/li&gt;
-      &lt;li&gt;letters only.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Context features&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;Uni-gram, bi-gram, tri-gram …&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;10-conclusion&quot;&gt;10. Conclusion&lt;/h3&gt;
-
-&lt;p&gt;Conv-CRF model relies on Senna embedding to get good tagging accuracy. But, Bi-LSTM doesn’t rely on embedding also it got a good tagging accuracy.&lt;/p&gt;
-
-&lt;h3 id=&quot;11-reference&quot;&gt;11. Reference&lt;/h3&gt;
-
-&lt;p&gt;[Bidirectional LSTM-CRF Models for Sequence Tagging] https://arxiv.org/abs/1508.01991&lt;/p&gt;</content><author><name></name></author><category term="Deep Learning" /><category term="NLP" /><summary type="html">1. Overview</summary></entry><entry><title type="html">플레이팅 점심 서비스</title><link href="https://judepark96.github.io/blog/startup/refactoring/android/2016/10/04/%ED%94%8C%EB%A0%88%EC%9D%B4%ED%8C%85-%EC%A0%90%EC%8B%AC-%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%9F%B0%EC%B9%AD-%ED%9A%8C%EA%B3%A0.html" rel="alternate" type="text/html" title="플레이팅 점심 서비스" /><published>2016-10-04T00:00:00-05:00</published><updated>2016-10-04T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/startup/refactoring/android/2016/10/04/%ED%94%8C%EB%A0%88%EC%9D%B4%ED%8C%85-%EC%A0%90%EC%8B%AC-%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%9F%B0%EC%B9%AD-%ED%9A%8C%EA%B3%A0</id><content type="html" xml:base="https://judepark96.github.io/blog/startup/refactoring/android/2016/10/04/%ED%94%8C%EB%A0%88%EC%9D%B4%ED%8C%85-%EC%A0%90%EC%8B%AC-%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%9F%B0%EC%B9%AD-%ED%9A%8C%EA%B3%A0.html">&lt;h3 id=&quot;1-플레이팅은&quot;&gt;1. 플레이팅은?&lt;/h3&gt;
-
-&lt;p&gt;플레이팅은 셰프들의 음식을 만들고 사용자들에게 배달해주는 서비스로서 나는 이 서비스 회사의 개발자로 근무하고 있다.&lt;/p&gt;
-
-&lt;p&gt;우리 회사는 저녁 서비스만을 사용자에게 제공하고 있었는데 이번에 점심 서비스를 런칭하기로 결정하였다. 그런데 문제는 일정이 매우 촉박했다는 것이었다. 약 5일 간의 일정으로 모든 플랫폼의 클라이언트와 서비스 서버를 개발해야하는 것이었다.&lt;/p&gt;
-
-&lt;p&gt;나는 안드로이드 클라이언트 작업을 단독으로 맡아서 진행하게 되었다.&lt;/p&gt;
-
-&lt;h3 id=&quot;2-고비의-시작-&quot;&gt;2. 고비의 시작 …&lt;/h3&gt;
-
-&lt;p&gt;기존의 작성되어져있던 레거시 코드를 크게 살펴볼 일이 없어서 일단 코드를 파악하는 것부터 시작하였다.&lt;/p&gt;
-
-&lt;p&gt;레거시 코드의 문제는 다음과 같았다.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;의미가 중복되어있는, 하지만 다른 이름의 함수로 되어있는 코드가 여러 곳의 분포되어있었다.&lt;/li&gt;
-  &lt;li&gt;객체 지향 설계 원칙에 맞지 않는 코드가 존재하였다.
-    &lt;ol&gt;
-      &lt;li&gt;가장 큰 예시로, 한 객체에서 다양한 기능이 구현되어있었다. &lt;strong&gt;(The Single Responsibility Principle, SRP)&lt;/strong&gt;
-        &lt;ol&gt;
-          &lt;li&gt;덧붙이자면, 본인은 Rest Client 단과 UI단의 코드의 결합을 피하고 싶었다. UI 단에서 Rest Client의 API를 콜하고, onSuccess(JSONObject object) 에서 처리하도록 바꾸었다.&lt;/li&gt;
-          &lt;li&gt;즉, 기존 코드에서는 Rest Client 에서 UI 처리까지 담당하였다.&lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;다양한 변수 선언 스타일이 공존하였었다.
-    &lt;ol&gt;
-      &lt;li&gt;이는, 곧 내게 혼란을 주었다.
-        &lt;ol&gt;
-          &lt;li&gt;작업을 할 때, 변수 선언 하나하나에 신경을 쓰려고 노력하는 나로서는 이해할 수 없는 것들이었기 때문이다.&lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;힘들었던 QA 작업&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;1번 같은 경우, 코드의 사용 유무를 일일히 검색하며 삭제하거나 하면 되지만 일정상의 문제로 넘어가도록 하였다.
-3번 또한 일정 문제로 넘어가도록 하였다. 이 회고글에서는 2번과 4번을 목차로 나누어 다루어보도록 한다.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;1번은 분명 쉘로 쉽게 할 수 있을텐데 …&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;21-어떻게-코드를-바꾸었을까&quot;&gt;2.1. 어떻게 코드를 바꾸었을까?&lt;/h3&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getMenuList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Context&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;RequestQueue&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requestQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nc&quot;&gt;JsonArrayRequest&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;JsonArrayRequest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-                &lt;span class=&quot;nc&quot;&gt;Request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;GET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-                &lt;span class=&quot;no&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Listener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;JSONArray&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
-                    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onResponse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;JSONArray&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                        &lt;span class=&quot;nc&quot;&gt;ArrayList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;DailyMenu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dailyMenuArrayList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;convertJsonToDailyMenuArrayList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-                        &lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;DailyMenuListActivity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getMenuListFromServer_Callback&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dailyMenuArrayList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-                    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-                &lt;span class=&quot;o&quot;&gt;},&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;ErrorListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
-                    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onErrorResponse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;VolleyError&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                    	&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printStackTrace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-                    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-                &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;requestQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;다음은 네트워크 통신을 통하여 서버의 API를 콜하는 코드이다. 이를 Rest Client라고 부를 것이다. 이 코드는 UI 단과 분리되어있지만 onResponse의 코드를 보면 UI 단의 역할 또한 담당하여 하고 있다.&lt;/p&gt;
-
-&lt;p&gt;이러한 코드는 UI 단의 코드를 수정할 때 어느정도의 헷갈림을 줄 수 있고 객체의 역할을 분리하는 것이 나중에 다른 개발자 분께서 작업을 이어받아서 진행할 때 더 수월할 것이라고 생각한다.&lt;/p&gt;
-
-&lt;p&gt;일단, 어느정도 코드의 방식을 수정하는 방향으로 가지만 위의 1절에서 언급했듯이 일정이 촉박하기 때문에 2절의 3번은 포기하도록 하고 코드를 수정해보도록 한다.&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;APIResult&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;LOG_TAG&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getClass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getSimpleName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onSuccess&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;JSONObject&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;JSONException&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onSuccess&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;JSONArray&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onFail&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;JSONException&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nc&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;LOG_TAG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onFail&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;VolleyError&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nc&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;LOG_TAG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;일단, APIResult 라는 Abstract Class 를 생성하도록 한다.&lt;/p&gt;
-
-&lt;p&gt;본 코드에 있는 onFail을 이용하면 더 이상 예외 처리 과정에서 사용되는 불필요한 로깅(logging) 코드를 작성할 필요가 없을 것이다. 즉, UI 단에서 예외 처리를 할 때, 더 이상 로깅을 하지 않고 순수하게 UI 코드를 작성할 수 있다는 의미가 된다.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;onFail을 Override하여 Toast.makeText(context, “네트워크 연결이 불안정합니다.”, Toast.LENGTH_SHORT).show(); 와 같은 코드만 작성해도 된다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;그리고 모든 API 의 Response 는 onSuccess를 통하여 가지고 오게 된다.&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getMenuList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;APIResult&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;VolleySingleton&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getInstance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getRequestQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;JsonArrayRequest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-            &lt;span class=&quot;nc&quot;&gt;Request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;GET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;getRequestUrl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(),&lt;/span&gt;
-            &lt;span class=&quot;nl&quot;&gt;result:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;onSuccess&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;nl&quot;&gt;result:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;onFail&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;기존의 서버 API 콜하는 Rest Client 를 새롭게 수정한 모습이다. 본 코드는 말 그대로 서버 API 콜만을 담당한다.&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;getMenuList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;APIResult&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onSuccess&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;JSONArray&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;c1&quot;&gt;// TODO -&amp;gt; UI Implementation&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;본 코드와 같이, UI 의 통제는 getMenuList(APIResult result) 메서드를 콜하는 UI 단의 클래스에서 하면 된다.&lt;/p&gt;
-
-&lt;p&gt;사실, 기존의 코드의 흐름대로 작성해도 문제는 없었겠지만 개발을 진행하면서 꼬여있는 실타래를 풀지는 못할 지언정 더 꼬이도록 하는 것을 도저히 견딜 수 없었다. 실제로 이러한 수정 이후에 수월하게 개발할 수 있었다.&lt;/p&gt;
-
-&lt;h3 id=&quot;22-힘들었던-qa-작업&quot;&gt;2.2. 힘들었던 QA 작업&lt;/h3&gt;
-
-&lt;p&gt;서버에 API 테스트가 있다면 클라이언트에는 QA(Quality assurance) 가 존재한다.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;소비자가 요구하는 품질이 충분히 만족되어 있음을 보증하기 위해서 생산자가 행하는 체계적인 활동이다. – 일본공업규격의 정의
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;위의 말대로 해보면 말 그대로 클라이언트에서 사용자가 앱을 삭제하지 않을 정도의 품질을 위한 활동인 것이다.&lt;/p&gt;
-
-&lt;p&gt;기존의 QA 작업은 체계적으로 이루어져있지 않았기 때문에 회사의 다른 개발자 분께서 QA 로그를 만드셔서 전해주셨고 나는 해당 문서를 바탕으로 QA 를 진행하였다.&lt;/p&gt;
-
-&lt;h4 id=&quot;221-무엇이-문제였는가&quot;&gt;2.2.1. 무엇이 문제였는가?&lt;/h4&gt;
-
-&lt;p&gt;일단, QA 작업이 매우 힘들었다. (매우라고 써놓고 &lt;strong&gt;존나&lt;/strong&gt;라고 읽는다.)&lt;/p&gt;
-
-&lt;p&gt;본인은 이것이 테스트의 자동화가 이루어져있지 않았기 때문이라고 생각한다. 이전에 기존의 클라이언트 작업에서 QA 로그를 바탕으로 한 테스트 코드가 작성되어있다면 힘들진 않았을 것이라고 생각한다.&lt;/p&gt;
-
-&lt;p&gt;일정 상의 문제가 있어, 테스트 코드를 작성하진 못하였지만 이건 언젠가는 꼭 하리라 다짐하는 부분이다.&lt;/p&gt;
-
-&lt;h3 id=&quot;3-글을-마치며-&quot;&gt;3. 글을 마치며 …&lt;/h3&gt;
-
-&lt;p&gt;오랜만의 회고였다. 작성 히스토리를 보니까 무려 약 3개월 전 … 많이 바빠짐과 동시에 나태해짐을 느꼈다.&lt;/p&gt;
-
-&lt;p&gt;본인은 최선을 다하여 개발하면서도 &lt;strong&gt;“일정 안에 맞추기 힘들 것 같은데 …?”&lt;/strong&gt; 라는 의문을 가지고 있었다. 게다가, 아직 규모가 큰 개발팀은 아니었기 때문에 단독으로 안드로이드 클라이언트를 맡아서 진행한다는 것이 큰 부담으로 작용하고 있었다.&lt;/p&gt;
-
-&lt;p&gt;하지만, 런칭 전날 새벽에 QA 를 통과하고 디플로이를 함으로서 큰 성취감을 느꼈고 &lt;strong&gt;2.1과 같은 과정을 거치며 성장했음을 느낄 수 있었다.&lt;/strong&gt; 이 과정에서 레거시 코드를 어떻게 효율적으로 활용할 지에 대한 경험도 쌓게 되어서 좋았다. 물론, 몇 일 동안, 학교를 다니면서 잠을 제대로 못 잤을 뿐만 아니라 밥 먹고 자는 시간을 제외하고 모두 개발했기 때문에 몸 건강이 안 좋았지만 그래도 뿌듯했다.&lt;/p&gt;
-
-&lt;p&gt;이 과정을 마치고 2일 휴가를 즐기며 휴가 마지막 날, 무려 20~21시간을 자며 나는 또 다시 행복함을 느낄 수 있었다.&lt;/p&gt;
-
-&lt;p&gt;역시, 학교보다는 회사일 때가 조금 더 재밌고 유쾌한 것 같다. &lt;strong&gt;학교는 주입식인데 회사는 자기주도식이니까.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;ol&gt;
-    &lt;li&gt;본인의 취미는 잠자기다. 자기 전, 몽롱한 느낌으로 폰으로 인터넷하는 걸 즐긴다. 그래서 일정에 따라 일어날 때는 일어나지만, 자는 과정에서 누군가 깨우면 굉장히 불쾌해한다. &lt;strong&gt;&lt;em&gt;(내 잠을 돌려내, 이런 나쁜 아이야. 라며 …)&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
-    &lt;li&gt;2.1의 과정이 굉장히 뿌듯하였지만 현실은 이 과정을 하면서도 머릿 속에서는 열심히 일정에 대한 계산을 하고 있었다. (…)&lt;/li&gt;
-    &lt;li&gt;이번 개발 과정을 느끼면서 &lt;strong&gt;1월에는 꼭 휴가를 내고 해외에서 머리를 식혀야겠다는 결심&lt;/strong&gt;을 하게 되었다.&lt;/li&gt;
-    &lt;li&gt;이번 개발 과정에서 많은 야식을 먹어서 행복했지만 살은 크게 늘지 않았다. (ㅋㅋ)&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/blockquote&gt;</content><author><name></name></author><summary type="html">1. 플레이팅은?</summary></entry></feed>
+&lt;p&gt;[1]. &lt;a href=&quot;https://github.com/konlpy/konlpy/issues/224#issuecomment-455439009&quot;&gt;Mac OS konlpy 설치오류 #224&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">소개</summary></entry></feed>
