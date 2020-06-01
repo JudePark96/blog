@@ -119,18 +119,22 @@
 </ul><script type="math/tex; mode=display">tanh(x) = \frac{sinh(x)}{cosh(x)} \\
 = \frac{e^x-e^{-x}}{e^x+e^{-x}}</script>
 
-<p>-1 ~ 1의 범위를 가지고 있으며 시그모이드 함수와 비슷한 모양을 가지고 있다. 활성화 함수로 쓰이는 것을 볼 수 있는데 미분을 직접 해보았다.
-<script type="math/tex">tanh^{\prime}(x) = \frac{d}{dx}\frac{e^x-e^{-x}}{e^x+e^{-x}} \\
+<p>-1 ~ 1의 범위를 가지고 있으며 시그모이드 함수와 비슷한 모양을 가지고 있다. 활성화 함수로 쓰이는 것을 볼 수 있는데 미분을 직접 해보았다.</p>
+
+<script type="math/tex; mode=display">tanh^{\prime}(x) = \frac{d}{dx}\frac{e^x-e^{-x}}{e^x+e^{-x}} \\
  =\frac{d}{dx}\frac{e^{-x}(e^{2x} -1)}{e^{-x}(e^{2x}+1)} \\
   =\frac{d}{dx}\frac{(e^{2x} -1)}{(e^{2x}+1)} \\
   =\frac{ 2e^{2x}(e^{2x}+1) - 2e^{2x}(e^{2x}-1)}{(e^{2x}+1)^2} \\
   =\frac{4e^{2x}}{(e^{2x}+1)^2}</script>
-위의 과정을 통하여 미분을 할 수 있다.</p>
 
-<p>위의 식에서 $e^{-x}(e^{2x} -1)$의 경우
-<script type="math/tex">e^x - e^{-x} = e^{-x}e^{2x} - e^{-x} \\
+<p>위의 과정을 통하여 미분을 할 수 있다.</p>
+
+<p>위의 식에서 $e^{-x}(e^{2x} -1)$의 경우</p>
+
+<script type="math/tex; mode=display">e^x - e^{-x} = e^{-x}e^{2x} - e^{-x} \\
 =e^{-x}(e^{2x}-1)</script>
-와 같은 과정으로 변환할 수 있다.</p>
+
+<p>와 같은 과정으로 변환할 수 있다.</p>
 
   </div><a class="u-url" href="/blog/%EB%AF%B8%EB%B6%84,/%ED%99%9C%EC%84%B1%ED%99%94%ED%95%A8%EC%88%98/2020/06/01/tanh.html" hidden></a>
 </article>
