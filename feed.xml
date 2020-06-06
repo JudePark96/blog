@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-06-01T02:33:05-05:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">여름 방학동안 뭐하지 ?</title><link href="https://judepark96.github.io/blog/%EC%97%AC%EB%A6%84%EB%B0%A9%ED%95%99,/%EB%8C%80%ED%95%99%EC%83%9D/2020/05/30/%EC%97%AC%EB%A6%84%EB%B0%A9%ED%95%99.html" rel="alternate" type="text/html" title="여름 방학동안 뭐하지 ?" /><published>2020-05-30T00:00:00-05:00</published><updated>2020-05-30T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/%EC%97%AC%EB%A6%84%EB%B0%A9%ED%95%99,/%EB%8C%80%ED%95%99%EC%83%9D/2020/05/30/%EC%97%AC%EB%A6%84%EB%B0%A9%ED%95%99</id><content type="html" xml:base="https://judepark96.github.io/blog/%EC%97%AC%EB%A6%84%EB%B0%A9%ED%95%99,/%EB%8C%80%ED%95%99%EC%83%9D/2020/05/30/%EC%97%AC%EB%A6%84%EB%B0%A9%ED%95%99.html">&lt;p&gt;이번 글만큼은 약간 러프한 나의 생각을 나열해보자! 러프한 생각 나열이니 글씨 말투도 러프하게 하자!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-06-06T09:02:22-05:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">Sigmoid Derivation</title><link href="https://judepark96.github.io/blog/%EB%AF%B8%EB%B6%84/2020/06/06/sigmoid.html" rel="alternate" type="text/html" title="Sigmoid Derivation" /><published>2020-06-06T00:00:00-05:00</published><updated>2020-06-06T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/%EB%AF%B8%EB%B6%84/2020/06/06/sigmoid</id><content type="html" xml:base="https://judepark96.github.io/blog/%EB%AF%B8%EB%B6%84/2020/06/06/sigmoid.html">&lt;script type=&quot;math/tex; mode=display&quot;&gt;y = \frac{1}{1+e^{-x}}&lt;/script&gt;
+
+&lt;p&gt;우선 $u = 1+e^{-x}$ 로 한다면 아래와 같이 된다.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;y = \frac{1}{u}&lt;/script&gt;
+
+&lt;p&gt;이제 이를 미분하는 과정은 아래와 같다.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{dy}{du}(u^{-1})\frac{du}{dx}(1+e^{-x}) \\
+=-u^{-2} (-e^{-x}) \\
+=\frac{e^{-x}}{(1+e^{-x})^2} \\
+=y(1-y)&lt;/script&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">여름 방학동안 뭐하지 ?</title><link href="https://judepark96.github.io/blog/%EC%97%AC%EB%A6%84%EB%B0%A9%ED%95%99,/%EB%8C%80%ED%95%99%EC%83%9D/2020/05/30/%EC%97%AC%EB%A6%84%EB%B0%A9%ED%95%99.html" rel="alternate" type="text/html" title="여름 방학동안 뭐하지 ?" /><published>2020-05-30T00:00:00-05:00</published><updated>2020-05-30T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/%EC%97%AC%EB%A6%84%EB%B0%A9%ED%95%99,/%EB%8C%80%ED%95%99%EC%83%9D/2020/05/30/%EC%97%AC%EB%A6%84%EB%B0%A9%ED%95%99</id><content type="html" xml:base="https://judepark96.github.io/blog/%EC%97%AC%EB%A6%84%EB%B0%A9%ED%95%99,/%EB%8C%80%ED%95%99%EC%83%9D/2020/05/30/%EC%97%AC%EB%A6%84%EB%B0%A9%ED%95%99.html">&lt;p&gt;이번 글만큼은 약간 러프한 나의 생각을 나열해보자! 러프한 생각 나열이니 글씨 말투도 러프하게 하자!&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;회사 인턴&lt;/li&gt;
@@ -551,61 +562,4 @@ Reference Response: I want buy gift for my mom!
 &lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
 &lt;p&gt;[1]. &lt;a href=&quot;https://arxiv.org/abs/1701.03079&quot;&gt;RUBER: An Unsupervised Method for Automatic Evaluation of Open-Domain Dialog Systems&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;[2]. &lt;a href=&quot;https://arxiv.org/abs/1904.10635&quot;&gt;Better Automatic Evaluation of Open-Domain Dialogue Systems with Contextualized Embeddings&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Deep Learning" /><category term="NLP" /><category term="Evaluation Metric" /><summary type="html">연구 주제에 맞게 읽을 논문을 추천해주신 카카오의 이동엽 형에게 감사드립니다! :)</summary></entry><entry><title type="html">Rotating 2D Array 90 Degrees In Python</title><link href="https://judepark96.github.io/blog/algorithm/python/2020/03/09/Rotating-2D-Array-90-Degrees-In-Python.html" rel="alternate" type="text/html" title="Rotating 2D Array 90 Degrees In Python" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/algorithm/python/2020/03/09/Rotating-2D-Array-90-Degrees-In-Python</id><content type="html" xml:base="https://judepark96.github.io/blog/algorithm/python/2020/03/09/Rotating-2D-Array-90-Degrees-In-Python.html">&lt;p&gt;Sometimes, we have to rotate the given 2d array to solve the algorithm. For example, in this &lt;a href=&quot;[https://tech.kakao.com/2019/10/02/kakao-blind-recruitment-2020-round1/](https://tech.kakao.com/2019/10/02/kakao-blind-recruitment-2020-round1/)&quot;&gt;coding test&lt;/a&gt;, Question 3.&lt;/p&gt;
-
-&lt;p&gt;In this post, I will show you how to rotate given 2d array in simple way.&lt;/p&gt;
-
-&lt;h1 id=&quot;concept&quot;&gt;Concept&lt;/h1&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-M=
-  \begin{bmatrix}
-    1 &amp; 2 &amp; 3  \\
-    4 &amp; 5 &amp; 6 \\
-    7 &amp; 8 &amp; 9
-  \end{bmatrix} %]]&gt;&lt;/script&gt;
-
-&lt;p&gt;Above given matrix is $N \times N$. What if we rotate 90 degrees above matrix?&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-M =
-  \begin{bmatrix}
-    7 &amp; 4 &amp; 1  \\
-    8 &amp; 5 &amp; 2 \\
-    9 &amp; 6 &amp; 3
-  \end{bmatrix} %]]&gt;&lt;/script&gt;
-
-&lt;p&gt;Result is above matrix. I think if i have to write in Java or C, it would be bothering me. So, Python.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Steps :
-    &lt;ul&gt;
-      &lt;li&gt;First of all, we have to reverse the given matrix.&lt;/li&gt;
-      &lt;li&gt;Second of all, &lt;strong&gt;zip(python) it&lt;/strong&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;code&quot;&gt;Code&lt;/h1&gt;
-
-&lt;p&gt;First, we need to define the matrix like as follows:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;matrix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;As I mentioned, first we have to reverse the matrix. So,&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[::&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Reverse!
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Last step is zipping it.&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;matrix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;zip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[::&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Result is as follows:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[(7, 4, 1), (8, 5, 2), (9, 6, 3)]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Sometimes, we have to rotate the given 2d array to solve the algorithm. For example, in this coding test, Question 3.</summary></entry></feed>
+&lt;p&gt;[2]. &lt;a href=&quot;https://arxiv.org/abs/1904.10635&quot;&gt;Better Automatic Evaluation of Open-Domain Dialogue Systems with Contextualized Embeddings&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Deep Learning" /><category term="NLP" /><category term="Evaluation Metric" /><summary type="html">연구 주제에 맞게 읽을 논문을 추천해주신 카카오의 이동엽 형에게 감사드립니다! :)</summary></entry></feed>
