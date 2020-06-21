@@ -24,12 +24,14 @@ Error 가 어떻게 위의 언급한 것과 같이 되는지 알아본다.
 - $y'=f(x')+\epsilon$
 
 ----
+
+
 $$
 E[(y'-g(x'))^2] \\
 = E[g(x')^2 - 2g(x')y' + y'^2] \\
 = Var(g(x')) + E[g(x')]^2 - 2E[g(x')]f(x') + Var(y')+f(x')^2 \\
 = Var(g(x')) + (E[g(x')]-f(x'))^2 + Var(\epsilon) \\
-= Var(g(x')) + (E[g(x')]-f(x'))^2 + \sigma^2 \\
+= Var(g(x')) + (E[g(x')]-f(x'))^2 + \sigma^2
 $$
 
 Low Bias-High Variance 인 상태일 수록 Overfitting 이고, High Bias-Low Variance 인 상태일 수록 Underfitting 이라고 할 수 있다.
