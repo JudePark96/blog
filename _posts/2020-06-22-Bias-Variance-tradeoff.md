@@ -34,6 +34,9 @@ E[(y'-g(x'))^2] \\
 = Var(g(x')) + (E[g(x')]-f(x'))^2 + \sigma^2
 $$
 
+
+----
+
 Low Bias-High Variance 인 상태일 수록 Overfitting 이고, High Bias-Low Variance 인 상태일 수록 Underfitting 이라고 할 수 있다.
 
 우리는 적절한 Bias, Variance 를 갖는 모델을 설계해야함을 알 수 있다.
