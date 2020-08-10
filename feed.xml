@@ -1,4 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-07-31T12:48:04-05:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">Ambiguity In Sentence Structure</title><link href="https://judepark96.github.io/blog/nlp/2020/07/28/Ambiguity-In-Sentence-Structure.html" rel="alternate" type="text/html" title="Ambiguity In Sentence Structure" /><published>2020-07-28T00:00:00-05:00</published><updated>2020-07-28T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/nlp/2020/07/28/Ambiguity%20In%20Sentence%20Structure</id><content type="html" xml:base="https://judepark96.github.io/blog/nlp/2020/07/28/Ambiguity-In-Sentence-Structure.html">&lt;h3 id=&quot;1-attachment-ambiguity&quot;&gt;1. Attachment ambiguity&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-08-10T06:43:01-05:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">Machine Translation, Sequence-to-Sequence and Attention</title><link href="https://judepark96.github.io/blog/nlp,/nmt,/seq2seq,/attention/2020/08/01/Machine-Translation,-Sequence-to-Sequence-and-Attention.html" rel="alternate" type="text/html" title="Machine Translation, Sequence-to-Sequence and Attention" /><published>2020-08-01T00:00:00-05:00</published><updated>2020-08-01T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/nlp,/nmt,/seq2seq,/attention/2020/08/01/Machine%20Translation,%20Sequence-to-Sequence%20and%20Attention</id><content type="html" xml:base="https://judepark96.github.io/blog/nlp,/nmt,/seq2seq,/attention/2020/08/01/Machine-Translation,-Sequence-to-Sequence-and-Attention.html">&lt;h2 id=&quot;1-introduction&quot;&gt;1. Introduction&lt;/h2&gt;
+
+&lt;p&gt;Seq2Seq 공부를 하는데 블로그들은 알아보기 &lt;strong&gt;(내 기준)&lt;/strong&gt; 힘들어서 CS224n 의 강의 슬라이드를 보면서 정리하였다. 근데 내 정리도 보니까 나 혼자밖에 못 알아볼 듯.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/JudePark96/blog/master/_posts/nmt/Page1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/JudePark96/blog/master/_posts/nmt/Page2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/JudePark96/blog/master/_posts/nmt/Page3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/JudePark96/blog/master/_posts/nmt/Page4.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/JudePark96/blog/master/_posts/nmt/Page5.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/JudePark96/blog/master/_posts/nmt/Page6.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-conclusion&quot;&gt;2. Conclusion&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Neural Machine Translation 은 Sequence-to-Sequence 형태의 Neural Network 로 접근함.&lt;/li&gt;
+  &lt;li&gt;Sequence-to-Sequence 는 Dialogue, Summarization 등의 다양한 Task 에 사용될 수 있음.&lt;/li&gt;
+  &lt;li&gt;Sequence-to-Sequence 는 Conditional Language Model 이라고 볼 수 있음.&lt;/li&gt;
+  &lt;li&gt;Decoding 에서 항상 optimal solution 이라고 보장할 수는 없지만 beam search 를 이용하는 것이 효율적임.&lt;/li&gt;
+  &lt;li&gt;Evaluation Metric 으로서 BLEU 를 사용하지만 불완전함.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://judepark96.github.io/blog/2020/03/22/BLEU-Score-Reasonable.html&quot;&gt;BLEU (Bilingual Evaluation Understudy) Score&lt;/a&gt; 를 참고.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Information Bottleneck 을 Attention Mecahnism 을 이용하여 해소함.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;3-reference&quot;&gt;3. Reference&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://web.stanford.edu/class/cs224n/slides/cs224n-2020-lecture08-nmt.pdf&quot;&gt;CS224n Lecture 8 Slide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">1. Introduction</summary></entry><entry><title type="html">Ambiguity In Sentence Structure</title><link href="https://judepark96.github.io/blog/nlp/2020/07/28/Ambiguity-In-Sentence-Structure.html" rel="alternate" type="text/html" title="Ambiguity In Sentence Structure" /><published>2020-07-28T00:00:00-05:00</published><updated>2020-07-28T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/nlp/2020/07/28/Ambiguity%20In%20Sentence%20Structure</id><content type="html" xml:base="https://judepark96.github.io/blog/nlp/2020/07/28/Ambiguity-In-Sentence-Structure.html">&lt;h3 id=&quot;1-attachment-ambiguity&quot;&gt;1. Attachment ambiguity&lt;/h3&gt;
 
 &lt;p&gt;A sentence has an attachment ambiguity if a particular constituent can be attached to the parse tree at more than one place.&lt;/p&gt;
 
@@ -308,105 +343,4 @@
 
 &lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;https://docs.python.org/ko/3/library/dataclasses.html&quot;&gt;Python Doc - dataclasses&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">1. Introduction</summary></entry><entry><title type="html">CS224W - Machine Learning w/ Graph (1)</title><link href="https://judepark96.github.io/blog/embedding/machine-learning/deep-learning/graph/2020/04/15/CS224W-Machine-Learning-with-Graph-(1).html" rel="alternate" type="text/html" title="CS224W - Machine Learning w/ Graph (1)" /><published>2020-04-15T00:00:00-05:00</published><updated>2020-04-15T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/embedding/machine-learning/deep-learning/graph/2020/04/15/CS224W-Machine%20-Learning-with-Graph-(1)</id><content type="html" xml:base="https://judepark96.github.io/blog/embedding/machine-learning/deep-learning/graph/2020/04/15/CS224W-Machine-Learning-with-Graph-(1).html">&lt;ul&gt;
-  &lt;li&gt;Why Networks?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Networks are a general language for describing complex systems of interacting entities.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Networks
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Society&lt;/strong&gt; :→ collection of 7+ billion individuals.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Communication systems&lt;/strong&gt; :→ it links electronic devices&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Interaction&lt;/strong&gt; :→ between genes/proteins regulate life&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Thoughts&lt;/strong&gt; :→ it is hidden in the connections between billions of neurons in our brain&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Type of Networks
-    &lt;ul&gt;
-      &lt;li&gt;Social networks&lt;/li&gt;
-      &lt;li&gt;Economic networks&lt;/li&gt;
-      &lt;li&gt;Communication networks&lt;/li&gt;
-      &lt;li&gt;Information networks&lt;/li&gt;
-      &lt;li&gt;Internet&lt;/li&gt;
-      &lt;li&gt;Networks of neurons&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Way to Analyze Networks
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Node classification&lt;/strong&gt; :→ predict the type/color of a given node&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Link prediction&lt;/strong&gt; :→ predict whether two nodes are linked&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Community detection&lt;/strong&gt; :→ identify densely linked clusters of nodes&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Network Similarity&lt;/strong&gt; :→ measure similarity of two nodes/networks&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Embedding Node
-    &lt;ul&gt;
-      &lt;li&gt;Let there is $Node u$, $Node v$.  When embedding, our goal is mapping nodes to $d$-dimensional embeddings such that nodes with similar network neighbourhoods are embedded close together.
-        &lt;ul&gt;
-          &lt;li&gt;&lt;strong&gt;My thinking&lt;/strong&gt; :→ As I think, in Natural Language Area, between each word of given sentence, they have a certain &lt;strong&gt;relationship&lt;/strong&gt; which they have to be represented by network representation.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Components of a Network
-    &lt;ul&gt;
-      &lt;li&gt;Object ($N$)
-        &lt;ul&gt;
-          &lt;li&gt;nodes, vertices&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Interactions ($E$)
-        &lt;ul&gt;
-          &lt;li&gt;links, edges&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;System ($G(N, E)$)
-        &lt;ul&gt;
-          &lt;li&gt;network, graph&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Directed VS Undirected Graphs
-    &lt;ul&gt;
-      &lt;li&gt;Directed
-        &lt;ul&gt;
-          &lt;li&gt;links :→ directed /w arcs&lt;/li&gt;
-          &lt;li&gt;examples :→ phone calls, following on Twitter.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Undirected
-        &lt;ul&gt;
-          &lt;li&gt;links :→ undirected which means it is symmetrical, reciprocal matrix.&lt;/li&gt;
-          &lt;li&gt;example :→ collaborations, friendship on Facebook&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Bipartite Graph
-    &lt;ul&gt;
-      &lt;li&gt;it is a graph whose nodes can be divided into two disjoint sets $U$ and $V$ such that every link connects a node in $U$ to one in $V$ which means $U$ and $V$ are &lt;strong&gt;independent sets.&lt;/strong&gt;&lt;/li&gt;
-      &lt;li&gt;Examples
-        &lt;ul&gt;
-          &lt;li&gt;Authors - Papers&lt;/li&gt;
-          &lt;li&gt;Actors - Movies&lt;/li&gt;
-          &lt;li&gt;Users - Moveis&lt;/li&gt;
-          &lt;li&gt;Recipes - Ingredients&lt;/li&gt;
-          &lt;li&gt;Folded Network
-            &lt;ul&gt;
-              &lt;li&gt;Author collaboration networks&lt;/li&gt;
-              &lt;li&gt;Movie co-rating networks&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Conclusion
-    &lt;ul&gt;
-      &lt;li&gt;As mentioned above, Networks are a general language for describing complex systems of interacting entities. No matter what you are in position it means domain, well-representation by graph will be powerful method to solve the given tasks.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Why Networks?</summary></entry></feed>
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">1. Introduction</summary></entry></feed>
