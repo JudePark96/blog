@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-08-10T06:43:01-05:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">Machine Translation, Sequence-to-Sequence and Attention</title><link href="https://judepark96.github.io/blog/nlp,/nmt,/seq2seq,/attention/2020/08/01/Machine-Translation,-Sequence-to-Sequence-and-Attention.html" rel="alternate" type="text/html" title="Machine Translation, Sequence-to-Sequence and Attention" /><published>2020-08-01T00:00:00-05:00</published><updated>2020-08-01T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/nlp,/nmt,/seq2seq,/attention/2020/08/01/Machine%20Translation,%20Sequence-to-Sequence%20and%20Attention</id><content type="html" xml:base="https://judepark96.github.io/blog/nlp,/nmt,/seq2seq,/attention/2020/08/01/Machine-Translation,-Sequence-to-Sequence-and-Attention.html">&lt;h2 id=&quot;1-introduction&quot;&gt;1. Introduction&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-08-12T08:39:57-05:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">What is Page Rank?</title><link href="https://judepark96.github.io/blog/graph-representation,/graph,/page-rank,/nlp/2020/08/12/PR.html" rel="alternate" type="text/html" title="What is Page Rank?" /><published>2020-08-12T00:00:00-05:00</published><updated>2020-08-12T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/graph-representation,/graph,/page-rank,/nlp/2020/08/12/PR</id><content type="html" xml:base="https://judepark96.github.io/blog/graph-representation,/graph,/page-rank,/nlp/2020/08/12/PR.html">&lt;p&gt;&lt;strong&gt;PageRank (PR) is an algorithm used to calculate the weight for web pages.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;2-pr-equation&quot;&gt;2. PR Equation&lt;/h1&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S(V_i) = (1-d) + d * \sum_{j\in In(v_i)}\frac{1}{|Out(v_j)|}S(V_j)&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Denotes
+    &lt;ul&gt;
+      &lt;li&gt;$S(V_i)$ ← the weight of webpage $i$&lt;/li&gt;
+      &lt;li&gt;$d$ ← damping factor, in case of no outgoing links&lt;/li&gt;
+      &lt;li&gt;$In(v_i)$ ← inbound links of $i$, which is a set.&lt;/li&gt;
+      &lt;li&gt;$Out(v_j)$ ← outgoing links of $j$, which is a set.&lt;/li&gt;
+      &lt;li&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;$&lt;/td&gt;
+              &lt;td&gt;Out(v_j)&lt;/td&gt;
+              &lt;td&gt;$ ← the number of outbound links&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;21-example&quot;&gt;2.1. Example&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5adb2c25-99f5-465b-8252-33aae377c355/Untitled.png&quot; alt=&quot;https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5adb2c25-99f5-465b-8252-33aae377c355/Untitled.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Weight of node $e$ is below as:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;In(v_e) = [a, b], j\in [a, b] \\
+S(V_e) = (1-d) + d*(S(V_a) + \frac{1}{2}S(V_b))&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;In the initialization, the weight of each node is $1$.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;3-pagerank-for-keyword-extraction-by-python&quot;&gt;3. PageRank for Keyword Extraction by Python&lt;/h1&gt;
+
+&lt;p&gt;You can see the code at &lt;a href=&quot;https://github.com/JudePark96/textrank-nlp&quot;&gt;textrank-nlp&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://towardsdatascience.com/textrank-for-keyword-extraction-by-python-c0bae21bcec0&quot;&gt;Understand TextRank for Keyword Extraction by Python&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">PageRank (PR) is an algorithm used to calculate the weight for web pages.</summary></entry><entry><title type="html">Machine Translation, Sequence-to-Sequence and Attention</title><link href="https://judepark96.github.io/blog/nlp,/nmt,/seq2seq,/attention/2020/08/01/Machine-Translation,-Sequence-to-Sequence-and-Attention.html" rel="alternate" type="text/html" title="Machine Translation, Sequence-to-Sequence and Attention" /><published>2020-08-01T00:00:00-05:00</published><updated>2020-08-01T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/nlp,/nmt,/seq2seq,/attention/2020/08/01/Machine%20Translation,%20Sequence-to-Sequence%20and%20Attention</id><content type="html" xml:base="https://judepark96.github.io/blog/nlp,/nmt,/seq2seq,/attention/2020/08/01/Machine-Translation,-Sequence-to-Sequence-and-Attention.html">&lt;h2 id=&quot;1-introduction&quot;&gt;1. Introduction&lt;/h2&gt;
 
 &lt;p&gt;Seq2Seq 공부를 하는데 블로그들은 알아보기 &lt;strong&gt;(내 기준)&lt;/strong&gt; 힘들어서 CS224n 의 강의 슬라이드를 보면서 정리하였다. 근데 내 정리도 보니까 나 혼자밖에 못 알아볼 듯.&lt;/p&gt;
 
@@ -279,68 +325,4 @@
 
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/JudePark96/blog/master/images/nvidia-smi.png&quot; alt=&quot;nvidia-smi&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;위의 명령어는 nvidia-smi 를 0.5초에 한 번씩 새로고침되도록 하는 명령어이다. 이를 통하여 실시간 모니터링이 가능하다.&lt;/p&gt;</content><author><name></name></author><summary type="html">1. Introduction</summary></entry><entry><title type="html">Python - DataClasses Package</title><link href="https://judepark96.github.io/blog/python/2020/04/21/Python-DataClasses-Package.html" rel="alternate" type="text/html" title="Python - DataClasses Package" /><published>2020-04-21T00:00:00-05:00</published><updated>2020-04-21T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/python/2020/04/21/Python-DataClasses-Package</id><content type="html" xml:base="https://judepark96.github.io/blog/python/2020/04/21/Python-DataClasses-Package.html">&lt;h2 id=&quot;1-introduction&quot;&gt;1. Introduction&lt;/h2&gt;
-
-&lt;p&gt;Java 로 개발하던 때에는 &lt;strong&gt;Lombok&lt;/strong&gt; 이라는 Dependency 를 통해 Constructor, Getter, Setter 등을 쉽게 Wrapping 할 수 있었다. 이는 객체 코드를 작성할 때 많은 양의 코드를 줄여주었다.&lt;/p&gt;
-
-&lt;p&gt;예를 들어, 객체를 아래와 같이 작성할 수 있었다.&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;lombok.Data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;nd&quot;&gt;@Data&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Student&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;이렇게 하면 기본적인 Constructor, Getter, Setter 등을 &lt;em&gt;@Data Annotation&lt;/em&gt; 을 통해서 쉽게 할 수 있었다. 이처럼 Java 로 개발할 때는 이런 도구들이 개발 효율성을 높여주었다.&lt;/p&gt;
-
-&lt;p&gt;지금은 소프트웨어 엔지니어링을 하지 않고 신경망 설계 및 실험을 진행하고 있지만 이 경우에도 당연히 많은 코드가 쓰이며 그렇기 때문에 어떻게 코드를 효율적으로 빠르게 작성할 수 있는가에 대하여 고민하는 것은 당연한 것 같다.&lt;/p&gt;
-
-&lt;p&gt;기존의 Python3 에서 객체 코드를 작성할 때는 아래와 같이 작성하였다.&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;torch.nn&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nn&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Net&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;nb&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;q&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;q&lt;/span&gt;
-    &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;
-    &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;위와 같은 코드를 작성하면서 시간이 많이 걸렸다고 생각되는 구간은 Constructor 이다. Property 를 일일히 Assgin 해주고 있었기 때문에 손가락을 많이 움직여야했다.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Java 에도 있는데 Python 에도 혹시 편하게 해주는 것은 없을까? 라는 생각은 계속 해왔었다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;이러한 문제를 없애주기 해소하기 위하여 Python 3.7 부터 추가된 &lt;a href=&quot;https://docs.python.org/ko/3/library/dataclasses.html&quot;&gt;dataclasses&lt;/a&gt; 라는 Pacakge 를 사용해보도록 하자.&lt;/p&gt;
-
-&lt;p&gt;이 글에서는 간단한 사용 방법만 소개하도록 한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;2-how-to-use&quot;&gt;2. How to use?&lt;/h2&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;dataclasses&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dataclass&lt;/span&gt;
-
-&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dataclass&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Net&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Java 와 비슷하게 &lt;em&gt;@dataclass&lt;/em&gt; Decorator 로 객체를 Wrapping 해준다.&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Net&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Net&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[])&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;결과는 위와 같이 나오며 성공적으로 Constructor 가 설정되었음을 알 수 있었다.&lt;/p&gt;
-
-&lt;h2 id=&quot;3-reference&quot;&gt;3. Reference&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.python.org/ko/3/library/dataclasses.html&quot;&gt;Python Doc - dataclasses&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">1. Introduction</summary></entry></feed>
+&lt;p&gt;위의 명령어는 nvidia-smi 를 0.5초에 한 번씩 새로고침되도록 하는 명령어이다. 이를 통하여 실시간 모니터링이 가능하다.&lt;/p&gt;</content><author><name></name></author><summary type="html">1. Introduction</summary></entry></feed>
