@@ -23,7 +23,7 @@ var documents = [{
     "id": 4,
     "url": "https://JudePark96.github.io/graph-representation,/graph,/page-rank,/nlp/2020/08/12/PR.html",
     "title": "What is Page Rank?",
-    "body": "2020/08/12 - 1. IntroductionPageRank (PR) is an algorithm used to calculate the weight for web pages. 2. PR Equation Denotes     $S(V_i)$ ← the weight of webpage $i$   $d$ ← damping factor, in case of no outgoing links   $In(v_i)$ ← inbound links of $i$, which is a set.    $Out(v_j)$ ← outgoing links of $j$, which is a set.                          $       Out(v_j)       $ ← the number of outbound links                     2. 1. Example Weight of node $e$ is below as: In the initialization, the weight of each node is $1$. 3. PageRank for Keyword Extraction by PythonYou can see the code at textrank-nlp Reference Understand TextRank for Keyword Extraction by Python"
+    "body": "2020/08/12 - 1. IntroductionPageRank (PR) is an algorithm used to calculate the weight for web pages. 2. PR Equation Denotes     $S(V_i)$ ← the weight of webpage $i$   $d$ ← damping factor, in case of no outgoing links   $In(v_i)$ ← inbound links of $i$, which is a set.    $Out(v_j)$ ← outgoing links of $j$, which is a set.    $\vert Out(v_j) \vert$ ← the number of outbound links   2. 1. Example Weight of node $e$ is below as: In the initialization, the weight of each node is $1$. 3. PageRank for Keyword Extraction by PythonYou can see the code at textrank-nlp Reference Understand TextRank for Keyword Extraction by Python"
     }, {
     "id": 5,
     "url": "https://JudePark96.github.io/nlp,/nmt,/seq2seq,/attention/2020/08/01/Machine-Translation,-Sequence-to-Sequence-and-Attention.html",
