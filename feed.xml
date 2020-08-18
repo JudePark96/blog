@@ -1,4 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-08-13T11:43:17-05:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">What is Page Rank?</title><link href="https://judepark96.github.io/blog/graph-representation,/graph,/page-rank,/nlp/2020/08/12/PR.html" rel="alternate" type="text/html" title="What is Page Rank?" /><published>2020-08-12T00:00:00-05:00</published><updated>2020-08-12T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/graph-representation,/graph,/page-rank,/nlp/2020/08/12/PR</id><content type="html" xml:base="https://judepark96.github.io/blog/graph-representation,/graph,/page-rank,/nlp/2020/08/12/PR.html">&lt;h1 id=&quot;1-introduction&quot;&gt;1. Introduction&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-08-18T03:39:49-05:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">Adding Special Tokens To HuggingFace BertTokenizer</title><link href="https://judepark96.github.io/blog/nlp/2020/08/18/Adding-Special-Tokens-To-HuggingFace-BertTokenizer.html" rel="alternate" type="text/html" title="Adding Special Tokens To HuggingFace BertTokenizer" /><published>2020-08-18T00:00:00-05:00</published><updated>2020-08-18T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/nlp/2020/08/18/Adding%20Special%20Tokens%20To%20HuggingFace%20BertTokenizer</id><content type="html" xml:base="https://judepark96.github.io/blog/nlp/2020/08/18/Adding-Special-Tokens-To-HuggingFace-BertTokenizer.html">&lt;h2 id=&quot;1-introduction&quot;&gt;1. Introduction&lt;/h2&gt;
+
+&lt;p&gt;Sometimes, except pre-defined special tokens, such as &lt;strong&gt;[SEP], [CLS]&lt;/strong&gt;, we need to add special tokens to BertTokenizer. &lt;strong&gt;In this post, I Introduce the way to add special tokens to BertTokenizer.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-method&quot;&gt;2. Method&lt;/h2&gt;
+
+&lt;p&gt;First, we need to define speical token what we will add. In this post, adding special token will be &lt;strong&gt;‘[eou]’&lt;/strong&gt; which means &lt;strong&gt;End of Utterances&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;eou_token&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'[eou]'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now, add eou_token to BertTokenizer.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;tokenizer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BertTokenizer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;from_pretrained&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;special_tokens_dict&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'additional_special_tokens'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decode_sep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]}&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;orig_num_tokens&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tokenizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;num_added_tokens&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tokenizer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_special_tokens&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;special_tokens_dict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;total_num_tokens&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;orig_num_tokens&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_added_tokens&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We got the tokenizer we added the special tokens, and total number of vocab. After this stage, we need to change the embedding size of BertModel.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;bert&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BertModel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;from_pretrained&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;bert&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resize_token_embeddings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;total_num_tokens&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Done!&lt;/p&gt;</content><author><name></name></author><summary type="html">1. Introduction</summary></entry><entry><title type="html">Graph Convolutional Networks for Text Classification</title><link href="https://judepark96.github.io/blog/graph-representation,/graph,/page-rank,/nlp,/graph-neural-network/2020/08/14/Graph-Convolutional-Networks-for-Text-Classification.html" rel="alternate" type="text/html" title="Graph Convolutional Networks for Text Classification" /><published>2020-08-14T00:00:00-05:00</published><updated>2020-08-14T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/graph-representation,/graph,/page-rank,/nlp,/graph-neural-network/2020/08/14/Graph%20Convolutional%20Networks%20for%20Text%20Classification</id><content type="html" xml:base="https://judepark96.github.io/blog/graph-representation,/graph,/page-rank,/nlp,/graph-neural-network/2020/08/14/Graph-Convolutional-Networks-for-Text-Classification.html">&lt;h1 id=&quot;1-초록은-뭐라고-말하고-있어-&quot;&gt;1. 초록은 뭐라고 말하고 있어 ?&lt;/h1&gt;
+
+&lt;p&gt;기존의 텍스트 분류 과업을 하기 위한 몇 몇 연구에서는 convolutional neural networks 를 사용하였다. 본 논문에서는 convolutional neural networks 가 아닌 graph convolutional networks 를 텍스트 분류 과업에 적용하는 것을 제안한다.&lt;/p&gt;
+
+&lt;h1 id=&quot;2-주요-기여점은-뭐야-&quot;&gt;2. 주요 기여점은 뭐야 ?&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We propose a novel graph neural network method for text classification. To the best of our knowledge, this is the first study to model a whole corpus as a heterogeneous graph and learn word and document embeddings with graph neural networks jointly.&lt;/li&gt;
+  &lt;li&gt;Results on several benchmark datasets demonstrate that our method outperforms state-of-the-art text classification methods, without using pre-trained word embeddings or external knowledge. Our method also learn predictive word and document embeddings automatically.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;3-이전의-접근과는-뭐가-다른-것-같아-&quot;&gt;3. 이전의 접근과는 뭐가 다른 것 같아 ?&lt;/h1&gt;
+
+&lt;p&gt;기존의 텍스트 분류 과업을 위한 주요 딥러닝 모델로는 CNN, LSTM 등이 있다. 이러한 모델들은 local consecutive word sequences 의 semantic, synthetic information 을 잘 caputre 할 수 있지만 global word co-occurence 를 무시할 수 있는 가능성이 있다.&lt;/p&gt;
+
+&lt;p&gt;본 논문에서는 이전의 접근과는 다르게 graph representation 을 학습하여 classification task 를 수행한다는 점이다. 이를 수행하기 위하여 corpus -&amp;gt; graph 의 방법으로 PMI, TF-IDF 를 소개하였고, PMI 의 경우가 성능이 더 좋음을 알려준다. 또한 two-layer GCN 이 one-layer GCN 보다 성능이 좋았지만 더 많은 layer 는 성능에 큰 의미가 없음을 나타내었다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;기존의 CNN, LSTM 을 GNN 계열의 신경망으로 대체한다는 것 자체가 geometric 의 관점으로 보았을 때 큰 차이가 있다.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;4-어떤-걸-제안할-수-있을까-&quot;&gt;4. 어떤 걸 제안할 수 있을까 ?&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;encoding method (corpus -&amp;gt; graph)&lt;/li&gt;
+  &lt;li&gt;residual connection&lt;/li&gt;
+  &lt;li&gt;한국어 데이터 집합에 적용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;5-reference&quot;&gt;5. Reference&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/1809.05679&quot;&gt;Graph Convolutional Networks for Text Classification&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">1. 초록은 뭐라고 말하고 있어 ?</summary></entry><entry><title type="html">What is Page Rank?</title><link href="https://judepark96.github.io/blog/graph-representation,/graph,/page-rank,/nlp/2020/08/12/PR.html" rel="alternate" type="text/html" title="What is Page Rank?" /><published>2020-08-12T00:00:00-05:00</published><updated>2020-08-12T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/graph-representation,/graph,/page-rank,/nlp/2020/08/12/PR</id><content type="html" xml:base="https://judepark96.github.io/blog/graph-representation,/graph,/page-rank,/nlp/2020/08/12/PR.html">&lt;h1 id=&quot;1-introduction&quot;&gt;1. Introduction&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;PageRank (PR) is an algorithm used to calculate the weight for web pages.&lt;/strong&gt;&lt;/p&gt;
 
@@ -255,66 +313,4 @@ S(V_e) = (1-d) + d*(S(V_a) + \frac{1}{2}S(V_b))&lt;/script&gt;
 
 &lt;h2 id=&quot;출처&quot;&gt;출처&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42840&quot;&gt;프로그래머스 - 모의고사&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">문제 설명</summary></entry><entry><title type="html">Supervised Learning, Linear Regression</title><link href="https://judepark96.github.io/blog/machine-learning/supervised-learning/2020/05/03/Supervised-Learning-1.html" rel="alternate" type="text/html" title="Supervised Learning, Linear Regression" /><published>2020-05-03T00:00:00-05:00</published><updated>2020-05-03T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/machine-learning/supervised-learning/2020/05/03/Supervised%20Learning-1</id><content type="html" xml:base="https://judepark96.github.io/blog/machine-learning/supervised-learning/2020/05/03/Supervised-Learning-1.html">&lt;h3 id=&quot;1-supervised-learning&quot;&gt;1. Supervised Learning&lt;/h3&gt;
-
-&lt;p&gt;Supervised Learning 이란 주어진 $feature X$ 를 이용하여 $target Y$ 를 예측하는 것이다. $(x_i, y_i)$ 는 하나의 training example 이며 ${(x_i, y_i);i = 1, …, n}$ 를 training set 으로 표현할 수 있다.&lt;/p&gt;
-
-&lt;p&gt;위의 Notation 을 바탕으로 정리하자면 주어진 training set 을 바탕으로 $target Y$ 를 예측하는 $h(x)$ 를 학습하는 것이다. 이 $h(x)$ 를 Hypothesis 라고  부른다.&lt;/p&gt;
-
-&lt;p&gt;$target Y$ 가 continuous 하다면 regression problem 이고, $target Y$ 가 discrete 하다면 classification problem 으로 부를 수 있다.&lt;/p&gt;
-
-&lt;h3 id=&quot;2-linear-regression&quot;&gt;2. Linear Regression&lt;/h3&gt;
-
-&lt;p&gt;$X$ 가 2개의 feature 를 가지고 있다고 하자. 그렇다면 $h(x)$ 는 아래와 같이 될 수 있다.&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;h(x) = \theta_0 + \theta_1x_1 + \theta_2x_2&lt;/script&gt;
-
-&lt;p&gt;위의 수식은 linear function 을 통하여 y 로 approximate 하는 것이다. 여기서 $\theta$ 는 parameters 이며 weights 로도 불린다. 이 $\theta$ 는 $x$ 를 $y$ 로 vector space 에서 mapping 하는 것을 의미하며 그렇기 때문에 $\theta$ 가 잘 학습되는 것이 중요하다.&lt;/p&gt;
-
-&lt;p&gt;어떻게 좋은 $\theta$ 를 얻을 수 있을까? Linear Regression 을 하는 목적은 주어진 $feature X$ 를 이용하여 $target Y$ 에 근사시키는 것이다. 이를 위해 &lt;strong&gt;Cost Function&lt;/strong&gt; 을 사용한다. 수식은 아래와 같다.&lt;/p&gt;
-
-&lt;p&gt;$J(\theta) = \frac{1}{2}\sum_{i=1}^n(h_{\theta}(x^{i}) - y^i)^2 $&lt;/p&gt;
-
-&lt;p&gt;Ordinary Least Squares 를 의미하며 수식을 직관적으로 바라보면 $h(x^i)$ 와 $y^i$ 간의 잔차를 제곱한 것이다. 이는 $y$ 와 $h_{\theta}(x)$ 간의 error 를 의미하며 좋은 $\theta$ 를 얻기 위해서 error 를 줄여야할 것이다.&lt;/p&gt;
-
-&lt;p&gt;우리는 $J(\theta)$ 를 최소화(minimize)하는 $\theta$ 를 찾고 싶다. 그렇기 때문에 &lt;strong&gt;Gradient Descent&lt;/strong&gt; 를 사용한다.&lt;/p&gt;
-
-&lt;p&gt;$\theta_j := \theta_j - \alpha \frac{\partial}{\partial\theta_j}J(\theta)$&lt;/p&gt;
-
-&lt;p&gt;$\alpha$ 는 learning rate 를 의미한다. 매 step 마다 $J(\theta)$ 를 최소화할 것이며 결국 수렴할 것이다. right hand side 의 partial derivative term 을 풀어보면 아래와 같다.&lt;/p&gt;
-
-&lt;p&gt;$\frac{\partial}{\partial\theta_j}J(\theta) = (h_\theta(x) - y)x_j$&lt;/p&gt;
-
-&lt;p&gt;그렇기 때문에 update rule 은 아래와 같다.&lt;/p&gt;
-
-&lt;p&gt;$\theta_j := \theta_j + \alpha(y^i-h_{\theta}(x^i)x^i_j))$&lt;/p&gt;
-
-&lt;p&gt;위의 rule 을 &lt;strong&gt;least mean squares update rule&lt;/strong&gt; 이라고 불린다.&lt;/p&gt;
-
-&lt;h3 id=&quot;3-conclusion&quot;&gt;3. Conclusion&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Supervised Learning 은 $h(x) :\rightarrow Y$, 즉 $y$ 로 근사시키는 $h(x)$ 를 만드는 것이다.&lt;/li&gt;
-  &lt;li&gt;$J(\theta)$ 를 minimize 하기 위하여 Gradient Descent 를 사용한다.&lt;/li&gt;
-  &lt;li&gt;Linear Regression 에서 update rule 로서 least mean squares update rule 을 사용한다.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">1. Supervised Learning</summary></entry><entry><title type="html">Real-Time Checking NVIDIA-SMI</title><link href="https://judepark96.github.io/blog/deep-learning/2020/04/30/Real-Time-Checking-NVIDIA-SMI.html" rel="alternate" type="text/html" title="Real-Time Checking NVIDIA-SMI" /><published>2020-04-30T00:00:00-05:00</published><updated>2020-04-30T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/deep-learning/2020/04/30/Real-Time-Checking-NVIDIA-SMI</id><content type="html" xml:base="https://judepark96.github.io/blog/deep-learning/2020/04/30/Real-Time-Checking-NVIDIA-SMI.html">&lt;h2 id=&quot;1-introduction&quot;&gt;1. Introduction&lt;/h2&gt;
-
-&lt;p&gt;딥러닝 신경망을 학습하다보면 GPU 상태를 확인해볼 필요가 있다. 그 명령어가 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nvidia-smi&lt;/code&gt; 인데 이거를 매번 타이핑하는 것은 굉장히 비효율적인 행동이다. 리눅스 명령어를 통하여 실시간 모니터링이 가능하도록 하자.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;cuda 관련 환경 구축이 전부 되어있음을 가정한다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;2-monitoring&quot;&gt;2. Monitoring&lt;/h2&gt;
-
-&lt;p&gt;아래의 명령어를 터미널에서 타이핑한다.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;watch -d -n 0.5 nvidia-smi&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;그러면 아래와 같이 화면이 나온다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/JudePark96/blog/master/images/nvidia-smi.png&quot; alt=&quot;nvidia-smi&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;위의 명령어는 nvidia-smi 를 0.5초에 한 번씩 새로고침되도록 하는 명령어이다. 이를 통하여 실시간 모니터링이 가능하다.&lt;/p&gt;</content><author><name></name></author><summary type="html">1. Introduction</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42840&quot;&gt;프로그래머스 - 모의고사&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">문제 설명</summary></entry></feed>
