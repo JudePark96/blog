@@ -86,7 +86,7 @@ label -> <sos> autonomous exploration __;__ mapping of unknown environments <eos
 
 ## 3. 여기서 나의 실수는?
 
-많은 예제들, 그리고 나의 경험에서 나는 항상 데이터 전처리 과정에서 텐서의 형상을 $[\text{batch_size} \ntimes \text{sequence_length}]$ 의 형태를 띄도록 하였다. 하지만 TorchText 에서는 $[\text{sequence_length} \ntimes \text{batch_size}]$ 의 형태 또한 지원했던 것이다. 그렇기 때문에 Index -> Text 로 변환하였을 때 제대로 표현이 안되었던 것이다. 홀리쉿...
+많은 예제들, 그리고 나의 경험에서 나는 항상 데이터 전처리 과정에서 텐서의 형상을 $\text{batch_size} \ntimes \text{sequence_length}$ 의 형태를 띄도록 하였다. 하지만 TorchText 에서는 $\text{sequence_length} \ntimes \text{batch_size}$ 의 형태 또한 지원했던 것이다. 그렇기 때문에 Index -> Text 로 변환하였을 때 제대로 표현이 안되었던 것이다. 홀리쉿...
 
 ## 4. 결론
 
