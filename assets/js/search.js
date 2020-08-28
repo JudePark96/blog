@@ -8,7 +8,7 @@ var documents = [{
     "id": 1,
     "url": "https://JudePark96.github.io/about/",
     "title": "About Me",
-    "body": "Eunhwan Park Seoul, Republic of Korea. judepark@kookmin. ac. kr Hi, I am student in the Department of Computer Science at Kookmin University. If you want to know about me in details, please see my curriculum vitae "
+    "body": "Eunhwan Park Seoul, Republic of Korea. judepark@kookmin. ac. kr Hi, I am student in the Department of Computer Science at Kookmin University. If you want to know about me in details, please see my curriculum vitae By the way, I love travel. Do you wanna see my travel log? go to Travel Log! "
     }, {
     "id": 2,
     "url": "https://JudePark96.github.io/categories/",
