@@ -18,7 +18,7 @@ var documents = [{
     "id": 3,
     "url": "https://JudePark96.github.io/travel_log/",
     "title": "Travel Log",
-    "body": "&lt;!DOCTYPE html&gt;    A Study of Keyphrases Extraction &amp; Generation        class: middle, inverselayout: true---## Travel Log### Jude Park### judepark@kookmin. ac. kr##### 20. 09. 04.            "
+    "body": "&lt;!DOCTYPE html&gt;    A Study of Keyphrases Extraction &amp; Generation        class: middle, inverselayout: true---## Travel Log### Jude Park### judepark@kookmin. ac. kr##### 20. 09. 04. ---Sample Text           "
     }, {
     "id": 4,
     "url": "https://JudePark96.github.io/images/copied_from_nb/",
