@@ -3,7 +3,7 @@ layout: page
 title: About Me
 permalink: /about/
 ---
-<img src="https://avatars.githubusercontent.com/JudePark96" width="20%" height="20%" style="border-radius:50%"/><br/>
+<img src="https://avatars.githubusercontent.com/JudePark96" width="25%" height="25%" style="border-radius:50%"/><br/>
 Eunhwan Park <br >
 Seoul, Republic of Korea. <br >
 judepark@kookmin.ac.kr
