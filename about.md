@@ -14,6 +14,15 @@ If you want to know about me in details, please see my [curriculum vitae](https:
 By the way, I love travel. Do you wanna see my travel log? go to [Travel Log](https://judepark96.github.io/blog/travel_log/#1)!
 
 ---
+
 **09. 08. 20.**
 
-Recently, I've made the crawling system to collect data using Selenium and Python 3. Watch out [Paper-Crawling](https://github.com/JudePark96/paper-crawling)!
+I made the crawling system to collect data using Selenium and Python 3. Watch out [Paper-Crawling](https://github.com/JudePark96/paper-crawling)!
+
+---
+
+**11. 06. 20.**
+
+I got accepted to Division of Computer Science and Engineering at Jeonbuk National University (JBNU) as a master course student!
+
+My main research area will be Natural Language Processing! It will be very excited! Thank you for huge support from my all friends!
