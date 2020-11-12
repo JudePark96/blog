@@ -8,7 +8,7 @@ var documents = [{
     "id": 1,
     "url": "https://JudePark96.github.io/about/",
     "title": "About Me",
-    "body": "Eunhwan Park Seoul, Republic of Korea. judepark@kookmin. ac. kr Hi, I am student in the Department of Computer Science at Kookmin University. If you want to know about me in details, please see my curriculum vitae By the way, I love travel. Do you wanna see my travel log? go to Travel Log! 09. 08. 20. I made the crawling system to collect data using Selenium and Python 3. Watch out Paper-Crawling! 11. 06. 20. I got accepted to Division of Computer Science and Engineering at Jeonbuk National University (JBNU) as a master course student! My main research area will be Natural Language Processing! It will be very excited! Thank you for huge support from my all friends! "
+    "body": "Eunhwan Park Seoul, Republic of Korea. judepark@kookmin. ac. kr Hi, I am student in the Department of Computer Science at Kookmin University. If you want to know about me in details, please see my curriculum vitae By the way, I love travel. Do you wanna see my travel log? go to Travel Log! 09. 08. 20. I made the crawling system to collect data using Selenium and Python 3. Watch out Paper-Crawling! 11. 06. 20. I got accepted to Division of Computer Science and Engineering at Jeonbuk National University (JBNU) as a master course student! My main research area will be Natural Language Processing! It will be very excited! Thank you for huge supports from my all friends! "
     }, {
     "id": 2,
     "url": "https://JudePark96.github.io/categories/",
