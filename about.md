@@ -23,6 +23,6 @@ I made the crawling system to collect data using Selenium and Python 3. Watch ou
 
 **11. 06. 20.**
 
-I got accepted to Division of Computer Science and Engineering at Jeonbuk National University (JBNU) as a master course student!
+I officially got accepted to Division of Computer Science and Engineering at Jeonbuk National University (JBNU) as a master course student!
 
 My main research area will be **Natural Language Processing**! It will be very excited! Thank you for huge supports from my all friends!
