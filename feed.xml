@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-11-22T08:29:34-06:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">Linear Independence and Dependence</title><link href="https://judepark96.github.io/blog/linear/algebra/2020/11/22/Linear-Independence-and-Dependence.html" rel="alternate" type="text/html" title="Linear Independence and Dependence" /><published>2020-11-22T00:00:00-06:00</published><updated>2020-11-22T00:00:00-06:00</updated><id>https://judepark96.github.io/blog/linear/algebra/2020/11/22/Linear%20Independence%20and%20Dependence</id><content type="html" xml:base="https://judepark96.github.io/blog/linear/algebra/2020/11/22/Linear-Independence-and-Dependence.html">&lt;p&gt;If $S = {v_1, v_2, …, v_r}$ is a nonempty set of vectors in a vector space $V$, then the vector equation:
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-11-26T05:43:11-06:00</updated><id>https://judepark96.github.io/blog/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">Linear Independence and Dependence</title><link href="https://judepark96.github.io/blog/linear/algebra/2020/11/22/Linear-Independence-and-Dependence.html" rel="alternate" type="text/html" title="Linear Independence and Dependence" /><published>2020-11-22T00:00:00-06:00</published><updated>2020-11-22T00:00:00-06:00</updated><id>https://judepark96.github.io/blog/linear/algebra/2020/11/22/Linear%20Independence%20and%20Dependence</id><content type="html" xml:base="https://judepark96.github.io/blog/linear/algebra/2020/11/22/Linear-Independence-and-Dependence.html">&lt;p&gt;If $S = {v_1, v_2, …, v_r}$ is a nonempty set of vectors in a vector space $V$, then the vector equation:
 &lt;script type=&quot;math/tex&quot;&gt;k_1v_1 + k_2v_2+ ... + k_rv_r = 0&lt;/script&gt;
 has at least one solution, namely,
 &lt;script type=&quot;math/tex&quot;&gt;k_1=0, k_2=0, ..., k_r =0&lt;/script&gt;
@@ -20,25 +20,7 @@ git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot
 git push origin master
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;이러면 해결이 되더라…!&lt;/p&gt;</content><author><name></name></author><summary type="html">1. 어떤 문제가 발생했어?</summary></entry><entry><title type="html">대학원에 합격했어!</title><link href="https://judepark96.github.io/blog/%EB%8C%80%ED%95%99%EC%9B%90/2020/09/15/new-beginning.html" rel="alternate" type="text/html" title="대학원에 합격했어!" /><published>2020-09-15T00:00:00-05:00</published><updated>2020-09-15T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/%EB%8C%80%ED%95%99%EC%9B%90/2020/09/15/new-beginning</id><content type="html" xml:base="https://judepark96.github.io/blog/%EB%8C%80%ED%95%99%EC%9B%90/2020/09/15/new-beginning.html">&lt;p&gt;2015년에 국민대학교 국민프런티어 전형을 통하여 합격한 것이 엊그제인데 이제 학부 졸업을 앞두고 대학원 합격을 하였다.
-국민대학교에 합격하던 당시에는 너무 기뻐서 좁고 자그마한 외진 나의 자취방에서 혼자 무야호~ 를 외쳤었다.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;무야호는 그냥 해외축구 드립.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;이번에 대학원에 합격할 때는 기뻤지만 2015년의 느낌처럼 그러진 않고 그냥 담담히 받아들였다. 또 다른 공부의 시작이라고 생각하니 기쁘면서도 그냥 담담해졌다.
-교수님의 추천을 받아 합격을 하고, 연구도 하고 참으로 운이 좋은 듯 하다.&lt;/p&gt;
-
-&lt;p&gt;이제 작성하던 논문의 최종본을 LaTex 로 편집하고, 새로운 연구 주제에 대하여 열심히 공부하고 코딩할 일이 남았다.
-연구 주제를 정한다는게 참 애매모호하다. 뭐가 재밌을까? 하면서 컴퓨터 비전도 잠깐 해봤지만 그 때도 그렇고 지금도 컴퓨터 비전의 어떠한 과업도 재미가 없었다.
-컴퓨터 비전 또한 쓰일 영역이 되게 많은데 나에게 있어서는 별로 매력적이지 못했다. 그에 반해 지금 하는 건 재미있고.&lt;/p&gt;
-
-&lt;p&gt;연구 주제를 정한다는게 애매모호하다는 이유는 우선 자연어처리 영역의 왠만한 과업들이 아직까진 다 재밌다. 그래서 새로운 연구라는게 설렌다고나 할까.&lt;/p&gt;
-
-&lt;p&gt;결론은 대학원을 합격했어. 나는 대학원에 가. 새로운 공부의 시작이다. 학부 빨리 끝났으면.&lt;/p&gt;
-
-&lt;p&gt;그나저나 새로 만든 메이플 캐릭터 닉네임을 학부졸업언제로 했는데 다음 캐릭터 닉네임은 석사졸업언제로 해야겠다.&lt;/p&gt;</content><author><name></name></author><summary type="html">2015년에 국민대학교 국민프런티어 전형을 통하여 합격한 것이 엊그제인데 이제 학부 졸업을 앞두고 대학원 합격을 하였다. 국민대학교에 합격하던 당시에는 너무 기뻐서 좁고 자그마한 외진 나의 자취방에서 혼자 무야호~ 를 외쳤었다.</summary></entry><entry><title type="html">TorchText Field 의 batch_first 는 항상 True 로 설정하자</title><link href="https://judepark96.github.io/blog/nlp,/torch,/torchtext/2020/08/25/torchtext-field-batch-first.html" rel="alternate" type="text/html" title="TorchText Field 의 batch_first 는 항상 True 로 설정하자" /><published>2020-08-25T00:00:00-05:00</published><updated>2020-08-25T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/nlp,/torch,/torchtext/2020/08/25/torchtext-field-batch-first</id><content type="html" xml:base="https://judepark96.github.io/blog/nlp,/torch,/torchtext/2020/08/25/torchtext-field-batch-first.html">&lt;h2 id=&quot;1-소개&quot;&gt;1. 소개&lt;/h2&gt;
+&lt;p&gt;이러면 해결이 되더라…!&lt;/p&gt;</content><author><name></name></author><summary type="html">1. 어떤 문제가 발생했어?</summary></entry><entry><title type="html">TorchText Field 의 batch_first 는 항상 True 로 설정하자</title><link href="https://judepark96.github.io/blog/nlp,/torch,/torchtext/2020/08/25/torchtext-field-batch-first.html" rel="alternate" type="text/html" title="TorchText Field 의 batch_first 는 항상 True 로 설정하자" /><published>2020-08-25T00:00:00-05:00</published><updated>2020-08-25T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/nlp,/torch,/torchtext/2020/08/25/torchtext-field-batch-first</id><content type="html" xml:base="https://judepark96.github.io/blog/nlp,/torch,/torchtext/2020/08/25/torchtext-field-batch-first.html">&lt;h2 id=&quot;1-소개&quot;&gt;1. 소개&lt;/h2&gt;
 
 &lt;p&gt;우선 평소에 따로 vocabulary, tokenizer 등의 데이터 전처리 과정에서 필요한 요소들을 직접 코딩해왔었다. 하지만, 이번에는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TorchText&lt;/code&gt; 를 한 번 사용해보고자 했다. 그 과정에서 나의 어이없는 실수를 소개한다.&lt;/p&gt;
 
@@ -288,4 +270,43 @@ S(V_e) = (1-d) + d*(S(V_a) + \frac{1}{2}S(V_b))&lt;/script&gt;
       &lt;li&gt;다양한 연구 주제 생각&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">연구 주제 Keyphrase 추출/생성 Named Entity Recognition 공부 목록 Stanford NLP chap 2-3, 8, 12-15 관련 논문 읽기 ICLR 2020 최근 논문 읽기 해야할 일 연구 주제 실험 다양한 연구 주제 생각</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">연구 주제 Keyphrase 추출/생성 Named Entity Recognition 공부 목록 Stanford NLP chap 2-3, 8, 12-15 관련 논문 읽기 ICLR 2020 최근 논문 읽기 해야할 일 연구 주제 실험 다양한 연구 주제 생각</summary></entry><entry><title type="html">Bias-Variance Trade off</title><link href="https://judepark96.github.io/blog/machine-learning/2020/06/22/Bias-Variance-tradeoff.html" rel="alternate" type="text/html" title="Bias-Variance Trade off" /><published>2020-06-22T00:00:00-05:00</published><updated>2020-06-22T00:00:00-05:00</updated><id>https://judepark96.github.io/blog/machine-learning/2020/06/22/Bias-Variance-tradeoff</id><content type="html" xml:base="https://judepark96.github.io/blog/machine-learning/2020/06/22/Bias-Variance-tradeoff.html">&lt;p&gt;Supervised Learning 을 할 때, 설계한 모델의 Predicted Value 와 실제 Label Value 간의 차이를 Error 라고 한다.&lt;/p&gt;
+
+&lt;p&gt;이 Error 는 Variance, Bias, Noise 로 이루어져 있는데 $Error(x) = Var(x) + Bias(x) + Noise(x)$ 이다.&lt;/p&gt;
+
+&lt;p&gt;Error 가 어떻게 위의 언급한 것과 같이 되는지 알아본다.&lt;/p&gt;
+
+&lt;h1 id=&quot;decomposition&quot;&gt;Decomposition&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;$y = f(x) + \epsilon$
+    &lt;ul&gt;
+      &lt;li&gt;$y$ 는 $\text{noise } \epsilon$ 을 포함한 함수이다. 이 때, noise 는 평균이 0, 표준편차는 $\sigma^2$ 인 가우시안 분포를 따른다고 가정한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;$g(x) = wx + b$
+    &lt;ul&gt;
+      &lt;li&gt;학습할 hypothesis function 이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;$Error = E[(y-g(x))^2]$
+    &lt;ul&gt;
+      &lt;li&gt;hypothesis function 을 바탕으로 한 error function 이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;$y’=f(x’)+\epsilon$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;E[(y'-g(x'))^2] \\
+= E[g(x')^2 - 2g(x')y' + y'^2] \\
+= Var(g(x')) + E[g(x')]^2 - 2E[g(x')]f(x') + Var(y')+f(x')^2 \\
+= Var(g(x')) + (E[g(x')]-f(x'))^2 + Var(\epsilon) \\
+= Var(g(x')) + (E[g(x')]-f(x'))^2 + \sigma^2&lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Low Bias-High Variance 인 상태일 수록 Overfitting 이고, High Bias-Low Variance 인 상태일 수록 Underfitting 이라고 할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;우리는 적절한 Bias, Variance 를 갖는 모델을 설계해야함을 알 수 있다.&lt;/p&gt;</content><author><name></name></author><summary type="html">Supervised Learning 을 할 때, 설계한 모델의 Predicted Value 와 실제 Label Value 간의 차이를 Error 라고 한다.</summary></entry></feed>
