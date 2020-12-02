@@ -9,6 +9,9 @@ Seoul, Republic of Korea. <br >
 judepark@kookmin.ac.kr
 
 Hi, I am student in the Department of Computer Science at Kookmin University.
+
+I am expected to graduate Bachelor of Science in Computer Science at Kookmin University in Feb 2021.
+
 If you want to know about me in details, please see my [curriculum vitae](https://github.com/JudePark96/blog/raw/master/eunhwanpark_cv.pdf)
 
 By the way, I love travel. Do you wanna see my travel log? go to [Travel Log](https://judepark96.github.io/blog/travel_log/#1)!
