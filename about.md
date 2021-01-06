@@ -8,9 +8,10 @@ Eunhwan Park <br >
 Seoul, Republic of Korea. <br >
 judepark@kookmin.ac.kr
 
-Hi, I am student in the Department of Computer Science at Kookmin University.
+Hi, I'm a student in the Department of Computer Science at Kookmin University.
 
-I am expected to graduate Bachelor of Science in Computer Science at Kookmin University in Feb 2021.
+I've received the certification of SW Maestro 6th mentee from the Ministry of Science, ICT and Future Planning, South Korea.
+Also I'm expected to graduate Bachelor of Science in Computer Science at Kookmin University in Feb 2021.
 
 If you want to know about me in details, please see my [curriculum vitae](https://github.com/JudePark96/blog/raw/master/eunhwanpark_cv.pdf)
 
