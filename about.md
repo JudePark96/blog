@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Me (judepark@kookmin.ac.kr)
+title: About Me
 permalink: /about/
 ---
 <img src="https://avatars.githubusercontent.com/JudePark96" width="25%" height="25%" style="border-radius:50%"/><br/>
