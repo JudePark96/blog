@@ -16,7 +16,7 @@ Hi! I obtained B.S. Degree in Computer Science at Kookmin University in Feb 2021
 
 ## Research Interest
 
-Information retrieval, Question Answering, Knowledge Graph, etc.
+Information retrieval, Question answering, Knowledge graph, etc.
 
 ## Education
 
