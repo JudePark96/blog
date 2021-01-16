@@ -8,7 +8,7 @@ Eunhwan Jude Park <br >
 Seoul, Republic of Korea. <br >
 judepark@kookmin.ac.kr
 
-Hi! I obtained B.S. Degree in Computer Science at Kookmin University in Feb 2021. Recently, I got accepted to the Division of Computer Science and Engineering at Jeonbuk National University as a M.S. Student! My advisor is Prof. SeungHoon Na.
+Hi! I obtained a B.S. Degree in Computer Science from Kookmin University in Feb 2021. Recently, I got accepted to the Division of Computer Science and Engineering at Jeonbuk National University as a graduate student! My advisor is Prof. SeungHoon Na.
 
 > I will update the email soon.
 
