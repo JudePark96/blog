@@ -3,7 +3,7 @@ layout: page
 title: About Me
 permalink: /about/
 ---
-<img src="https://avatars.githubusercontent.com/JudePark96" width="25%" height="25%" style="border-radius:50%"/><br/>
+<img src="https://avatars.githubusercontent.com/JudePark96" width="20%" height="20%" style="border-radius:50%"/><br/>
 Eunhwan Jude Park <br >
 Seoul, Republic of Korea. <br >
 judepark@kookmin.ac.kr
@@ -16,7 +16,7 @@ Hi! I obtained B.S. Degree in Computer Science at Kookmin University in Feb 2021
 
 ## Research Interest
 
-Information retrieval, Question answering, Knowledge graph, etc.
+Natural language processing, Information retrieval, Question answering, Knowledge graph, etc.
 
 ## Education
 
@@ -30,10 +30,10 @@ B.S. Degree in Computer Science.
 
 ## Domestic Publication
 
-1. **EunHwan Park**, SeungHoon Na, Keyword Generation via Graph Convolutional Network Encoder and Hierarchical Decoder, Korea Software Congress 2020.
+1. **EunHwan Park**, SeungHoon Na, Keyword Generation via Graph Convolutional Network Encoder and Hierarchical Decoder, Korea Software Congress, (2020).
 2. RoJe Lee, **EunHwan Park**, JaeKoo Lee, Comparison of Variant BERT Model on Korean, KICS Winter Conference, (2020).
 
-## Appointment
+## Activities 
 
 | Year   |      Content      |  
 |----------|:-------------:|
