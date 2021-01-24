@@ -14,6 +14,8 @@ Hi! I obtained a B.S. Degree in Computer Science from Kookmin University in Feb 
 
 [CV](https://github.com/JudePark96/judepark96.github.io/blob/master/eunhwanpark_cv.pdf)
 
+I love travel! You can see [my travel log](https://judepark96.github.io/travel_log/#1)!
+
 ## Research Interest
 
 Natural language processing, Information retrieval, Question answering, Knowledge graph, etc.
