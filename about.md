@@ -24,7 +24,7 @@ Natural language processing, Information retrieval, Question answering, Knowledg
 
 Currently, M.S Student.
 
-#### Kookmin University (2016 ~ 2020)
+#### Kookmin University (2016 ~ 2021)
 
 B.S. Degree in Computer Science.
 
