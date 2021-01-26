@@ -35,16 +35,17 @@ B.S. Degree in Computer Science.
 1. **EunHwan Park**, SeungHoon Na, Keyword Generation via Graph Convolutional Network Encoder and Hierarchical Decoder, Korea Software Congress, (2020).
 2. RoJe Lee, **EunHwan Park**, JaeKoo Lee, Comparison of Variant BERT Model on Korean, KICS Winter Conference, (2020).
 
-## Activities 
+## Activities & Awards
 
 | Year   |      Content      |  
 |----------|:-------------:|
+| 2021 | Graduate Research Scholarship II, Jeonbuk National University |
 | 2017 |  Summer Innovation Program, Kookmin University – University of California, Irvine. |
 | 2015 |  SW Maestro 6th (Completion of Phase 1) |
 
 ## Work Experience
 
-| Year   |      Position      | Company|  
+| Year   |      Position      | Company |  
 |----------|:-------------:|:-------------|
 | 2015. 07 ~ 2016. 02 | Backend Engineer | Plating Co.|
 
