@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 <img src="https://avatars.githubusercontent.com/JudePark96" width="20%" height="20%" style="border-radius:50%"/><br/>
-Eunhwan Jude Park <br >
+Eunhwan Park <br >
 Seoul, Republic of Korea. <br >
 judepark@kookmin.ac.kr
 
@@ -24,7 +24,7 @@ Natural language processing, Information retrieval, Question answering, Knowledg
 
 #### Jeonbuk National University (2021 ~ Present)
 
-Currently, M.S Student.
+Currently, M.S. Student.
 
 #### Kookmin University (2016 ~ 2021)
 
