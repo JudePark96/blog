@@ -39,6 +39,7 @@ B.S. Degree in Computer Science.
 
 | Year   |      Content      |  
 |----------|:-------------:|
+| 2021 | Encouragement Award in KSC2020 Undergraduate/Junior Thesis Contest |
 | 2021 | Graduate Research Scholarship II, Jeonbuk National University |
 | 2017 |  Summer Innovation Program, Kookmin University – University of California, Irvine. |
 | 2015 |  SW Maestro 6th (Completion of Phase 1) |
