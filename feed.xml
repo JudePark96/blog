@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/" rel="alternate" type="text/html" /><updated>2021-02-18T00:58:39-06:00</updated><id>https://judepark96.github.io/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">簡単な卒業の感想</title><link href="https://judepark96.github.io/2020/12/11/%E7%B0%A1%E5%8D%98%E3%81%AA%E5%8D%92%E6%A5%AD%E3%81%AE%E6%84%9F%E6%83%B3.html" rel="alternate" type="text/html" title="簡単な卒業の感想" /><published>2020-12-11T00:00:00-06:00</published><updated>2020-12-11T00:00:00-06:00</updated><id>https://judepark96.github.io/2020/12/11/%E7%B0%A1%E5%8D%98%E3%81%AA%E5%8D%92%E6%A5%AD%E3%81%AE%E6%84%9F%E6%83%B3</id><content type="html" xml:base="https://judepark96.github.io/2020/12/11/%E7%B0%A1%E5%8D%98%E3%81%AA%E5%8D%92%E6%A5%AD%E3%81%AE%E6%84%9F%E6%83%B3.html">&lt;p&gt;そろそろ卒業の時間が来る。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/" rel="alternate" type="text/html" /><updated>2021-02-20T05:09:02-06:00</updated><id>https://judepark96.github.io/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">mecab-ko-dic 컴파일 에러 해결하기</title><link href="https://judepark96.github.io/natural/language/processing,/nlp/2021/02/20/mecab-ko-dic-%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0.html" rel="alternate" type="text/html" title="mecab-ko-dic 컴파일 에러 해결하기" /><published>2021-02-20T00:00:00-06:00</published><updated>2021-02-20T00:00:00-06:00</updated><id>https://judepark96.github.io/natural/language/processing,/nlp/2021/02/20/mecab-ko-dic%20%EC%BB%B4%ED%8C%8C%EC%9D%BC%20%EC%97%90%EB%9F%AC%20%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0</id><content type="html" xml:base="https://judepark96.github.io/natural/language/processing,/nlp/2021/02/20/mecab-ko-dic-%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0.html">&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;WARNING: `aclocal-1.11' is missing on your system. You should only need it if you modified`acinclude.m4' or `configure.ac'. You might want to install the`Automake' and `Perl' packages. Grab them from any GNU archive site. configure.ac:2: error: possibly undefined macro: AM_INIT_AUTOMAKE If this token and others are legitimate, please use m4_pattern_allow. See the Autoconf documentation. make: ***
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./configure&lt;/code&gt; 와 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;make&lt;/code&gt; 을 하였을 때 위와 같은 에러로 MeCab 사전이 컴파일되지 않는 경우가 발생한다. 그럴 경우에는 아래와 같이 하면 된다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;autoreconf
+./configure
+make
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;아마도 autoconf, automake 관련 에러로 생각되는데 autoreconf 를 하면 잘 된다.&lt;/p&gt;</content><author><name></name></author><summary type="html">WARNING: `aclocal-1.11' is missing on your system. You should only need it if you modified`acinclude.m4' or `configure.ac'. You might want to install the`Automake' and `Perl' packages. Grab them from any GNU archive site. configure.ac:2: error: possibly undefined macro: AM_INIT_AUTOMAKE If this token and others are legitimate, please use m4_pattern_allow. See the Autoconf documentation. make: ***</summary></entry><entry><title type="html">簡単な卒業の感想</title><link href="https://judepark96.github.io/2020/12/11/%E7%B0%A1%E5%8D%98%E3%81%AA%E5%8D%92%E6%A5%AD%E3%81%AE%E6%84%9F%E6%83%B3.html" rel="alternate" type="text/html" title="簡単な卒業の感想" /><published>2020-12-11T00:00:00-06:00</published><updated>2020-12-11T00:00:00-06:00</updated><id>https://judepark96.github.io/2020/12/11/%E7%B0%A1%E5%8D%98%E3%81%AA%E5%8D%92%E6%A5%AD%E3%81%AE%E6%84%9F%E6%83%B3</id><content type="html" xml:base="https://judepark96.github.io/2020/12/11/%E7%B0%A1%E5%8D%98%E3%81%AA%E5%8D%92%E6%A5%AD%E3%81%AE%E6%84%9F%E6%83%B3.html">&lt;p&gt;そろそろ卒業の時間が来る。&lt;/p&gt;
 
 &lt;p&gt;良いことも、悪い事もありましたけど何か未来が期待される。&lt;/p&gt;
 
@@ -259,43 +269,4 @@ S(V_e) = (1-d) + d*(S(V_a) + \frac{1}{2}S(V_b))&lt;/script&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://web.stanford.edu/~jurafsky/slp3/&quot;&gt;Speech and Language Processing&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">1. Attachment ambiguity</summary></entry><entry><title type="html">Bias-Variance Trade off</title><link href="https://judepark96.github.io/machine-learning/2020/06/22/Bias-Variance-tradeoff.html" rel="alternate" type="text/html" title="Bias-Variance Trade off" /><published>2020-06-22T00:00:00-05:00</published><updated>2020-06-22T00:00:00-05:00</updated><id>https://judepark96.github.io/machine-learning/2020/06/22/Bias-Variance-tradeoff</id><content type="html" xml:base="https://judepark96.github.io/machine-learning/2020/06/22/Bias-Variance-tradeoff.html">&lt;p&gt;Supervised Learning 을 할 때, 설계한 모델의 Predicted Value 와 실제 Label Value 간의 차이를 Error 라고 한다.&lt;/p&gt;
-
-&lt;p&gt;이 Error 는 Variance, Bias, Noise 로 이루어져 있는데 $Error(x) = Var(x) + Bias(x) + Noise(x)$ 이다.&lt;/p&gt;
-
-&lt;p&gt;Error 가 어떻게 위의 언급한 것과 같이 되는지 알아본다.&lt;/p&gt;
-
-&lt;h1 id=&quot;decomposition&quot;&gt;Decomposition&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;$y = f(x) + \epsilon$
-    &lt;ul&gt;
-      &lt;li&gt;$y$ 는 $\text{noise } \epsilon$ 을 포함한 함수이다. 이 때, noise 는 평균이 0, 표준편차는 $\sigma^2$ 인 가우시안 분포를 따른다고 가정한다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;$g(x) = wx + b$
-    &lt;ul&gt;
-      &lt;li&gt;학습할 hypothesis function 이다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;$Error = E[(y-g(x))^2]$
-    &lt;ul&gt;
-      &lt;li&gt;hypothesis function 을 바탕으로 한 error function 이다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;$y’=f(x’)+\epsilon$&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;E[(y'-g(x'))^2] \\
-= E[g(x')^2 - 2g(x')y' + y'^2] \\
-= Var(g(x')) + E[g(x')]^2 - 2E[g(x')]f(x') + Var(y')+f(x')^2 \\
-= Var(g(x')) + (E[g(x')]-f(x'))^2 + Var(\epsilon) \\
-= Var(g(x')) + (E[g(x')]-f(x'))^2 + \sigma^2&lt;/script&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Low Bias-High Variance 인 상태일 수록 Overfitting 이고, High Bias-Low Variance 인 상태일 수록 Underfitting 이라고 할 수 있다.&lt;/p&gt;
-
-&lt;p&gt;우리는 적절한 Bias, Variance 를 갖는 모델을 설계해야함을 알 수 있다.&lt;/p&gt;</content><author><name></name></author><summary type="html">Supervised Learning 을 할 때, 설계한 모델의 Predicted Value 와 실제 Label Value 간의 차이를 Error 라고 한다.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">1. Attachment ambiguity</summary></entry></feed>
