@@ -24,11 +24,11 @@ Natural language processing, Information retrieval, Question answering, Knowledg
 
 #### Jeonbuk National University (2021 ~ Present)
 
-Currently, M.S. Student.
+Currently, Graduate Student.
 
 #### Kookmin University (2016 ~ 2021)
 
-B.S. Degree in Computer Science.
+B.E. in Computer Science.
 
 ## Domestic Publication
 
