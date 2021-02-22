@@ -21,19 +21,19 @@ var documents = [{
     "body": "WarningDo not manually save images into this folder. This is used by GitHub Actions to automatically copy images.  Any images you save into this folder could be deleted at build time. "
     }, {
     "id": 4,
+    "url": "https://JudePark96.github.io/nlp,/torch/2021/02/22/load-weight-manually.html",
+    "title": "How to load weight of the part of a pre-trained model in PyTorch?",
+    "body": "2021/02/22 - We usually do pre-train language models, but depends on model configuration, there need to load weight manually. For example, what if we have weights of 6 layers and structure of given pre-trained model is 12 layers, then how to load the weights into given pre-trained model? Usually, there is a succint method to load weights; load_state_dict(). But, mentioned above, we can’t use load_state_dict(). Here’s the things; weights = model. state_dict()lm_dict = lm. state_dict()weights = {k: v for k, v in weights. items() if k in lm_dict}lm_dict. update(weights)lm. load_state_dict(lm_dict)"
+    }, {
+    "id": 5,
     "url": "https://JudePark96.github.io/graduation/2021/02/20/%EA%B5%AD%EB%AF%BC%EB%8C%80%ED%95%99%EA%B5%90%EB%A5%BC-%EB%93%9C%EB%94%94%EC%96%B4-%EC%A1%B8%EC%97%85%ED%96%88%EC%96%B4%EC%9A%94.html",
     "title": "국민대학교를 드디어 졸업했어요.",
     "body": "2021/02/20 -  드디어 국민대학교를 졸업하였습니다. 이 추운 날 학교 와줘서 축하해준 친구들 너무 고맙습니다. 국민대학교를 다니며 좋은 친구들 덕분에 그 무엇보다 “노력” 과 “겸손” 의 가치를 보다 더 깨달을 수 있었습니다. 학교의 미국 연수 프로그램 덕분에 좋은 경험들도 할 수 있었죠. 미국 연수 이후 영어 실력이 좋아져서 지금까지도 논문을 읽는데 있어 굉장히 큰 도움이 되고 있습니다. 어찌어찌 졸업을 하였고, 이런 부족한 저도 지금은 대학원에 들어가 석사 과정 학생으로서 다시 한 번 공부하려고 합니다. 정든 학교를 떠나는 건 마음이 아프지만, 그럼에도 졸업은 필연이니 이젠 국민대학교 졸업생으로서 더욱 더 열심히 해야겠죠. 학부 생활동안 너무나도 행복했고 교수님들, 선배님들, 동기, 친구들 모두 너무 감사드리고 배운 걸 바탕으로 석사 과정 열심히 공부해서 자연어처리 좋은 연구하도록 노력할게요. 모두 감사합니다! "
     }, {
-    "id": 5,
+    "id": 6,
     "url": "https://JudePark96.github.io/natural/language/processing,/nlp/2021/02/20/mecab-ko-dic-%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0.html",
     "title": "mecab-ko-dic 컴파일 에러 해결하기",
     "body": "2021/02/20 - WARNING: `aclocal-1. 11' is missing on your system. You should only need it if you modified`acinclude. m4' or `configure. ac'. You might want to install the`Automake' and `Perl' packages. Grab them from any GNU archive site. configure. ac:2: error: possibly undefined macro: AM_INIT_AUTOMAKE If this token and others are legitimate, please use m4_pattern_allow. See the Autoconf documentation. make: ***. /configure 와 make 을 하였을 때 위와 같은 에러로 MeCab 사전이 컴파일되지 않는 경우가 발생한다. 그럴 경우에는 아래와 같이 하면 된다. autoreconf. /configuremake아마도 autoconf, automake 관련 에러로 생각되는데 autoreconf 를 하면 잘 된다. "
-    }, {
-    "id": 6,
-    "url": "https://JudePark96.github.io/nlp,/torch/2021/02/02/load-weight-manually.html",
-    "title": "How to load weight of the part of a pre-trained model in PyTorch?",
-    "body": "2021/02/02 - We usually do pre-train language models, but depends on model configuration, there need to load weight manually. For example, what if we have weights of 6 layers and structure of given pre-trained model is 12 layers, then how to load the weights into given pre-trained model? Usually, there is a succint method to load weights; load_state_dict(). But, mentioned above, we can’t use load_state_dict(). Here’s the things; weights = model. state_dict()lm_dict = lm. state_dict()weights = {k: v for k, v in weights. items() if k in lm_dict}lm_dict. update(weights)lm. load_state_dict(lm_dict)"
     }, {
     "id": 7,
     "url": "https://JudePark96.github.io/2020/12/11/%E7%B0%A1%E5%8D%98%E3%81%AA%E5%8D%92%E6%A5%AD%E3%81%AE%E6%84%9F%E6%83%B3.html",
