@@ -116,20 +116,19 @@
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
-</ul><p>We usually do pre-train language models, but depends on model configuration, there need to load weight manually. 
-For example, what if we have weights of 6 layers and structure of given pre-trained model is 12 layers, then how to load the weights into given pre-trained model?</p>
+</ul><p>We usually do pre-train language models but depends on model configuration, there need to load weight manually. For example, what if we have weights of 6 layers and the structure of the given pre-trained model is 12 layers, then how to load the weights into the given pre-trained model?</p>
 
-<p>Usually, there is a succint method to load weights; <code class="language-plaintext highlighter-rouge">load_state_dict()</code>. But, mentioned above, we can’t use <code class="language-plaintext highlighter-rouge">load_state_dict()</code>.</p>
+<p>Usually, there is a succinct method to load weights; <code class="language-plaintext highlighter-rouge">load_state_dict()</code>. But, mentioned above, we can’t use <code class="language-plaintext highlighter-rouge">load_state_dict()</code>.</p>
 
-<p>Here’s the things;</p>
+<p>Here is the thing;</p>
 
-<pre><code class="language-python3">weights = model.state_dict()
-lm_dict = lm.state_dict()
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">weights</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">state_dict</span><span class="p">()</span>
+<span class="n">lm_dict</span> <span class="o">=</span> <span class="n">lm</span><span class="o">.</span><span class="n">state_dict</span><span class="p">()</span>
 
-weights = {k: v for k, v in weights.items() if k in lm_dict}
-lm_dict.update(weights)
-lm.load_state_dict(lm_dict)
-</code></pre>
+<span class="n">weights</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span><span class="p">:</span> <span class="n">v</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">weights</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">lm_dict</span><span class="p">}</span>
+<span class="n">lm_dict</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">weights</span><span class="p">)</span>
+<span class="n">lm</span><span class="o">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">lm_dict</span><span class="p">)</span>
+</code></pre></div></div>
 
   </div><a class="u-url" href="/nlp,/torch/2021/02/22/load-weight-manually.html" hidden></a>
 </article>

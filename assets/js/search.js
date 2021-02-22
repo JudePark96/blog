@@ -23,7 +23,7 @@ var documents = [{
     "id": 4,
     "url": "https://JudePark96.github.io/nlp,/torch/2021/02/22/load-weight-manually.html",
     "title": "How to load weight of the part of a pre-trained model in PyTorch?",
-    "body": "2021/02/22 - We usually do pre-train language models, but depends on model configuration, there need to load weight manually. For example, what if we have weights of 6 layers and structure of given pre-trained model is 12 layers, then how to load the weights into given pre-trained model? Usually, there is a succint method to load weights; load_state_dict(). But, mentioned above, we can’t use load_state_dict(). Here’s the things; weights = model. state_dict()lm_dict = lm. state_dict()weights = {k: v for k, v in weights. items() if k in lm_dict}lm_dict. update(weights)lm. load_state_dict(lm_dict)"
+    "body": "2021/02/22 - We usually do pre-train language models but depends on model configuration, there need to load weight manually. For example, what if we have weights of 6 layers and the structure of the given pre-trained model is 12 layers, then how to load the weights into the given pre-trained model? Usually, there is a succinct method to load weights; load_state_dict(). But, mentioned above, we can’t use load_state_dict(). Here is the thing; weights = model. state_dict()lm_dict = lm. state_dict()weights = {k: v for k, v in weights. items() if k in lm_dict}lm_dict. update(weights)lm. load_state_dict(lm_dict)"
     }, {
     "id": 5,
     "url": "https://JudePark96.github.io/graduation/2021/02/20/%EA%B5%AD%EB%AF%BC%EB%8C%80%ED%95%99%EA%B5%90%EB%A5%BC-%EB%93%9C%EB%94%94%EC%96%B4-%EC%A1%B8%EC%97%85%ED%96%88%EC%96%B4%EC%9A%94.html",
