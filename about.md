@@ -9,9 +9,7 @@ Seoul, Republic of Korea. <br >
 judepark@jbnu.ac.kr <br >
 judepark@kookmin.ac.kr 
 
-Hi! I obtained a Bachelor of Engineering in Computer Science from Kookmin University in Feb 2021. Recently, I got accepted to the Division of Computer Science and Engineering at Jeonbuk National University as a graduate student! My advisor is Prof. SeungHoon Na.
-
-> I will update the email soon.
+Hi! I am a 1st-year graduate student in the Conginitive Computing Lab at Jeonbuk National University. Currently, I am fortunate to be advised by [Seunghoon Na](http://nlp.jbnu.ac.kr/~nash/faculty.html). Prior to Jeonbuk National University, I obtained a Bachelor of Engineering in Computer Science from Kookmin University in Feb 2021.
 
 [CV](https://github.com/JudePark96/judepark96.github.io/blob/master/eunhwanpark_cv.pdf)
 
@@ -25,7 +23,7 @@ Natural language processing, Information retrieval, Question answering, Knowledg
 
 #### Jeonbuk National University (2021 ~ Present)
 
-Currently, Graduate Student.
+Graduate Student in Computer Science
 
 #### Kookmin University (2016 ~ 2021)
 
