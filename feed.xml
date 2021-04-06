@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/" rel="alternate" type="text/html" /><updated>2021-03-28T22:28:53-05:00</updated><id>https://judepark96.github.io/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">UAS, LAS 정의</title><link href="https://judepark96.github.io/nlp,/torch/2021/03/05/uas-las.html" rel="alternate" type="text/html" title="UAS, LAS 정의" /><published>2021-03-05T00:00:00-06:00</published><updated>2021-03-05T00:00:00-06:00</updated><id>https://judepark96.github.io/nlp,/torch/2021/03/05/uas-las</id><content type="html" xml:base="https://judepark96.github.io/nlp,/torch/2021/03/05/uas-las.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://judepark96.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://judepark96.github.io/" rel="alternate" type="text/html" /><updated>2021-04-05T21:42:27-05:00</updated><id>https://judepark96.github.io/feed.xml</id><title type="html">Eunhwan Park X NLP</title><subtitle>Eunhwan Park X NLP</subtitle><entry><title type="html">Binary Gap</title><link href="https://judepark96.github.io/2021/04/05/2021-04-06-binary-gap.html" rel="alternate" type="text/html" title="Binary Gap" /><published>2021-04-05T21:42:27-05:00</published><updated>2021-04-05T21:42:27-05:00</updated><id>https://judepark96.github.io/2021/04/05/2021-04-06-binary-gap</id><content type="html" xml:base="https://judepark96.github.io/2021/04/05/2021-04-06-binary-gap.html">&lt;p&gt;A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N.&lt;/p&gt;
+
+&lt;p&gt;For example, number 9 has binary representation 1001 and contains a binary gap of length 2. The number 529 has binary representation 1000010001 and contains two binary gaps: one of length 4 and one of length 3. The number 20 has binary representation 10100 and contains one binary gap of length 1. The number 15 has binary representation 1111 and has no binary gaps. The number 32 has binary representation 100000 and has no binary gaps.&lt;/p&gt;
+
+&lt;p&gt;Write a function: def solution(N)&lt;/p&gt;
+
+&lt;p&gt;that, given a positive integer N, returns the length of its longest binary gap. The function should return 0 if N doesn’t contain a binary gap.&lt;/p&gt;
+
+&lt;p&gt;For example, given N = 1041 the function should return 5, because N has binary representation 10000010001 and so its longest binary gap is of length 5. Given N = 32 the function should return 0, because N has binary representation ‘100000’ and thus no binary gaps.&lt;/p&gt;
+
+&lt;p&gt;Write an efficient algorithm for the following assumptions:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;N is an integer within the range [1..2,147,483,647].&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;writing-code-in-python&quot;&gt;Writing Code in Python&lt;/h1&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2147483647&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+    
+    &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:])&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# String
+&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;one_idx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+    
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;enumerate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;one_idx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+    
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;one_idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;one_idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;one_idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]))&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;one_idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;one_idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N.</summary></entry><entry><title type="html">UAS, LAS 정의</title><link href="https://judepark96.github.io/nlp,/torch/2021/03/05/uas-las.html" rel="alternate" type="text/html" title="UAS, LAS 정의" /><published>2021-03-05T00:00:00-06:00</published><updated>2021-03-05T00:00:00-06:00</updated><id>https://judepark96.github.io/nlp,/torch/2021/03/05/uas-las</id><content type="html" xml:base="https://judepark96.github.io/nlp,/torch/2021/03/05/uas-las.html">&lt;ul&gt;
   &lt;li&gt;UAS (Unlabeled attachment score) : Percentage of words that get the correct head&lt;/li&gt;
   &lt;li&gt;LAS (Labeled attachment score) : Percentage of words that get the correct head and label&lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><summary type="html">UAS (Unlabeled attachment score) : Percentage of words that get the correct head LAS (Labeled attachment score) : Percentage of words that get the correct head and label</summary></entry><entry><title type="html">How to load weight of the part of a pre-trained model in PyTorch?</title><link href="https://judepark96.github.io/nlp,/torch/2021/02/22/load-weight-manually.html" rel="alternate" type="text/html" title="How to load weight of the part of a pre-trained model in PyTorch?" /><published>2021-02-22T00:00:00-06:00</published><updated>2021-02-22T00:00:00-06:00</updated><id>https://judepark96.github.io/nlp,/torch/2021/02/22/load-weight-manually</id><content type="html" xml:base="https://judepark96.github.io/nlp,/torch/2021/02/22/load-weight-manually.html">&lt;p&gt;We usually do pre-train language models but depends on model configuration, there need to load weight manually. For example, what if we have weights of 6 layers and the structure of the given pre-trained model is 12 layers, then how to load the weights into the given pre-trained model?&lt;/p&gt;
@@ -172,35 +210,4 @@ label -&amp;gt; &amp;lt;sos&amp;gt; autonomous exploration __&lt;span class=&quo
 &lt;span class=&quot;n&quot;&gt;bert&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resize_token_embeddings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;total_num_tokens&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Done!&lt;/p&gt;</content><author><name></name></author><summary type="html">1. Introduction</summary></entry><entry><title type="html">Graph Convolutional Networks for Text Classification</title><link href="https://judepark96.github.io/graph-representation,/graph,/page-rank,/nlp,/graph-neural-network/2020/08/14/Graph-Convolutional-Networks-for-Text-Classification.html" rel="alternate" type="text/html" title="Graph Convolutional Networks for Text Classification" /><published>2020-08-14T00:00:00-05:00</published><updated>2020-08-14T00:00:00-05:00</updated><id>https://judepark96.github.io/graph-representation,/graph,/page-rank,/nlp,/graph-neural-network/2020/08/14/Graph%20Convolutional%20Networks%20for%20Text%20Classification</id><content type="html" xml:base="https://judepark96.github.io/graph-representation,/graph,/page-rank,/nlp,/graph-neural-network/2020/08/14/Graph-Convolutional-Networks-for-Text-Classification.html">&lt;h1 id=&quot;1-초록은-뭐라고-말하고-있어-&quot;&gt;1. 초록은 뭐라고 말하고 있어 ?&lt;/h1&gt;
-
-&lt;p&gt;기존의 텍스트 분류 과업을 하기 위한 몇 몇 연구에서는 convolutional neural networks 를 사용하였다. 본 논문에서는 convolutional neural networks 가 아닌 graph convolutional networks 를 텍스트 분류 과업에 적용하는 것을 제안한다.&lt;/p&gt;
-
-&lt;h1 id=&quot;2-주요-기여점은-뭐야-&quot;&gt;2. 주요 기여점은 뭐야 ?&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;We propose a novel graph neural network method for text classification. To the best of our knowledge, this is the first study to model a whole corpus as a heterogeneous graph and learn word and document embeddings with graph neural networks jointly.&lt;/li&gt;
-  &lt;li&gt;Results on several benchmark datasets demonstrate that our method outperforms state-of-the-art text classification methods, without using pre-trained word embeddings or external knowledge. Our method also learn predictive word and document embeddings automatically.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;3-이전의-접근과는-뭐가-다른-것-같아-&quot;&gt;3. 이전의 접근과는 뭐가 다른 것 같아 ?&lt;/h1&gt;
-
-&lt;p&gt;기존의 텍스트 분류 과업을 위한 주요 딥러닝 모델로는 CNN, LSTM 등이 있다. 이러한 모델들은 local consecutive word sequences 의 semantic, synthetic information 을 잘 caputre 할 수 있지만 global word co-occurence 를 무시할 수 있는 가능성이 있다.&lt;/p&gt;
-
-&lt;p&gt;본 논문에서는 이전의 접근과는 다르게 graph representation 을 학습하여 classification task 를 수행한다는 점이다. 이를 수행하기 위하여 corpus -&amp;gt; graph 의 방법으로 PMI, TF-IDF 를 소개하였고, PMI 의 경우가 성능이 더 좋음을 알려준다. 또한 two-layer GCN 이 one-layer GCN 보다 성능이 좋았지만 더 많은 layer 는 성능에 큰 의미가 없음을 나타내었다.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;기존의 CNN, LSTM 을 GNN 계열의 신경망으로 대체한다는 것 자체가 geometric 의 관점으로 보았을 때 큰 차이가 있다.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;4-어떤-걸-제안할-수-있을까-&quot;&gt;4. 어떤 걸 제안할 수 있을까 ?&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;encoding method (corpus -&amp;gt; graph)&lt;/li&gt;
-  &lt;li&gt;residual connection&lt;/li&gt;
-  &lt;li&gt;한국어 데이터 집합에 적용&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;5-reference&quot;&gt;5. Reference&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/1809.05679&quot;&gt;Graph Convolutional Networks for Text Classification&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">1. 초록은 뭐라고 말하고 있어 ?</summary></entry></feed>
+&lt;p&gt;Done!&lt;/p&gt;</content><author><name></name></author><summary type="html">1. Introduction</summary></entry></feed>
