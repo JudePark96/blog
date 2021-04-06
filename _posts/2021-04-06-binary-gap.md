@@ -35,7 +35,6 @@ def solution(N):
     out = []
     
     for i in range(len(one_idx) - 1):
-        print(one_idx[i+1], (one_idx[i]))
         out.append((one_idx[i+1] - (one_idx[i] + 1)))
 
     if len(out) == 0:
