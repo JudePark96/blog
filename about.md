@@ -49,5 +49,6 @@ Bachelor of Science in Computer Science.
 
 | Year   |      Position      | Company |  
 |----------|:-------------:|:-------------|
+| 2021. 05 ~ 2021. 07 | NLP Researcher | NAVER |
 | 2015. 07 ~ 2016. 02 | Backend Engineer | Plating Co.|
 
