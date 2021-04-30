@@ -3,19 +3,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Binary Gap | Eunhwan Park X NLP</title>
+<title>Single-Hop Question Generation with BART | Eunhwan Park X NLP</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Binary Gap" />
+<meta property="og:title" content="Single-Hop Question Generation with BART" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N." />
-<meta property="og:description" content="A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N." />
-<link rel="canonical" href="https://judepark96.github.io/2021/04/07/2021-04-06-binary-gap.html" />
-<meta property="og:url" content="https://judepark96.github.io/2021/04/07/2021-04-06-binary-gap.html" />
+<meta name="description" content="Single-Hop Question Generation with BART" />
+<meta property="og:description" content="Single-Hop Question Generation with BART" />
+<link rel="canonical" href="https://judepark96.github.io/nlp,/text/generation/2021/04/08/BART-Single-Hop-Question-Generation.html" />
+<meta property="og:url" content="https://judepark96.github.io/nlp,/text/generation/2021/04/08/BART-Single-Hop-Question-Generation.html" />
 <meta property="og:site_name" content="Eunhwan Park X NLP" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-04-07T13:40:11-05:00" />
+<meta property="article:published_time" content="2021-04-08T00:00:00-05:00" />
 <script type="application/ld+json">
-{"headline":"Binary Gap","dateModified":"2021-04-07T13:40:11-05:00","datePublished":"2021-04-07T13:40:11-05:00","url":"https://judepark96.github.io/2021/04/07/2021-04-06-binary-gap.html","description":"A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://judepark96.github.io/2021/04/07/2021-04-06-binary-gap.html"},"@context":"https://schema.org"}</script>
+{"headline":"Single-Hop Question Generation with BART","dateModified":"2021-04-08T00:00:00-05:00","datePublished":"2021-04-08T00:00:00-05:00","url":"https://judepark96.github.io/nlp,/text/generation/2021/04/08/BART-Single-Hop-Question-Generation.html","description":"Single-Hop Question Generation with BART","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://judepark96.github.io/nlp,/text/generation/2021/04/08/BART-Single-Hop-Question-Generation.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -90,8 +90,8 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Binary Gap</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-04-07T13:40:11-05:00" itemprop="datePublished">
-        Apr 7, 2021
+    <h1 class="post-title p-name" itemprop="name headline">Single-Hop Question Generation with BART</h1><p class="page-description">Single-Hop Question Generation with BART</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-04-08T00:00:00-05:00" itemprop="datePublished">
+        Apr 8, 2021
       </time>
        • <span class="read-time" title="Estimated read time">
     
@@ -101,50 +101,30 @@
 </span></p>
 
     
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="//categories/#NLP,">NLP,</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="//categories/#Text">Text</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="//categories/#Generation">Generation</a>
+        
+      
+      </p>
+    
 
     </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N.</p>
+    <ul class="section-nav">
+</ul><p><img src="https://user-images.githubusercontent.com/1131106/113915719-11cab100-981a-11eb-8c2b-a7e0b8a9d746.png" alt="Screen Shot 2021-04-06 at 2 15 00 AM"></p>
 
-<p>For example, number 9 has binary representation 1001 and contains a binary gap of length 2. The number 529 has binary representation 1000010001 and contains two binary gaps: one of length 4 and one of length 3. The number 20 has binary representation 10100 and contains one binary gap of length 1. The number 15 has binary representation 1111 and has no binary gaps. The number 32 has binary representation 100000 and has no binary gaps.</p>
+<p>KorQuAD 와 AI 기계독해 데이터와 BART를 이용하여 질문 생성 실험을 해보았다. 생각보다 결과가 좋게 나온 것 같다.
+이제 이러한 실험을 바탕으로 더욱 더 확장해보아야겠다.</p>
 
-<p>Write a function: def solution(N)</p>
-
-<p>that, given a positive integer N, returns the length of its longest binary gap. The function should return 0 if N doesn’t contain a binary gap.</p>
-
-<p>For example, given N = 1041 the function should return 5, because N has binary representation 10000010001 and so its longest binary gap is of length 5. Given N = 32 the function should return 0, because N has binary representation ‘100000’ and thus no binary gaps.</p>
-
-<p>Write an efficient algorithm for the following assumptions:</p>
-<ul>
-  <li>N is an integer within the range [1..2,147,483,647].</li>
-</ul>
-
-<h1 id="writing-code-in-python">Writing Code in Python</h1>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">N</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">N</span> <span class="o">&gt;</span> <span class="mi">2147483647</span><span class="p">:</span>
-        <span class="k">return</span> <span class="mi">0</span>
-    
-    <span class="n">N</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">bin</span><span class="p">(</span><span class="n">N</span><span class="p">)[</span><span class="mi">2</span><span class="p">:])</span> <span class="c1"># String
-</span>
-    <span class="n">one_idx</span> <span class="o">=</span> <span class="p">[]</span>
-    
-    <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">v</span> <span class="o">==</span> <span class="s">'1'</span><span class="p">:</span>
-            <span class="n">one_idx</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
-    <span class="n">out</span> <span class="o">=</span> <span class="p">[]</span>
-    
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">one_idx</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
-        <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">one_idx</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">one_idx</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)))</span>
-
-    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">out</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">return</span> <span class="mi">0</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>
-</code></pre></div></div>
-
-  </div><a class="u-url" href="/2021/04/07/2021-04-06-binary-gap.html" hidden></a>
+  </div><a class="u-url" href="/nlp,/text/generation/2021/04/08/BART-Single-Hop-Question-Generation.html" hidden></a>
 </article>
 
       </div>
