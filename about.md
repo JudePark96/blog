@@ -6,6 +6,7 @@ permalink: /about/
 <img src="https://avatars.githubusercontent.com/JudePark96" width="20%" height="20%" style="border-radius:50%"/><br/>
 Eunhwan Park (朴殷煥) <br >
 Seoul, Republic of Korea. <br >
+jude.park.96@navercorp.com <br >
 judepark@jbnu.ac.kr <br >
 judepark@kookmin.ac.kr 
 
