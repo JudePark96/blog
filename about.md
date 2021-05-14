@@ -35,7 +35,6 @@ Bachelor of Science in Computer Science.
 ## Domestic Publication
 
 1. **EunHwan Park**, SeungHoon Na, Keyword Generation via Graph Convolutional Network Encoder and Hierarchical Decoder, Korea Software Congress, (2020).
-2. RoJe Lee, **EunHwan Park**, JaeKoo Lee, Comparison of Variant BERT Model on Korean, KICS Winter Conference, (2020).
 
 ## Activities & Awards
 
