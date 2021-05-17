@@ -3,7 +3,7 @@ layout: page
 title: About Me
 permalink: /about/
 ---
-<img src="https://avatars.githubusercontent.com/JudePark96" width="20%" height="20%" style="border-radius:50%"/><br/>
+<img src="https://avatars.githubusercontent.com/JudePark96" width="25%" height="25%" style="border-radius:50%"/><br/>
 Eunhwan Park (朴殷煥) <br >
 Seoul, Republic of Korea. <br >
 jude.park.96@navercorp.com <br >
@@ -49,6 +49,6 @@ Bachelor of Science in Computer Science.
 
 | Year   |      Position      | Company |  
 |----------|:-------------:|:-------------|
-| 2021. 05 ~ 2021. 07 | NLP Researcher | NAVER Corp. |
+| 2021. 05 ~ 2021. 07 | NLP Researcher (Internship) | NAVER Corp. |
 | 2015. 07 ~ 2016. 02 | Backend Engineer | Plating Corp. |
 
