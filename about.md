@@ -3,12 +3,11 @@ layout: page
 title: About Me
 permalink: /about/
 ---
-<img src="https://avatars.githubusercontent.com/JudePark96" width="25%" height="25%" style="border-radius:50%"/><br/>
+<img src="https://avatars.githubusercontent.com/JudePark96" width="35%" height="35%" style="border-radius:50%"/><br/>
 Eunhwan Park (朴殷煥) <br >
 Seoul, Republic of Korea. <br >
 jude.park.96@navercorp.com <br >
-judepark@jbnu.ac.kr <br >
-judepark@kookmin.ac.kr 
+judepark@{jbnu.ac.kr, kookmin.ac.kr}
 
 Hi! I am a 1st-year graduate student in the [Cognitive Computing Lab](http://nlp.jbnu.ac.kr/) at Jeonbuk National University. Currently, I am fortunate to be advised by [Seunghoon Na](http://nlp.jbnu.ac.kr/~nash/faculty.html). Prior to Jeonbuk National University, I obtained a Bachelor of Engineering in Computer Science from Kookmin University in Feb 2021, also a certification of Software Maestro 6th from the government of the Republic of Korea in Dec 2015.
 
@@ -34,7 +33,10 @@ Bachelor of Science in Computer Science.
 
 ## Domestic Publication
 
-1. **EunHwan Park**, SeungHoon Na, Keyword Generation via Graph Convolutional Network Encoder and Hierarchical Decoder, Korea Software Congress, (2020).
+1. **Eunhwan Park**, Seunghoon Na, I Know the Reason : Graph-based Evidence Reasoning for Fact Verification about Question Answering, Korea Computing Congress (2021)
+2. **Eunhwan Park**, Seunghoon Na, SpanBERT for Korean Natural Language Processing: Machine Reading Comprehension, Entity Linking, Dependency Parsing, Korea Computing Congress (2021)
+3. **Eunhwan Park**, Seunghonn Na, Domain-Specific Language Model in Heavy Industry: HeavyBERT, Korea Computing Congress (2021)
+4. **Eunhwan Park**, SeungHoon Na, Keyword Generation via Graph Convolutional Network Encoder and Hierarchical Decoder, Korea Software Congress, (2020).
 
 ## Activities & Awards
 
