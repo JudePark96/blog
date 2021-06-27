@@ -33,10 +33,10 @@ Bachelor of Science in Computer Science.
 
 ## Domestic Publication
 
-1. **Eunhwan Park**, Seunghoon Na, I Know the Reason : Graph-based Evidence Reasoning for Fact Verification about Question Answering, Korea Computing Congress (2021)
-2. **Eunhwan Park**, Seunghoon Na, SpanBERT for Korean Natural Language Processing: Machine Reading Comprehension, Entity Linking, Dependency Parsing, Korea Computing Congress (2021)
-3. **Eunhwan Park**, Seunghonn Na, Domain-Specific Language Model in Heavy Industry: HeavyBERT, Korea Computing Congress (2021)
-4. **Eunhwan Park**, SeungHoon Na, Keyword Generation via Graph Convolutional Network Encoder and Hierarchical Decoder, Korea Software Congress, (2020).
+1. **박은환**, 나승훈, 신동욱, 김선훈, 강인호, 그래프 기반 증거 추론을 이용한 질의 응답에 대한 사실 여부 검증 연구, 한국 정보과학회 학술발표논문집, 2021.6.
+2. **박은환**, 나승훈, 김태형, 최윤수, 장두성, SpanBERT를 이용한 한국어 자연어처리: 기계 독해, 개체 연결, 의존 파싱, 한국 정보과학회 학술발표논문집, 2021.6.
+3. **박은환**, 나승훈, 중공업 도메인 특화 언어 모델 : HeavyBERT, 한국 정보과학회 학술발표논문집, 2021.6.
+4. **박은환**, 나승훈, 그래프 합성곱 신경망 인코더와 계층 구조 디코더를 이용한 키워드 생성, 한국 정보과학회 동계 학술발표논문집, 2020.12.
 
 ## Activities & Awards
 
@@ -53,4 +53,3 @@ Bachelor of Science in Computer Science.
 |----------|:-------------:|:-------------|
 | 2021. 05 ~ 2021. 07 | NLP Researcher (Internship) | NAVER Corp. |
 | 2015. 07 ~ 2016. 02 | Backend Engineer | Plating Corp. |
-
